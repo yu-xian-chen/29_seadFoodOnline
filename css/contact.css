@@ -1,0 +1,170 @@
+/* ------------ *\
+    banner
+\* ------------ */
+.p-contact-banner{
+	background-image: url(../imgs/contact/contact_1.jpg);
+	height: 300px;
+    max-width: 1440px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    background-position:center center;
+}
+.p-contact-banner-txt{
+    position: absolute;
+    bottom: 5%;
+    right: 1% ;
+    background-color: #635e5e87;
+    padding: 2%;
+    line-height: 1.5em;
+    border-radius: 5px;
+}
+.p-contact-banner-txt p{
+    color: #fff;
+}
+
+@media screen and (min-width: 550px){
+    .p-contact-banner{
+        height: 400px;
+    }
+}
+@media screen and (min-width: 600px){
+    .p-contact-banner{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .p-contact-banner{
+        height: 500px;
+    }
+}
+@media screen and (min-width: 768px){
+    .p-contact-banner{
+        height: 550px;
+    }
+	.p-contact-banner-txt p{font-size: 24px;}
+    .p-contact-banner-txt{
+        line-height: 2em;
+        right: 3% ;
+    }
+}
+@media screen and (min-width: 1024px){
+	.p-contact-banner-txt p{font-size: 24px;}
+    .p-contact-banner-txt{
+        line-height: 2em;
+        right: 15% ;
+    }
+}
+@media screen and (min-width: 1200px){
+	.p-contact-banner-txt p{font-size: 28px;}
+    .p-contact-banner-txt{
+        line-height: 2em;
+        right: 5% ;
+    }
+}
+/* ------------ *\
+    path
+\* ------------ */
+.breadcrumb{
+	display: flex;
+	margin: 20px 0;
+}
+.breadcrumb li{
+    padding: 0 20px;
+}
+.breadcrumb a{
+    color: #3c56a6;
+	font-weight: 600;
+}
+.breadcrumb a:hover,
+.breadcrumb li:last-child a{
+    color: #0EA5A1;
+}
+.breadcrumb li+li{
+    padding-left: 0;
+}
+.breadcrumb li+li::before{
+    content: '/';
+    margin-right: 20px;
+}
+
+/* ------------ *\
+    main
+\* ------------ */
+/* 地圖與地址設定在index css */
+/* 回饋表單 */
+.table-content{
+    background-color: #3c56a6;
+    border-radius: 10px;
+    padding-bottom: 5%;
+    margin-bottom: 50px;
+}
+.table-content .logo-pic{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-content .logo-pic img{
+    width: 180px;
+}
+.table-content h3{
+    color: #fff;
+    text-align: center;
+    padding: 3% 1%;
+    border-bottom: #fff 1px dashed;
+    width: fit-content;
+    margin: auto;
+}
+.table-content p{
+    color: #fff;
+}
+/* form */
+.form-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-content input[type="text"],
+.form-content input[type="tel"],
+.form-content input[type="email"]{
+    border-radius: 5px;
+    height: 2em;
+    border: none;
+    outline: none;
+}
+.form-content input{
+    margin:1% 2%;
+    color: #aaa;
+}
+.c-phone_email,
+.btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.come_back-class,
+.custumer_name{
+    margin:1% 2%;
+    margin-left: -185px;
+}
+.form-content input[type="submit"],
+.form-content input[type="reset"]{
+    border-radius: 5px;
+    height: 2em;
+    color: #3c56a6;
+    padding: 1%;
+    line-height: 0.5em;
+    border: none;
+    outline: none;
+    margin-top: 3%;
+}
+.form-content textarea{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    margin-top: 1%;
+}

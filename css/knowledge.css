@@ -1,0 +1,214 @@
+/* ------------ *\
+    banner
+\* ------------ */
+.page-knowledge-banner{
+	background-image: url(../imgs/knowledge/knowledge_banner.jpg);
+	height: 300px;
+    max-width: 1440px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    background-position:center center;
+}
+.page-knowledge-banner-txt{
+    position: absolute;
+    bottom: 5%;
+    right: 1% ;
+    background-color: #635e5e87;
+    padding: 2%;
+    line-height: 1.5em;
+    border-radius: 5px;
+}
+.page-knowledge-banner-txt p{
+    color: #fff;
+}
+
+@media screen and (min-width: 550px){
+    .page-knowledge-banner{
+        height: 400px;
+    }
+}
+@media screen and (min-width: 600px){
+    .page-knowledge-banner{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .page-knowledge-banner{
+        height: 500px;
+    }
+}
+@media screen and (min-width: 768px){
+    .page-knowledge-banner{
+        height: 550px;
+    }
+	.page-knowledge-banner-txt p{font-size: 24px;}
+    .page-knowledge-banner-txt{
+        line-height: 2em;
+        right: 3% ;
+    }
+}
+@media screen and (min-width: 1024px){
+	.page-knowledge-banner-txt p{font-size: 24px;}
+    .page-knowledge-banner-txt{
+        line-height: 2em;
+        right: 15% ;
+    }
+}
+@media screen and (min-width: 1200px){
+	.page-knowledge-banner-txt p{font-size: 28px;}
+    .page-knowledge-banner-txt{
+        line-height: 2em;
+        right: 5% ;
+    }
+}
+/* ------------ *\
+    path
+\* ------------ */
+.breadcrumb{
+	display: flex;
+	margin: 20px 0;
+}
+.breadcrumb li{
+    padding: 0 20px;
+}
+.breadcrumb a{
+    color: #3c56a6;
+	font-weight: 600;
+}
+.breadcrumb a:hover,
+.breadcrumb li:last-child a{
+    color: #0EA5A1;
+}
+.breadcrumb li+li{
+    padding-left: 0;
+}
+.breadcrumb li+li::before{
+    content: '/';
+    margin-right: 20px;
+}
+/* ------------ *\
+       main
+\* ------------ */
+.part-judge .site{
+    display: none;/* 768出現*/ 
+}
+.judge{
+    position: relative;
+    margin: 5% 0;
+    width: 80%;
+    margin: auto;
+}
+/* pic */
+.judue-pic{
+    position: relative;
+    z-index: 2;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+.judue-pic img{
+    width: 100%;
+}
+/* txt */
+.judge-list>p{
+    text-align: center;
+    font-weight: 600;
+}
+.judge-list h2{
+    padding: 1% 0;
+    border-top:1px dashed #2b3d74;
+    border-bottom:1px dashed #2b3d74;
+    margin-top: 0;
+}
+.judge-txt{
+    border-radius: 5px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.body .judge-txt {
+    background-color: #3952A5;
+}
+.gill .judge-txt {
+    background-color: #FC6B6B;
+}
+.eye .judge-txt {
+    background-color: #0EA5A1;
+}
+.judge-txt h3{
+    font-weight: 600;
+    margin: 2% 0;
+    padding-top: 2%;
+}
+.judge-txt h3,
+.judge-txt p{
+    color: #fff;
+    text-align: center;
+    text-indent: 2em;
+    padding: 0.5% 0;
+}
+/* --------側邊欄--------------*/
+.part-judge .site{
+	background-color: #3c56a6;
+	border-radius: 10px;
+	opacity: 95%;
+	height: 600px;
+	margin-top: 30px;
+}
+.part-judge .site h3{
+	color: #fff;
+	font-weight: 600;
+	font-size: 22px;
+	margin-top: 20px;
+	text-align: center;
+	padding: 10px 0;
+	border-top: 1px dashed #fff;
+	border-bottom: 1px dashed #fff;
+}
+.part-judge .site a{
+	display: block;
+	color: #fff;
+	margin-top: 10px;
+	padding: 6px 0;
+	text-align: center;
+	font-size: 18px;
+}
+.part-judge .site a:hover{
+	background-color: #2b3d74;
+}
+
+@media screen and (min-width: 768px){
+    .part-judge .site{
+        display: block;
+    }
+    .part-judge,.judge{
+        display: flex;
+    }
+    .judge{
+        align-items: center;
+    }
+    .judue-pic{
+        width: 40%;
+    }
+    .judge-txt{
+        width: 54%;
+        margin: auto;
+    }
+    .part-judge .site{
+        width: 14%;
+        margin: 0 3%;
+    }
+    .judge-list{
+        width: 80%;
+    }
+    .judge:nth-child(even){
+        flex-direction: row-reverse;
+    }
+    
+}

@@ -1,0 +1,249 @@
+/* ------------ *\
+    banner
+\* ------------ */
+.p-online_store-banner{
+	background-image: url(../imgs/online_store/product_banner.jpg);
+	height: 300px;
+    max-width: 1440px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    background-position:center center;
+}
+.p-online_store-banner-txt{
+    position: absolute;
+    bottom: 5%;
+    right: 1% ;
+    background-color: #635e5e87;
+    padding: 2%;
+    line-height: 1.5em;
+    border-radius: 5px;
+}
+.p-online_store-banner-txt p{
+    color: #fff;
+}
+
+@media screen and (min-width: 550px){
+    .p-online_store-banner{
+        height: 400px;
+    }
+}
+@media screen and (min-width: 600px){
+    .p-online_store-banner{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .p-online_store-banner{
+        height: 500px;
+    }
+}
+@media screen and (min-width: 768px){
+    .p-online_store-banner{
+        height: 550px;
+    }
+	.p-online_store-banner-txt p{font-size: 24px;}
+    .p-online_store-banner-txt{
+        line-height: 2em;
+        right: 3% ;
+    }
+}
+@media screen and (min-width: 1024px){
+	.p-online_store-banner-txt p{font-size: 24px;}
+    .p-online_store-banner-txt{
+        line-height: 2em;
+        right: 15% ;
+    }
+}
+@media screen and (min-width: 1200px){
+	.p-online_store-banner-txt p{font-size: 28px;}
+    .p-online_store-banner-txt{
+        line-height: 2em;
+        right: 5% ;
+    }
+}
+
+/* ------------ *\
+    path
+\* ------------ */
+.breadcrumb{
+	display: flex;
+	margin: 20px 0;
+}
+.breadcrumb li{
+    padding: 0 20px;
+}
+.breadcrumb a{
+    color: #3c56a6;
+	font-weight: 600;
+}
+.breadcrumb a:hover,
+.breadcrumb li:last-child a{
+    color: #0EA5A1;
+}
+.breadcrumb li+li{
+    padding-left: 0;
+}
+.breadcrumb li+li::before{
+    content: '/';
+    margin-right: 20px;
+}
+/* ------------ *\
+    main
+\* ------------ */
+.main-site {
+	display: none;
+}
+
+.specialty h2{
+	padding: 10px 0;
+	border-top:1px dashed #3c56a6;
+	border-bottom:1px dashed #3c56a6;
+}
+.p-online_store .container{
+	display: flex;
+	margin-bottom: 100px;
+}
+
+/* --------側邊欄--------------*/
+.main-site{
+	background-color: #3c56a6;
+	border-radius: 10px;
+	opacity: 95%;
+	height: 600px;
+	margin-top: 30px;
+}
+
+.main-site p{
+	color: #fff;
+	font-weight: 600;
+	font-size: 22px;
+	margin-top: 20px;
+	text-align: center;
+	padding: 10px 0;
+	border-top: 1px dashed #fff;
+	border-bottom: 1px dashed #fff;
+}
+.main-site a{
+	display: block;
+	color: #fff;
+	margin-top: 10px;
+	padding: 6px 0;
+	text-align: center;
+	font-size: 18px;
+}
+
+.main-site a:hover{
+	background-color: #2b3d74;
+}
+/* --------複合側邊欄---------- */
+.next{
+    display: none;
+    position: absolute;
+    left: 100%;
+    width: 200px;
+    background-color: #27396f;
+    box-shadow:5px 5px 10px hsla(240,40%,15%,.6);
+    top: 2px;
+	border-radius: 0 10px 0px 0;
+}
+
+.last{
+	background-color: #1a2547;
+    box-shadow:5px 5px 10px hsla(240,40%,15%,.6);
+	border-radius: 0 10px 10px 0;
+}
+
+.main-site li{
+    position: relative;
+}
+
+.main-site li:hover >a{
+    background-color: rgba(0,0,0,.3);
+}
+
+.main-site li:hover >ul{
+    display: block;
+}
+
+
+/* --------商品區--------------*/
+.main .cards{
+display: flex;
+justify-content: center;
+margin: auto;
+}
+.specialty .card{
+    box-shadow: 3px 3px 5px #d3d6df;
+    border: 1px solid #aaa;
+	margin: 5% 0;
+	border-radius: 5px;
+}
+.specialty-pic{
+	width: 100%;
+}
+.specialty .cards img{
+	width: 100%;
+	border-radius: 5px;
+	aspect-ratio: 20/13;
+	object-fit: cover;
+}
+.specialty h3{
+	font-weight: 600;
+	margin: 1% 0;
+}
+
+.specialty-txt{
+	margin-bottom: 15%;
+}
+
+.specialty-txt p{
+	color: rgb(74, 74, 74);
+}
+
+.card-foot{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 3%;
+}
+
+.card-foot p:nth-child(1){
+	color: #FF5959;
+	font-weight: 600;
+	font-size: 20px;
+}
+.card-foot p:nth-child(2){
+	font-weight: 600;
+	background-color: #f2bc5f;
+	padding: 2% 5%;
+	border-radius: 5px;
+}
+
+.main .specialty .btn{
+	text-align: end;
+}
+.specialty .btn a{
+	display: inline-block;
+	font-size: 18px;
+	color: #fff;
+	background-color: #3c56a6;
+	width: 25px;
+	height: 25px;
+	text-align: center;
+	line-height: 26px;
+	border-radius: 50%;
+}
+.specialty .btn a:hover{
+	background-color: #18213c;
+}
+
+@media screen and (min-width: 768px){
+	.main-site {
+		display: block;
+
+	}
+}

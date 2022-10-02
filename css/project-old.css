@@ -1,0 +1,796 @@
+*{
+    text-decoration: none;
+}
+
+/* ---------- *\
+    公用設定
+\* ---------- */
+/* 文字 */
+h1{
+    font-size: 48px;
+    display: none;
+}
+
+h2{
+    font-size: 38px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+section{
+    margin: 100px;
+}
+
+/* 置中版型 */
+html,body{
+    width: 100%;
+    /* background-color: #aaa; */
+}
+
+
+.content{
+    width: 1200px;
+    margin: auto;
+}
+
+
+/* ---------- *\
+     header
+\* ---------- */
+.drassing-box.header img:nth-child(1){
+    position: absolute;
+    width: 100%;
+    max-width: 1920px;
+    z-index: 1;
+    top: -30px;
+    left: 40px;
+}
+
+.drassing-box.header img:nth-child(2){
+    position: absolute;
+    width: 100%;
+    max-width: 1920px;
+    z-index: 2;
+    top: -25px;
+    left: 30px;
+}
+
+
+header{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    width: 1200px;
+
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 100px;
+}
+
+.logo{
+    width: 250px;
+    height: 200px;
+    margin: 25px 10px;
+}
+
+.logo img{
+    width: 100%;
+}
+
+nav{
+    flex-grow: 2;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: #fa0; */
+
+}
+
+nav>ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+    font-size: 0px;
+    padding: 15px 0;
+    border-top: 1px solid #944F40;
+    border-bottom: 1px solid #944F40;
+}
+
+nav>ul>li{
+    font-size: 24px;
+    padding: 5px 0;
+}
+nav>ul>li a{
+    color: #944F40;
+    font-weight: 600;
+}
+
+nav>ul>li a:hover{
+    color: #c53d43;
+    border-bottom:1px solid #c53d43;
+    /* transition: 1s; */
+}
+
+.member{
+    width: 100px;
+    margin: 30px -70px 30px 30px;
+}
+
+.member img{
+    width: 100%;
+}
+
+/* ---------------- *\
+     banner-imagery
+\* ---------------- */
+
+.banner-imagery{
+    width: 100%;
+    max-width: 1440px;
+    height: 600px;
+    margin: auto;
+    margin-top: 180px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+}
+
+.banner-imagery::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    background-color: rgba(0, 0, 0,.1);
+}
+
+.banner-imagery img{
+    width: 100%;
+}
+
+.imagery-txt{
+    width: 100%;
+    /* background-image: url(../imgs/indext/imagery.jpg); */
+    /* background-repeat:no-repeat ; */
+    /* background-size: 100% 100%; */
+    /* 圖片原圖很大 原檔需要再設定比例問題設定P183 */
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.imagery-txt p{
+    position: relative;
+    top:-90px ;
+    background-color: rgba(255, 255, 255,.8);
+    padding: 30px 30px;
+    border-radius: 60px 60px 0px 0px ;
+}
+
+.imagery-txt p:nth-child(1){
+    color: #2DB2AE;
+    font-size: 30px;
+    margin: 0px 40px;
+}
+.imagery-txt p:nth-child(2){
+    color: #E16A6A;
+    font-size: 30px;
+    margin: 0px 40px;
+}
+.imagery-txt p:nth-child(3){
+    color: #3953A5;
+    font-size: 30px;
+    margin: 0px 40px;
+}
+
+/* ---------------- *\
+         news
+\* ---------------- */
+
+section .news{
+    /* outline: 1px solid #aaa; */
+}
+
+.news>h2{
+    text-align: center;
+    color: #944F40;
+    font-weight: 600;
+}
+
+.btn-circle{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(255, 189, 89);
+    border-radius: 50%;
+    align-self: center;
+    margin-top: 50px;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+.news-list{
+    width: calc( 100%-80px);
+    height: 250px;
+    margin: 100px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-list>.news{
+    width: 295px;
+    height: 190px;
+}
+
+.news-list>.news:nth-child(2),
+.news-list>.news:nth-child(4){
+    align-self: flex-end;
+}
+
+/* ---------------- *\
+     banner-shopping
+\* ---------------- */
+.drassing-box.shopping{
+    position: relative;
+    margin:-20px 0px 0px -150px ;
+    top: -35px;
+}
+
+.drassing-box.shopping img:nth-child(1){
+    position: absolute;
+    z-index: 1;
+    left: 50px;
+
+}
+
+.drassing-box.shopping img:nth-child(2){
+    position: absolute;
+    z-index: 2;
+}
+
+.banner-shopping{
+    width: 98%;
+    height: 550px;
+    background-image: url(../imgs/indext/imagery_table.jpg);
+    background-repeat:no-repeat ;
+    background-size: 100% 100%;
+    /* 圖片原圖很大 原檔需要再設定比例問題設定P183 */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    background-attachment: fixed;
+    border-radius: 5px;
+    position: relative;
+}
+
+.banner-shopping::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    background-color: rgba(0, 0, 0,.1);
+}
+
+.banner-shopping>.btn{
+    width: 250px;
+    height: 60px;
+    margin-right: 40px;
+    position: relative;
+    z-index: 2;
+}
+
+.banner-shopping>.btn:last-child{
+    margin: 40px;
+}
+
+.banner-shopping>.btn>a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    /* outline: #fff 1px solid; */
+    font-size: 28px;
+    padding: 10px 0;
+    background-color: rgba(255, 89, 89,.8);
+    transform: rotate(-10deg);
+}
+
+/* ---------------- *\
+     beliefs
+\* ---------------- */
+
+section.beliefs{
+    /* outline: 1px solid red; */
+}
+
+.belief-container{
+    display: flex;
+    margin-bottom: 80px;
+}
+
+.belief-container .belief-pic{
+    background-image: url(../imgs/indext/seafood_guide.jpg);
+    background-repeat:no-repeat ;
+    background-size: 100% 100%;
+    /* 圖片原圖很大 原檔需要再設定比例問題設定P183 */
+    border-radius: 5px;
+    width: 460px;
+    height: 340px;
+    margin: 0 50px;
+    background-color: #aaa;
+    display: flex;
+    align-items: center;
+}
+
+.belief-pic-txt{
+    width: 335px;
+    color: #fff;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    outline: #fff 1px solid;
+    margin: auto;
+}
+
+.belief-pic-txt p{
+    padding: 10px;
+    text-align: center;
+}
+
+
+.belief-container .belief-txt{
+    width: 600px;
+    height: 280px;
+    align-self: center;
+}
+
+.belief-txt>h2{
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+    padding-bottom: 20px;
+    color: #3953A5;
+    border-bottom: 1px solid #3953A5;
+
+}
+
+.belief-txt p{
+    line-height: 1.5;
+    margin: 30px 0;
+    color: #3953A5;
+    font-size: 20px;
+    text-indent:40px;
+}
+
+
+.belief-txt p:last-child{
+    border-bottom: 1px solid #3953A5;
+    padding-bottom: 20px;
+}
+
+.belief-list{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    outline: #3953A5;
+    justify-content: space-around;
+    flex-grow: 0px ;
+}
+
+.belief-list .belief{
+    border-radius: 50%;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.belief-list .txt{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.belief-list .txt p{
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.belief-list .txt p:nth-child(1){
+    font-size: 20px;
+    padding: 7px 0;
+    border-bottom: 1px solid #fff;
+}
+
+
+.belief-list .belief:hover .txt{
+    opacity: 1;
+}
+
+.belief-list .belief:nth-child(2){
+    align-self: flex-end;
+}
+
+/* ---------------- *\
+     product
+\* ---------------- */
+
+.product h2{
+    text-align: center;
+    margin: 50px;
+    color: #944F40;
+    font-weight: 600;
+}
+
+.product p{
+    text-align: center;
+    color: #944F40;
+    font-weight: 600;
+}
+
+.product-list{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 60px 0;
+
+}
+
+.product-list .product{
+    border-radius: 30px;
+    overflow: hidden;
+    width: 295px;
+    height: 190px;
+}
+
+
+/* ---------------- *\
+     banner-recipe
+\* ---------------- */
+.banner-recipe{
+    width: 100%;
+    margin: 10px;
+    position: relative;
+}
+
+.banner-recipe img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+figure figcaption p{
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    background-color: rgba(255, 189, 89,.8);
+    color: #fff;
+    padding: 10px 50px;
+    font-size: 28px;
+}
+
+figure figcaption a{
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 50px;
+    font-size: 28px;
+    right: 80px;
+    bottom: 50px;
+    background-color: rgba(255, 89, 89,.8);
+    transform: rotate(-10deg);
+}
+
+/* ---------------- *\
+     knoledge
+\* ---------------- */
+
+.knowledge h2{
+    text-align: center;
+    color: #944F40;
+    margin: 40px;
+    font-weight: 600;
+}
+
+.fish-list{
+    display: grid;
+    grid-template-rows:80px 50px 140px 200px ;
+    grid-template-columns: 250px 150px 150px 150px 150px 250px ;
+    justify-content: center;
+}
+
+.fish-list.fish{
+    width: 100%;
+    height: 100%;
+}
+
+.fish:nth-child(1){
+    grid-column: 3/5 ;
+    grid-row: 1/2 ;
+}
+
+.fish:nth-child(2){
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.fish:nth-child(3){
+    grid-column: 5/6;
+    grid-row: 2/3;
+}
+.fish:nth-child(4){
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.fish:nth-child(5){
+    grid-column: 6/7;
+    grid-row: 3/4;
+}
+.fish:nth-child(6){
+    grid-column: 1/4;
+    grid-row: 4/5;
+    position: relative;
+}
+
+.fish:nth-child(6) img{
+    position: absolute;
+    right: 0;
+}
+
+.fish:nth-child(7){
+    grid-column: 4/6;
+    grid-row: 4/5;
+    position: relative;
+}
+
+.fish:nth-child(7) img{
+    position: absolute;
+    top: 0;
+}
+
+.knowledge .btn{
+    display: block;
+    text-decoration: none;
+    width: 180px;
+    height: 40px;
+    color: #fff;
+    padding: 10px 50px;
+    font-size: 28px;
+    right: 50px;
+    bottom: 50px;
+    background-color: rgba(255, 89, 89,.8);
+    transform: rotate(-10deg);
+    margin-top: -40px;
+    grid-column: 6/7;
+    grid-row: 4/5;
+    align-self: flex-start;
+}
+
+/* ---------------- *\
+     C&P
+\* ---------------- */
+
+
+.content.certification{
+    display: flex;
+}
+
+.cp-mode{
+    width: 50%;
+}
+
+.cp-mode .list-row{
+    width: 100%;
+    display: flex;
+    margin: 20px 0px;
+}
+
+.certification-list{
+    border-right: 1px solid #944F40;
+}
+
+.certification-list .list-row:nth-child(1){
+    justify-content: center;
+}
+.certification-list .list-row:nth-child(2){
+    justify-content: space-evenly;
+}
+
+.partner-list .list-row{
+    justify-content: center;
+}
+
+.partner .pic{
+    margin: 20px;
+}
+
+.partner .pic img:nth-child(1){
+    width: 80%;
+}
+
+
+.cp-mode h2{
+    text-align: center;
+    color: #944F40;
+    font-weight: 600;
+    margin: 70px 0;
+}
+
+.cp-mode .pic{
+    width: 150px;
+}
+
+/* ---------------- *\
+    address
+\* ---------------- */
+.address h2{
+    text-align: center;
+    color: #944F40;
+    font-weight: 600;
+    margin: 70px 0;
+}
+
+.address-information{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.address .map img{
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.address-txt{
+    width: 360px;
+    height: 360px;
+    margin-left: 100px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.address-txt h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.address-txt p{
+    margin: 10px 20px;
+}
+
+/* ---------------- *\
+    footer
+\* ---------------- */
+
+footer{
+    margin-top: 240px;
+    margin: auto;
+    background-image: url(../imgs/indext/footer.png);
+    background-repeat: no-repeat;
+    width: 1440px;
+    height: 500px;
+    position: relative;
+}
+
+.content.footer{
+    display: flex;
+    margin: 0 30px;
+    margin: auto;
+    position: absolute;
+    bottom: 120px;
+    left: 120px;
+}
+
+.content .product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 0 30px;
+}
+.content .knowledge{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 0 30px;
+}
+.content .recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 0 30px;
+}
+.content .contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    margin: 0 30px;
+}
+.content .social_media-list{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.content.footer a{
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.content.footer a:hover{
+    color: #c53d43;
+}
+
+.footer .product a:nth-child(1),
+.footer .knowledge a:nth-child(1),
+.footer .recipe a:nth-child(1),
+.footer .contact a:nth-child(1){
+    font-size: 24px;
+    padding: 10px 40px;
+    margin: 5px 0;
+    border-bottom: 2px solid #fff;
+}
+
+footer .social_media{
+    width: 30px;
+    height: 30px;
+}
+
+footer .social_media:nth-child(1){
+    margin-left: 60px;
+}
+footer .social_media:nth-child(2){
+    margin-left: 5px;
+}
+footer .social_media:nth-child(3){
+    margin-left: 100px ;
+}
+footer .social_media:nth-child(4){
+    margin: 0 10px 30px 30px;
+}
+
+footer .copyright{
+    position: absolute;
+    bottom: 10px;
+    left: 405px;
+}
+
+footer .copyright p{
+    text-align: center;
+    color: rgb(207, 208, 209);
+}
+
+footer .copyright p:last-child{
+    color: #fff;
+}

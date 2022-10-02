@@ -1,0 +1,324 @@
+/* ------------ *\
+    banner
+\* ------------ */
+.page-cecipe-banner{
+	background-image: url(../imgs/recipe/banner.webp);
+	height: 300px;
+    max-width: 1440px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    background-position:center bottom;
+}
+.p-cecipe-banner-txt{
+    position: absolute;
+    bottom: 5%;
+    right: 1% ;
+    background-color: #635e5e87;
+    padding: 2%;
+    line-height: 1.5em;
+    border-radius: 5px;
+}
+.p-cecipe-banner-txt p{
+    color: #fff;
+}
+
+@media screen and (min-width: 550px){
+    .page-cecipe-banner{
+        height: 400px;
+    }
+}
+@media screen and (min-width: 600px){
+    .page-cecipe-banner{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .page-cecipe-banner{
+        height: 500px;
+    }
+}
+@media screen and (min-width: 768px){
+    .page-cecipe-banner{
+        height: 550px;
+    }
+	.p-cecipe-banner-txt p{font-size: 24px;}
+    .p-cecipe-banner-txt{
+        line-height: 2em;
+        right: 3% ;
+    }
+}
+@media screen and (min-width: 1024px){
+	.p-cecipe-banner-txt p{font-size: 24px;}
+    .p-cecipe-banner-txt{
+        line-height: 2em;
+        right: 15% ;
+    }
+}
+@media screen and (min-width: 1200px){
+	.p-cecipe-banner-txt p{font-size: 28px;}
+    .p-cecipe-banner-txt{
+        line-height: 2em;
+        right: 5% ;
+    }
+}
+/* ------------ *\
+    path
+\* ------------ */
+.breadcrumb{
+	display: flex;
+	margin: 20px 0;
+}
+.breadcrumb li{
+    padding: 0 20px;
+}
+.breadcrumb a{
+    color: #3c56a6;
+	font-weight: 600;
+}
+.breadcrumb a:hover,
+.breadcrumb li:last-child a{
+    color: #0EA5A1;
+}
+.breadcrumb li+li{
+    padding-left: 0;
+}
+.breadcrumb li+li::before{
+    content: '/';
+    margin-right: 20px;
+}
+
+/* ------------ *\
+    main
+\* ------------ */
+h2{
+    text-align: center;
+	/* font-weight: 600; */
+	/* font-size: 22px; */
+	margin-top: 20px;
+	padding: 10px 0;
+	border-top: 1px dashed #3c56a6;
+	border-bottom: 1px dashed #3c56a6;
+}
+.fish-class .main-content{
+    width: 800px;
+    height: 600px;
+    background-color: #aaa;
+}
+
+
+
+
+/* 側邊欄 */
+.recipe-main-site{
+	background-color: #3c56a6;
+	border-radius: 10px;
+	opacity: 95%;
+	height: 600px;
+	margin-top: 30px;
+    display: none;
+}
+.recipe-main-site h3{
+	color: #fff;
+	font-weight: 600;
+	font-size: 22px;
+	margin-top: 20px;
+	text-align: center;
+	padding: 10px 0;
+	border-top: 1px dashed #fff;
+	border-bottom: 1px dashed #fff;
+}
+.recipe-main-site a{
+	display: block;
+	color: #fff;
+	margin-top: 10px;
+	padding: 6px 0;
+	text-align: center;
+	font-size: 18px;
+}
+.recipe-main-site a:hover{
+	background-color: #2b3d74;
+}
+
+/* 處理技巧 */
+.processing-cards{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+}
+.youtube-box{
+    width: 100%;
+    aspect-ratio: 642/361;
+}
+.youtube-box iframe{
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+.processing-card h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 4% 0;
+}
+.processing-btn{
+    display: flex;
+    justify-content: center;
+}
+.processing-btn a{
+    color: #fff;
+    background-color: #FF5959;
+    padding: 1% 4%;
+    border-radius: 5px;
+}
+.processing-btn a:hover{
+    font-weight: 600;
+    background-color: #ab4c4c;
+}
+
+
+
+
+/* 鮮魚食譜 */
+/* *{
+    outline: solid red 1px;
+} */
+
+.show-recipe{
+    position: relative;
+    width: 100%;
+    margin-top: 5%;
+    background-color: #EEB55F;
+    padding: 15px 0px 50px 0px ;
+}
+.show-recipe-pic{
+    display: flex;
+}
+.show-recipe-pic img{
+    width: 60%;
+    border-radius: 10px;
+    margin: auto;
+}
+/* 文字 */
+.show-recipe h2{
+    margin-top: 70px;
+    color: #fff;
+    border-top: 1px dashed #fff;
+    border-bottom: 1px dashed #fff;
+}
+.show-recipe h3{
+    color: #fff;
+    font-weight: 600;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+.recipe-txt .recipe-des{
+    color: #fff;
+}
+.recipe-txt p{
+    color: #fff;
+}
+.recipe-txt-pre{
+    color: #fff;
+}
+.recipe-txt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* 待排 */
+
+/* 當季食譜 */
+.recipe-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.recipe{
+    box-shadow: 3px 3px 5px #d3d6df;
+    border: 1px solid #aaa;
+    margin: 2% 1%;
+    border-radius: 5px;
+    width: 60%;
+}
+.recipe-pic{
+    width: 100%;
+}
+.recipe-pic img{
+    width: 100%;
+    border-radius: 5px;
+    aspect-ratio: 20/13;
+    object-fit: cover;
+}
+.recipe h3{
+    font-weight: 600;
+    margin: 1% 2%;
+}
+
+.recipe-txt{
+    margin-bottom: 15%;
+    margin: 1% 2%;
+}
+
+.recipe-txt p{
+    color: rgb(74, 74, 74);
+}
+
+.recipe-foot{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-bottom: 3%;
+}
+
+.recipe-foot a{
+    display: inline-block;
+    font-weight: 600;
+    background-color: #f2bc5f;
+    padding: 2% 5%;
+    border-radius: 5px;
+    color: #ab4c4c;
+}
+.recipe-foot a:hover{
+    color: #FF5959;
+}
+.now-recipe-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+.now-recipe-btn a{
+    color: #fff;
+    background-color: #FF5959;
+    padding: 1% 4%;
+    border-radius: 5px;
+}
+.now-recipe-btn a:hover{
+    font-weight: 600;
+    background-color: #ab4c4c;
+}
+
+@media screen and (min-width: 768px){
+    .recipe-main-site{
+        display: block;
+    }
+    .fish-class{
+        display: flex;
+    }
+    .processing-card{
+        width: 44%;
+    }
+    .recipe{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .recipe{
+        width: 20%;
+    }
+}

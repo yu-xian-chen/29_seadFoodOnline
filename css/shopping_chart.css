@@ -1,0 +1,230 @@
+/* ------------ *\
+    banner
+\* ------------ */
+.p-shopping_chart-banner{
+	background-image: url(/imgs/shopping_chart/1.png);
+	height: 300px;
+    max-width: 1440px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    background-position:center center;
+}
+.p-shopping_chart-banner .dressing-box{
+    width: 100%;
+}
+.p-shopping_chart-banner-txt{
+    position: absolute;
+    bottom: 5%;
+    right: 1% ;
+    background-color: #b9b9b987;
+    padding: 2%;
+    line-height: 1.5em;
+    border-radius: 5px;
+}
+.p-shopping_chart-banner-txt p{
+    color: #fff;
+}
+
+@media screen and (min-width: 550px){
+    .p-shopping_chart-banner{
+        height: 400px;
+    }
+}
+@media screen and (min-width: 600px){
+    .p-shopping_chart-banner{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .p-shopping_chart-banner{
+        height: 500px;
+    }
+}
+@media screen and (min-width: 768px){
+    .p-shopping_chart-banner{
+        height: 550px;
+    }
+	.p-shopping_chart-banner-txt p{font-size: 24px;}
+    .p-shopping_chart-banner-txt{
+        line-height: 2em;
+        right: 3% ;
+    }
+}
+@media screen and (min-width: 1024px){
+	.p-shopping_chart-banner-txt p{font-size: 24px;}
+    .p-shopping_chart-banner-txt{
+        line-height: 2em;
+        right: 15% ;
+    }
+}
+@media screen and (min-width: 1200px){
+	.p-shopping_chart-banner-txt p{font-size: 28px;}
+    .p-shopping_chart-banner-txt{
+        line-height: 2em;
+        right: 5% ;
+    }
+}
+/* ------------ *\
+    path
+\* ------------ */
+.breadcrumb{
+	display: flex;
+	margin: 20px 0;
+}
+.breadcrumb li{
+    padding: 0 20px;
+}
+.breadcrumb a{
+    color: #3c56a6;
+	font-weight: 600;
+}
+.breadcrumb a:hover,
+.breadcrumb li:last-child a{
+    color: #0EA5A1;
+}
+.breadcrumb li+li{
+    padding-left: 0;
+}
+.breadcrumb li+li::before{
+    content: '/';
+    margin-right: 20px;
+}
+/* ------------ *\
+    main
+\* ------------ */
+/* 先隱藏步驟 有空再回頭做 */
+.shopping_chart .row{
+    display: none;
+}
+
+thead tr{
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+table{
+    width: 100%;
+}
+/* check */
+.goods-item,
+/* .goods-price, 多這格跑版 */
+.goods-total{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.count-box{
+    text-align: center;
+}
+.goods-name{
+    color: #3c56a6;
+    font-weight: 600;
+    font-size: 20px;
+}
+.total-box{
+    text-align: end;
+}
+
+.goods-pic img{
+    width: 100px;
+    height: 100px;
+}
+.check tr{
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+
+/* discount */
+.discount-box{
+    text-align: center;
+    padding: 15px 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+.discount-price{
+    text-align: end;
+}
+
+/* shipping */
+.shipping-area{
+    width: 15%;
+    text-align: center;
+}
+.shipping-check{
+    width: 10%;
+    text-align: center;
+
+}
+.shipping-demo{
+    width: 65%;
+}
+.shipping-fee{
+    width: 10%;
+    text-align: center;
+
+}
+.shipping-class{
+    border-bottom: 1px solid #aaa;
+}
+.shipping-demo p{
+    text-indent: 2em;
+    color: black;
+}
+
+/* wrapping */
+.wrapping-way{
+    width: 15%;
+    text-align: center;
+}
+.wrapping-check{
+    width: 10%;
+    text-align: center;
+
+}
+.wrapping-demo{
+    width: 65%;
+}
+.wrapping-fee{
+    width: 10%;
+    text-align: center;
+
+}
+.wrapping-class{
+    border-bottom: 1px solid #aaa;
+}
+.wrapping-demo p{
+    text-indent: 2em;
+    color: black;
+}
+
+/* pay */
+.pay-way{
+    width: 15%;
+    text-align: center;
+}
+.pay-check{
+    width: 10%;
+    text-align: center;
+
+}
+.pay-demo{
+    width: 65%;
+}
+.pay-class{
+    border-bottom: 1px solid #aaa;
+}
+.pay-demo p{
+    text-indent: 2em;
+    color: black;
+}
+
+.finall.btn{
+display: flex;
+justify-content: space-between;
+margin: 10% 30%;
+}

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 有點多魚 | 購物車 </title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css//shopping_chart.css">
+</head>
+<body>
+<!---------------- header  ------------------->
+<input type="checkbox" name="" id="menu-switch">
+<header>
+    <div class="logo">
+        <a href="/index.html"><img src="./imgs/index/1_header/logo.png" alt="logo"></a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="/online_store.html">多魚商品</a></li>
+            <li><a href="/recipe.html">多魚食譜</a></li>
+            <li><a href="/knowledge.html">多魚知識</a></li>
+            <li><a href="/contact.html">聯絡我們</a></li>
+            <li><a href="/shopping_cart.html">購物車</a></li>
+            <a class="member" href="./member_center.html"><img src="./imgs/index/icon/number.png" alt="會員"></a>
+        </ul>
+    </nav>
+    <label for="menu-switch" class="hb ">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="icon">
+        <a class="search" href="#"><img src="./imgs/index/1_header/search.png" alt="search"></a>
+    </div>
+</header>
+<h1>有點多魚</h1>
+<!---------------- beginner banner  ----------->
+<div class="p-shopping_chart-banner">
+    <div class="dressing-box beginner">
+        <img class="nami-up" src="/imgs/index/nami_up.png" alt="nami">
+    </div>
+    <div class="p-shopping_chart-banner-txt">
+        <p>宅配到府，輕鬆方便</p>
+    </div>
+</div>
+<!---------------- path  ------------------->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">購物車</a></li>
+    </ol>
+</div>
+<!---------------- main  ------------------->
+<div class="container">
+    <div class="shopping_chart">
+        <div class="row ">
+            <div class="last-btn">
+                <a href="#"><img src="" alt="回上一步"></a>
+                <span>回上一步</span>
+            </div>
+            <div class="step">
+                <div class="step-pic">
+                    <img src="" alt="1">
+                    <span>選擇付款方式</span>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-pic">
+                    <img src="" alt="2">
+                    <span>填寫訂購資料</span>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-pic">
+                    <img src="" alt="3">
+                    <span>完成訂購</span>
+                </div>
+            </div>
+        </div>
+        <div class="check">
+            <h2>訂單確認</h2>
+            <table >
+                <thead>
+                    <tr>
+                        <th>購買項目(冷凍)</th>
+                        <th>價格</th>
+                        <th>數量</th>
+                        <th>小計</th>
+                        <th>刪除</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="goods-item">  <!--購買項目 -->
+                            <div class='goods-pic'>
+                                <img src="./imgs/online_store/p5.webp" alt="商品圖片" />
+                            </div>									
+                            <div class='goods-box'>
+                                <span class='goods-name'>魚肝小菜</span>
+                                <span class="goods-weight">重量：200± 10 g</span>
+                            <div class="goods-discount-tag">
+                                <span>#適用折扣碼</span>
+                            </div>
+                        </td>
+                        <td class="goods-price"> <!--價格 -->
+                            <span>$280<span>
+                        </td>
+                        <td class="goods-count"> <!--數量 -->
+                            <div class="count-box">
+                                <a class="btn-reduce">-</a>
+                                <input type="text" size="3">
+                                <a class="btn-add">+</a>
+                            </div>
+                        </td>
+                        <td class="goods-total"> <!--統計 -->
+                            <span>$280<span>
+                        </td>
+                        <td> <!--刪除鍵 -->
+                            <a href="#">X</a>
+                        </td>
+                    </tr>
+                    <td class="goods-item">  <!--購買項目 -->
+                        <div class='goods-pic'>
+                            <img src="./imgs/online_store/p7.jpg" alt="商品圖片" />
+                        </div>									
+                        <div class='goods-box'>
+                            <span class='goods-name'>魚子醬</span>
+                            <span class="goods-weight">重量：200± 10 g</span>
+                        <div class="goods-discount-tag">
+                            <span>#適用折扣碼</span>
+                        </div>
+                    </td>
+                    <td class="goods-price"> <!--價格 -->
+                        <span>$280<span>
+                    </td>
+                    <td class="goods-count"> <!--數量 -->
+                        <div class="count-box">
+                            <a class="btn-reduce">-</a>
+                            <input type="text" size='3'>
+                            <a class="btn-add">+</a>
+                        </div>
+                    </td>
+                    <td class="goods-total"> <!--統計 -->
+                        <span>$280<span>
+                    </td>
+                    <td> <!--刪除鍵 -->
+                        <a href="#">X</a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <div class="total-box">
+                <span>合計$ </span>
+                <span>560</span>
+            </div>
+        </div>
+        <div class="discount">
+            <h2>使用折扣碼</h2>
+            <div class="discount-box">
+                <label for="discount_code">折扣碼</label>
+                <input type="text" id="discount_code" size="20" value="">
+            </div>    
+            <div class="discount-price">
+                <span>-$0</span>
+            </div>
+        </div>
+        <div class="shipping">
+            <h2>冷凍運送方式</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>宅配區域</th>
+                        <th>確認</th>
+                        <th>內容備註</th>
+                        <th>運費</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="shipping-class">
+                        <td class="shipping-area"><!-- 宅配區域 -->
+                            <p>本島宅配</p>
+                        </td>
+                        <td class="shipping-check"><!-- 確認 -->
+                            <input type="radio" name="shipping-check">
+                        </td>
+                        <td class="shipping-demo"><!-- 內容備註 -->
+                            <p>本島宅配實際配送過程與時間由黑貓宅急便人員安排，若商品延遲送達請儘速聯繫
+                                多魚客服專線：0900-000-888，我們將聯繫宅配人員追蹤商品實際運送狀況</p>
+                        </td>
+                        <td class="shipping-fee"><!-- 運費 -->
+                            <p>$100</p>
+                        </td>
+                    </tr>
+                    <tr class="shipping-class">
+                        <td class="shipping-area"><!-- 宅配區域 -->
+                            <p>外島宅配</p>
+                        </td>
+                        <td class="shipping-check"><!-- 確認 -->
+                            <input type="radio" name="shipping-check">
+                        </td>
+                        <td class="shipping-demo"><!-- 內容備註 -->
+                            <p>外島宅配實際配送過程與時間由黑貓宅急便人員安排，若商品延遲送達請儘速聯繫
+                                多魚客服專線：0900-000-888，我們將聯繫宅配人員追蹤商品實際運送狀況</p>
+                        </td>
+                        <td class="shipping-fee"><!-- 運費 -->
+                            <p>$200</p>
+                        </td>
+                    </tr>
+                    <tr class="shipping-class">
+                        <td class="shipping-area"><!-- 宅配區域 -->
+                            <p>本地自取</p>
+                        </td>
+                        <td class="shipping-check"><!-- 確認 -->
+                            <input type="radio" name="shipping-check">
+                        </td>
+                        <td class="shipping-demo"><!-- 內容備註 -->
+                            <p>取貨地點為 「有點多魚 前鎮漁港旗艦店」（地址：806高雄市前鎮區漁港路水管街001號）
+                                取貨時間為一~日 10:00~21:00
+                                客服專線：0900-000-888</p>
+                        </td>
+                        <td class="shipping-fee"><!-- 運費 -->
+                            <p>$0</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total-box">
+                <span>合計$ </span>
+                <span>560</span>
+            </div>
+        </div>
+        <div class="wrapping">
+            <h2>冷凍包裝方式</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>包裝方式</th>
+                        <th>選擇</th>
+                        <th>內容備註</th>
+                        <th>費用</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="wrapping-class">
+                        <td class="wrapping-way"><!-- 包裝方式 -->
+                            <p>保麗龍箱</p>
+                        </td>
+                        <td class="wrapping-check"><!-- 確認 -->
+                            <input type="radio" name="wrapping-check">
+                        </td>
+                        <td class="wrapping-demo"><!-- 內容備註 -->
+                            <p>選用具可回收標誌保麗龍箱，提供無法即時收貨冷凍保存，可置於常溫約1小時。 *需視實際室溫狀況而有所增減。</p>
+                        </td>
+                        <td class="wrapping-fee"><!-- 費用 -->
+                            <p>$10</p>
+                        </td>
+                    </tr>
+                    <tr class="shipping-class">
+                        <td class="wrapping-way"><!-- 包裝方式 -->
+                            <p>紙箱</p>
+                        </td>
+                        <td class="wrapping-check"><!-- 確認 -->
+                            <input type="radio" name="wrapping-check">
+                        </td>
+                        <td class="wrapping-demo"><!-- 內容備註 -->
+                            <p>紙箱選用紙箱包裝，請先確認可即時收貨並將商品盡速取出冷凍保存。*若無法親自收貨，不建議選擇此種包裝方式。</p>
+                        </td>
+                        <td class="wrapping-fee"><!-- 費用 -->
+                            <p>$0</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total-box">
+                <span>合計$ </span>
+                <span>560</span>
+            </div>
+        </div>
+        <div class="pay">
+            <h2>付款方式</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>付款方式</th>
+                        <th>選擇</th>
+                        <th>內容備註</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="pay-class">
+                        <td class="pay-way"><!-- 付款方式 -->
+                            <p>ATM轉帳</p>
+                        </td>
+                        <td class="pay-check"><!-- 選擇 -->
+                            <input type="radio" name="pay-check">
+                        </td>
+                        <td class="pay-demo"><!-- 內容備註 -->
+                            <p>ATM轉帳 請收到訂購通知後，於三日內前往最近的ATM或者透過WebATM或網路銀行轉帳，匯款資訊請登入會員或至您的信箱中查詢訂單相關資訊。</p>
+                        </td>
+                    </tr>
+                    <tr class="pay-class">
+                        <td class="pay-way"><!-- 付款方式 -->
+                            <p>信用卡</p>
+                        </td>
+                        <td class="pay-check"><!-- 選擇 -->
+                            <input type="radio" name="pay-check">
+                        </td>
+                        <td class="pay-demo"><!-- 內容備註 -->
+                            <p>信用卡線上刷卡一次付清(可接受VISA, Master, JCB, 聯合信用卡)</p>
+                        </td>
+                    </tr>
+                    <tr class="pay-class">
+                        <td class="wrapping-way"><!-- 付款方式 -->
+                            <p>Line Pay</p>
+                        </td>
+                        <td class="pay-check"><!-- 選擇 -->
+                            <input type="radio" name="pay-check">
+                        </td>
+                        <td class="pay-demo"><!-- 內容備註 -->
+                            <p>*請注意：使用Linepay付款必須於20分鐘內完成付款手續，若超過時間或付款未完成，請至 會員專區/我的訂單 裡重新使用Line Pay付款。</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total-box">
+                <span>合計$ </span>
+                <span>560</span>
+            </div>
+        </div>
+        <div class="finall btn">
+            <button>上一步</button>
+            <button>下一步</button>
+        </div>
+    </div>
+</div>
+<!---------------- footer  ------------------->
+<footer>
+    <div class="container footer">
+        <div class="row">
+            <ul class="f-item f-product">
+                <a href="/online_store.html">多魚商品</a>
+                <a href="#">組合包</a>
+                <a href="#">整尾魚</a>
+                <a href="#">半條魚</a>
+                <a href="#">魚(骨)頭</a>
+                <a href="#">私房小菜</a>
+            </ul>
+            <ul class="f-item f-knowledge">
+                <a href="/knowledge.html">多魚知識</a>
+                <a href="#">如何挑魚</a>
+                <a href="#">多魚季節</a>
+            </ul>
+            <ul class="f-item f-recipe">
+                <a href="/recipe.html">多魚食譜</a>
+                <a href="#">處理技巧</a>
+                <a href="#">教學影片</a>
+                <a href="#">大師食譜</a>
+                <a href="#">料理方式</a>
+            </ul>
+            <ul class="f-item f-contact">
+                <a href="/contact.html">聯絡我們</a>
+                <a href="#">門市據點</a>
+                <a href="#">表單</a>
+            </ul>
+            <ul class="social_media-list">
+                <li class="social_media"><a href="#"><img src="/imgs/index/icon/icon-facebook.png" alt="fb"> </a></li>
+                <li class="social_media"><a href="#"><img src="/imgs/index/icon/icon-youtube.png" alt="youtub"> </a></li>
+                <li class="social_media"><a href="#"><img src="/imgs/index/icon/icon-instagram.png" alt="ig"> </a></li>
+                <li class="social_media"><a href="#"><img src="/imgs/index/icon/icon-twitter.png" alt="twetter"> </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。</p>
+        <p>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</p>
+        <p>COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>

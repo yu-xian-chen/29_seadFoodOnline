@@ -1,0 +1,169 @@
+/* ------------ *\
+    banner
+\* ------------ */
+.p-shopping_chart-banner{
+	background-image: url(/imgs/shopping_chart/1.png);
+	height: 300px;
+    max-width: 1440px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    background-position:center center;
+}
+.p-log_in-banner .dressing-box{
+    width: 100%;
+}
+.p-log_in-banner-txt{
+    position: absolute;
+    bottom: 5%;
+    right: 1% ;
+    background-color: #b9b9b987;
+    padding: 2%;
+    line-height: 1.5em;
+    border-radius: 5px;
+}
+.p-log_in-banner-txt p{
+    color: #fff;
+}
+
+@media screen and (min-width: 550px){
+    .p-log_in-banner{
+        height: 400px;
+    }
+}
+@media screen and (min-width: 600px){
+    .p-log_in-banner{
+        height: 450px;
+    }
+}
+
+@media screen and (min-width: 650px){
+    .p-log_in-banner{
+        height: 500px;
+    }
+}
+@media screen and (min-width: 768px){
+    .p-log_in-banner{
+        height: 550px;
+    }
+	.p-log_in-banner-txt p{font-size: 24px;}
+    .p-log_in-banner-txt{
+        line-height: 2em;
+        right: 3% ;
+    }
+}
+@media screen and (min-width: 1024px){
+	.p-log_in-banner-txt p{font-size: 24px;}
+    .p-log_in-banner-txt{
+        line-height: 2em;
+        right: 15% ;
+    }
+}
+@media screen and (min-width: 1200px){
+	.p-log_in-banner-txt p{font-size: 28px;}
+    .p-log_in-banner-txt{
+        line-height: 2em;
+        right: 5% ;
+    }
+}
+
+/* ------------ *\
+    path
+\* ------------ */
+
+/* ------------ *\
+    main
+\* ------------ */
+.member_log-in *{
+    /* outline: 1px solid red; */
+}
+
+/* log-in */
+.sign-in h3,
+.sign-in p{
+    color: #fff;
+    margin: 3% 0;
+}
+.sign-in{
+    background-color: #3c56a6;
+    color: #fff;
+    text-align: center;
+    margin: 5%;
+    border-radius: 10px;
+    padding: 5% 0;
+}
+.log-in{
+    margin: 3% 0;
+    padding: 0 5%;
+}
+.log-in input{
+    width: 200px;;
+}
+button{
+    border-radius: 5px;
+    border: none;
+    padding: 1% 2%;
+}
+
+/* sign-up */
+.sign-up h3{
+    text-align: center;
+    margin: 3% 0;
+}
+.sign-up{
+    text-align: center;
+    border-radius: 10px;
+    padding: 5% 0;
+}
+.log-up input{
+    width: 200px;;
+}
+.sign-up-box{
+    margin: 3% 0;
+
+}
+.sign-up-box input{
+    border-radius: 5px;
+    border: none;
+    padding: 1% 2%;
+    border: 1px solid #aaa;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:767px){
+    .member_log-in input,
+    button,
+    .member_log-in label{font-size: 15px;}
+}
+@media screen and (min-width: 768px){
+    .member_log-in input,
+    button,
+    .member_log-in label{font-size: 24px;}
+    .member_log-in{
+        display: flex;
+        justify-content: center;
+    }
+    .sign-in{
+        width: 60%;
+    }
+    .sign-up{
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1024px){
+    .member_log-in input,
+    button,
+    .member_log-in label{font-size: 24px;}
+}
+@media screen and (min-width: 1200px){
+    .member_log-in input,
+    button,
+    .member_log-in label{font-size: 24px;}
+}
