@@ -108,7 +108,51 @@ h2{
     height: 600px;
     background-color: #aaa;
 }
+/* 季節分類
+.season-class-fish *{
+    outline: 1px solid red;
+}
+.season-class-fish{
+    display: flex;
+}
 
+.season-class-rotate{
+    display: flex;
+    margin: auto;
+    padding: 100px 0;
+    flex-wrap:wrap ;
+}
+.season-class-rotate li{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    margin: 0 60px -40px;
+    position: relative;
+    font-size: 30px;
+}
+.season-class-rotate li::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.season-class-rotate li:nth-child(n+4){
+    left: 160px;
+}
+.season-class-rotate li:nth-child(N+7){
+    left: 0;
+}
+.season-class-rotate li:hover{
+    color: aliceblue;
+}
+.season-class-rotate li:hover::before{
+    background-color: #000;
+} */
 
 
 
@@ -120,6 +164,7 @@ h2{
 	height: 600px;
 	margin-top: 30px;
     display: none;
+    width: 10%;
 }
 .recipe-main-site h3{
 	color: #fff;
@@ -144,11 +189,16 @@ h2{
 }
 
 /* 處理技巧 */
+.processing-cards h2{
+    width: 100%;
+}
 .processing-cards{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-around;
+    width: 75%; /* 配合影片移動設置 */
+    
 }
 .youtube-box{
     width: 100%;
@@ -231,7 +281,22 @@ h2{
     align-items: center;
 }
 /* 待排 */
+.recipe-more-btn{
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+}
+.recipe-more-btn a{
+    color: #fff;
+    background-color: #FF5959;
+    padding: 1% 4%;
+    border-radius: 5px;
+}
 
+.recipe-more-btn a:hover{
+    font-weight: 600;
+    background-color: #ab4c4c;
+}
 /* 當季食譜 */
 .recipe-list{
     display: flex;

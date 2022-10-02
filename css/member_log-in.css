@@ -72,7 +72,28 @@
 /* ------------ *\
     path
 \* ------------ */
-
+.breadcrumb{
+	display: flex;
+	margin: 20px 0;
+}
+.breadcrumb li{
+    padding: 0 20px;
+}
+.breadcrumb a{
+    color: #3c56a6;
+	font-weight: 600;
+}
+.breadcrumb a:hover,
+.breadcrumb li:last-child a{
+    color: #0EA5A1;
+}
+.breadcrumb li+li{
+    padding-left: 0;
+}
+.breadcrumb li+li::before{
+    content: '/';
+    margin-right: 20px;
+}
 /* ------------ *\
     main
 \* ------------ */

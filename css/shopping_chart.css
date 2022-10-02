@@ -96,16 +96,46 @@
 /* ------------ *\
     main
 \* ------------ */
-/* 先隱藏步驟 有空再回頭做 */
-.shopping_chart .row{
-    display: none;
+/* 步驟 */
+.sopping-steps ol{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.sopping-steps li{
+    margin: 2%;
+    width: 20%;
+    padding: 1% 0;
+}
+.sopping-steps li p:nth-child(1){
+    height: 15px;
+    width: 15px;
+    margin: auto;
+    color: #fff;
+    background-color: #0ea5a1;
+    padding: 5%;
+    border-radius: 50% ;
+    font-weight: 600;
+}
+.now{
+    background-color: #ddd;
+    border-radius: 5px;
+}   
+
+.sopping-steps li p:nth-child(2){
+    color: #000;
+    font-weight: 600;
+    margin-top: 20px;
 }
 
+
+
+
+/* 表格公版 */
 thead tr{
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
 }
-
 table{
     width: 100%;
 }

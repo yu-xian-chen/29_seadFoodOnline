@@ -212,3 +212,357 @@
     }
     
 }
+
+/* ------------ *\
+    season-table
+\* ------------ */
+.fish-season-table h2{
+    padding: 1% 0;
+    border-top:1px dashed #2b3d74;
+    border-bottom:1px dashed #2b3d74;
+}
+.fish-season-table p{
+    text-align: center;
+    color: #FC6B6B;
+    margin-top: 5px;
+}
+.fish-season-table .demo{
+    text-align: end;
+    color: #000;
+}
+
+/*表格樣式 */
+table{
+	width: 100%;
+	border-collapse: collapse;
+}
+table th, 
+table td{
+	line-height: 24px;
+	padding: 12px;
+	text-align: left;
+    text-align: center;
+    vertical-align: middle;
+}
+table tr{
+	transition: all 0.2s;
+}
+table tr:nth-child(even){
+	background-color: #fefbf5;
+}
+table tr:hover{
+	background-color: #d2dbf9;
+}
+table th{
+	background-color: #3952A5;
+	color: #fff;
+}
+/* 圓角設定maru */
+.maru-lu{
+    border-radius:5px 0 0 0;
+}
+.maru-ru{
+    border-radius:0 5px 0 0;
+}
+.maru-ld{
+    border-radius:0 0 5px 0;
+}
+.maru-rd{
+    border-radius:0 0 0 5px ;
+}
+ 
+
+/*魚種設定 */
+.kannbati td:nth-child(3),
+.kannbati td:nth-child(4),
+.kannbati td:nth-child(5),
+.kannbati td:nth-child(6),
+.kannbati td:nth-child(7),
+.kannbati td:nth-child(8),
+.kannbati td:nth-child(9),
+.kannbati td:nth-child(10),
+.kannbati td:nth-child(11),
+.kannbati td:nth-child(12),
+.kannbati td:nth-child(13),
+.kannbati td:nth-child(14){
+    background-color: #f8e5c487;
+    /* opacity: .5; */
+    padding: 5px 0;
+}
+
+.hime td:nth-child(4),
+.hime td:nth-child(5),
+.hime td:nth-child(6),
+.hime td:nth-child(7),
+.hime td:nth-child(8),
+.hime td:nth-child(9),
+.hime td:nth-child(10),
+.hime td:nth-child(11),
+.hime td:nth-child(12),
+.hime td:nth-child(13),
+.hime td:nth-child(14){
+    background-color: #fddea587;
+}
+
+.aji td:nth-child(3),
+.aji td:nth-child(4),
+.aji td:nth-child(5),
+.aji td:nth-child(6),
+.aji td:nth-child(7),
+.aji td:nth-child(8),
+.aji td:nth-child(9),
+.aji td:nth-child(10),
+.aji td:nth-child(11),
+.aji td:nth-child(12),
+.aji td:nth-child(13),
+.aji td:nth-child(14){
+    background-color: #f8e5c487;
+}
+
+.tajio td:nth-child(3),
+.tajio td:nth-child(4),
+.tajio td:nth-child(5),
+.tajio td:nth-child(6),
+.tajio td:nth-child(7),
+.tajio td:nth-child(8),
+.tajio td:nth-child(9),
+.tajio td:nth-child(10),
+.tajio td:nth-child(11),
+.tajio td:nth-child(12),
+.tajio td:nth-child(13),
+.tajio td:nth-child(14){
+    background-color: #fddea587;
+}
+
+.tajio-y td:nth-child(3),
+.tajio-y td:nth-child(4),
+.tajio-y td:nth-child(5),
+.tajio-y td:nth-child(6),
+.tajio-y td:nth-child(7),
+.tajio-y td:nth-child(8),
+.tajio-y td:nth-child(9),
+.tajio-y td:nth-child(10),
+.tajio-y td:nth-child(11),
+.tajio-y td:nth-child(12),
+.tajio-y td:nth-child(13),
+.tajio-y td:nth-child(14){
+    background-color: #f8e5c487;
+}
+
+.isaki td:nth-child(6),
+.isaki td:nth-child(7),
+.isaki td:nth-child(8),
+.isaki td:nth-child(9),
+.isaki td:nth-child(10),
+.isaki td:nth-child(11),
+.isaki td:nth-child(12){
+    background-color: #fddea587;
+}
+
+.kamasu td:nth-child(3),
+.kamasu td:nth-child(4),
+.kamasu td:nth-child(7),
+.kamasu td:nth-child(8),
+.kamasu td:nth-child(9),
+.kamasu td:nth-child(12),
+.kamasu td:nth-child(13),
+.kamasu td:nth-child(14){
+    background-color: #f8e5c487;
+}
+
+.tobio td:nth-child(5),
+.tobio td:nth-child(6),
+.tobio td:nth-child(7),
+.tobio td:nth-child(8),
+.tobio td:nth-child(9){
+    background-color: #fddea587;
+}
+
+.mahimahi td:nth-child(3),
+.mahimahi td:nth-child(4),
+.mahimahi td:nth-child(5),
+.mahimahi td:nth-child(6),
+.mahimahi td:nth-child(7),
+.mahimahi td:nth-child(8),
+.mahimahi td:nth-child(9),
+.mahimahi td:nth-child(10),
+.mahimahi td:nth-child(11),
+.mahimahi td:nth-child(12),
+.mahimahi td:nth-child(13),
+.mahimahi td:nth-child(14){
+    background-color: #f8e5c487;
+}
+
+.haki td:nth-child(3),
+.haki td:nth-child(4),
+.haki td:nth-child(10),
+.haki td:nth-child(11),
+.haki td:nth-child(12),
+.haki td:nth-child(13),
+.haki td:nth-child(14){
+    background-color: #fddea587;
+}
+
+
+/* ------------- *\
+ fish-season-party   
+\* ------------- */
+/* .fish-season-party *{outline: 1px solid red;} */
+.fish-season-party{
+    margin-bottom: 40px;
+}
+.season-box{
+    position: relative;
+}
+.spring-box,
+.summer-box,
+.fall-box,
+.winter-box{
+    position: relative;
+    left: 15%;
+}
+.season-txt{
+    position: absolute;
+    font-size: 60px;
+    z-index: 2;
+}
+
+.fish-season-party h2{
+    padding: 1% 0;
+    border-top:1px dashed #2b3d74;
+    border-bottom:1px dashed #2b3d74;
+    margin:2% 0;
+}
+.spring{
+    background-image: url(../imgs/knowledge/season_bg_sprig.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    margin-bottom: 40px;
+}
+.summer{
+    background-image: url(../imgs/knowledge/season_bg_summer.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    margin-bottom: 40px;
+
+}
+.fall{
+    background-image: url(../imgs/knowledge/season_bg_fall.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    margin-bottom: 40px;
+
+}
+.winter{
+    background-image: url(../imgs/knowledge/season_bg_winter.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    margin-bottom: 40px;
+
+}
+.season-pic img{
+    position: absolute;
+}
+/* 春 */
+.season-pic img[alt="白帶"]{
+    width: 45%;
+    left: 10%;
+    top: 0%;
+}
+
+.season-pic img[alt="飛魚"]{
+    width: 25%;
+    left: 3%;
+    top: 20%;
+}
+.season-pic img[alt="竹夾"]{
+    width: 20%;
+    left: 40%;
+    top: 30%;
+}
+
+/* 夏 */
+.season-pic img[alt="剝皮"]{
+    width: 20%;
+    left: 5%;
+    top: 15%;
+}
+.season-pic img[alt="巴鰹"]{
+    width: 25%;
+    left: 25%;
+    top: -15%;
+}
+.season-pic img[alt="鬼頭刀"]{
+    width: 25%;
+    left: 40%;
+    top: 30%;
+}
+
+/* 秋 */
+.season-pic img[alt="齒鰹"]{
+    width: 18%;
+    left: 5%;
+    top: 30%;
+}
+.season-pic img[alt="紅甘"]{
+    width: 25%;
+    left: 15%;
+}
+.season-pic img[alt="圓花鰹"]{
+    width: 20%;
+    left: 33%;
+    top: 55%;
+}
+.season-pic img[alt="油帶"]{
+    width: 30%;
+    left: 40%;
+    top: 15%;
+}
+/* 冬 */
+.season-pic img[alt="正鰹"]{
+    width: 20%;
+    left: 5%;
+    top: 40%;
+}
+.season-pic img[alt="剝皮魚"]{
+    width: 20%;
+    left: 20%;
+    top: -5%;
+}
+.season-pic img[alt="尖梭"]{
+    width: 25%;
+    left: 45%;
+    top: -10%;
+}
+.season-pic img[alt="鯖魚"]{
+    width: 25%;
+    left: 35%;
+    top: 60%;
+}
+
+@media screen and (max-width:767px){
+
+}
+
+@media screen and (min-width: 768px){
+
+}
+
+@media screen and (min-width: 1024px){
+
+}
+
+@media screen and (min-width: 1200px){
+
+}
+
+
+
