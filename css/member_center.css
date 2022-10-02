@@ -2,7 +2,7 @@
     banner
 \* ------------ */
 .p-shopping_chart-banner{
-	background-image: url(/imgs/shopping_chart/1.png);
+	background-image: url(../imgs/shopping_chart/1.png);
 	height: 300px;
     max-width: 1440px;
     width: 100%;
