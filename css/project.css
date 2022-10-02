@@ -966,11 +966,16 @@ footer{
     display: inline-block;
     color: #fff;
     font-size: 20px;
-    padding: 10px 0;
+    padding: 10px 20px;
+
     font-weight: 500;
 }
 .container.footer a:hover{
-    color: rgb(120, 237, 206);
+    /* color: rgb(120, 237, 206); */
+    font-weight: 600;
+    outline: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #00000020;
 }
 .footer .f-product a:nth-child(1),
 .footer .f-knowledge a:nth-child(1),

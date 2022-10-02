@@ -2,7 +2,7 @@
     banner
 \* ------------ */
 .p-member-banner{
-	background-image: url(../imgs/shopping_chart/1.png);
+	background-image: url(../imgs/member_center/center.png);
 	height: 300px;
     max-width: 1440px;
     width: 100%;
@@ -26,6 +26,39 @@
 }
 .p-member-banner-txt p{
     color: #fff;
+}
+
+.id-pic{
+    width: 150px;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translateX(-50%);
+}
+.member-personal .id p{
+    position: absolute;
+    left: 48%;
+    top: 65%;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+}
+.member-personal .edit p{
+    position: absolute;
+    left: 52%;
+    top: 58%;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 4px 6px;
+    color: #100;
+    background-color: #aaa;
+    opacity: .9;
+    border-radius: 10px;
+}
+
+.id-pic img{
+    width: 100%;
 }
 
 @media screen and (min-width: 550px){
