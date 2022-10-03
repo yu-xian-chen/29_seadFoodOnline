@@ -167,3 +167,8 @@
     border-radius: 5px;
     margin-top: 1%;
 }
+@media screen and (min-width: 1024px){
+    .c-phone_email{
+    padding-left: 6px;}
+}
+

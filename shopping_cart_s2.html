@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 有點多魚 | 購物車 </title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/shopping_chart_s2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9de1e3e715.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!---------------- header  ------------------->
+<input type="checkbox" name="" id="menu-switch">
+<header>
+    <div class="logo">
+        <a href="./index.html"><img src="./imgs/index/1_header/logo.png" alt="logo"></a>
+    </div>
+    <nav>
+        <ul>
+            <li>
+                <a href="./online_store.html">多魚商品</a>
+                <ul class="nav-next">
+                    <li><a href="./online_store.html">組合包</a></li>
+                    <li><a href="./online_store.html">整尾魚</a></li>
+                    <li><a href="./online_store.html">半條魚</a></li>
+                    <li><a href="./online_store.html">魚骨頭</a></li>
+                    <li><a href="./online_store.html">私房小菜</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./recipe.html">多魚食譜</a>
+                <ul class="nav-next">
+                    <li><a href="./recipe.html">季節分類</a></li>
+                    <li><a href="./recipe.html">處理技巧</a></li>
+                    <li><a href="./recipe.html">鮮魚食譜</a></li>
+                    <li><a href="./recipe.html">當季食譜</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./knowledge.html">多魚知識</a>
+                <ul class="nav-next">
+                    <li><a href="./knowledge.html">鮮度判斷</a></li>
+                    <li><a href="./knowledge.html">鮮魚季節</a></li>
+                    <li><a href="./knowledge.html">認識魚</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="./contact.html">聯絡我們</a>
+                <ul class="nav-next">
+                    <li><a href="./contact.html">服務據點</a></li>
+                    <li><a href="./contact.html">聯絡表單</a></li>
+                </ul>
+            </li>
+            <li><a href="./shopping_cart.html">購物車</a></li>
+            <a class="member desktop" href="./member_log-in.html"><img src="./imgs/index/icon/number.png" alt="會員"></a>
+            <a class="member phone" href="./member_log-in.html"><img src="./imgs/index/icon/w-number.png" alt="會員"></a>
+        </ul>
+    </nav>
+    <label for="menu-switch" class="hb ">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="icon">
+        <a class="search" href="#"><img src="./imgs/index/1_header/search.png" alt="search"></a>
+    </div>
+</header>
+<h1>有點多魚</h1>
+<!---------------- beginner banner  ----------->
+<div class="p-shopping_chart-banner">
+    <div class="dressing-box beginner">
+        <img class="nami-up" src="./imgs/index/nami_up.png" alt="nami">
+    </div>
+    <div class="p-shopping_chart-banner-txt">
+        <p>宅配到府，輕鬆方便</p>
+    </div>
+</div>
+<!---------------- path  ------------------->
+<div class="container">
+    <ol class="breadcrumb">
+        <li><a href="./index.html">首頁</a></li>
+        <li><a href="./shopping_cart.html">購物車</a></li>
+    </ol>
+</div>
+<!---------------- main  ------------------->
+<div class="container">
+    <div class="sopping-steps">
+        <ol>
+            <li class="step ">
+                <p>1</p>
+                <p>選擇付款方式</p>
+            </li>
+            <li class="step now">
+                <p>2</p>
+                <p>填寫訂購資料</p>
+            </li>
+            <li class="step">
+                <p>3</p>
+                <p>完成訂購</p>
+            </li>
+        </ol>
+    </div>
+</div>
+<div class="container">
+    <div class="shopping_chart">
+        <div class="customer-data">
+            <h2>訂購人資料</h2>
+            <!-- 以下css class還沒改 -->
+            <div class="discount-box">
+                <label for="discount_code">訂購人</label>
+                <input type="text" id="discount_code" size="20" value="">
+                <label for="discount_code">連絡電話</label>
+                <input type="text" id="discount_code" size="20" value="">
+            </div>    
+        </div>
+        <div class="shipping">
+            <h2>會員資料</h2>
+            <div class="discount-box">
+                <label for="discount_code">帳號</label>
+                <input type="text" id="discount_code" size="20" value="">
+                <label for="discount_code">密碼</label>
+                <input type="text" id="discount_code" size="20" value="">
+            </div>    
+            <div class="total-box">
+                <span class="new-member">新會員 </span>
+                <span class="quite-sign-up">快速註冊</span>
+            </div>
+        </div>
+        <div class="wrapping">
+            <h2>配送地址</h2>
+            <div class="discount-box">
+                <label for="discount_code">地址</label>
+                <input type="text" id="discount_code" size="20" value="">
+            </div>    
+        </div>
+        <div class="wrapping">
+            <h2>其他</h2>
+            <div class="discount-box">
+                <label for="discount_code">備註</label>
+                <input type="text" id="discount_code" size="20" value="">
+            </div>    
+        </div>
+        <div class="finall btn">
+            <a href="./shopping_cart.html"><button>上一步</button></a>
+            <a href="./shopping_cart_s3.html"><button>下一步</button></a>
+        </div>
+    </div>
+</div>
+<!---------------- footer  ------------------->
+<footer>
+    <div class="container footer">
+        <div class="row">
+            <ul class="f-item f-product">
+                <a href="./online_store.html">多魚商品</a>
+                <a href="./online_store.html">組合包</a>
+                <a href="./online_store.html">整尾魚</a>
+                <a href="./online_store.html">半條魚</a>
+                <a href="./online_store.html">魚骨頭</a>
+                <a href="./online_store.html">私房小菜</a>
+            </ul>
+            <ul class="f-item f-knowledge">
+                <a href="./knowledge.html">多魚知識</a>
+                <a href="./knowledge.html">鮮度判斷</a>
+                <a href="./knowledge.html">如何挑魚</a>
+                <a href="./knowledge.html">多魚季節</a>
+            </ul>
+            <ul class="f-item f-recipe">
+                <a href="./recipe.html">多魚食譜</a>
+                <a href="./recipe.html">處理技巧</a>
+                <a href="./recipe.html">鮮魚食譜</a>
+                <a href="./recipe.html">當季食譜</a>
+            </ul>
+            <ul class="f-item f-contact">
+                <a href="./contact.html">聯絡我們</a>
+                <a href="./contact.html">服務據點</a>
+                <a href="./contact.html">聯絡表單</a>
+            </ul>
+            <ul class="social_media-list">
+                <li class="social_media"><a href="#"><img src="./imgs/index/icon/icon-facebook.png" alt="fb"> </a></li>
+                <li class="social_media"><a href="#"><img src="./imgs/index/icon/icon-youtube.png" alt="youtub"> </a></li>
+                <li class="social_media"><a href="#"><img src="./imgs/index/icon/icon-instagram.png" alt="ig"> </a></li>
+                <li class="social_media"><a href="#"><img src="./imgs/index/icon/icon-twitter.png" alt="twetter"> </a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>本網站為緯育TibaMe_前端設計工程師班學員專題成果作品，本平台僅供學習、展示之用。</p>
+        <p>若有侵權疑慮，您可以私訊「TibaMe-前端設計工程師養成班」，後續會由專人協助處理。</p>
+        <p>COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

@@ -147,65 +147,6 @@ table p{
     line-height: 1.5em;
 }
 
-/* check */
-.check *{
-    /* outline: 1px red solid; */
-}
-
-.delete-x{
-    display: inline-block;
-    color: red;
-    width: 100%;
-    text-align: center;
-}
-.goods-price span{
-    color: red;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
-
-.goods-item{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin: 10px 0;
-}
-.count-box input{
-    text-align: center;
-}
-/* .goods-price,  */
-.goods-total{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.count-box{
-    text-align: center;
-}
-.goods-name{
-    color: #3c56a6;
-    font-weight: 600;
-    font-size: 20px;
-}
-.total-box{
-    text-align: end;
-}
-
-.goods-pic img{
-    width: 100px;
-    height: 100px;
-}
-.check tr{
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
-}
-.goods-name{
-    font-weight: 400;
-    
-}
-
 /* discount */
 .discount-box{
     text-align: center;
@@ -215,6 +156,19 @@ table p{
 }
 .discount-price{
     text-align: end;
+}
+.total-box{
+    text-align: end;
+}
+
+.new-member{
+    /* color: #aaa; */
+    font-size: 15px;
+}
+.quite-sign-up{
+    color: red;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 /* shipping */
