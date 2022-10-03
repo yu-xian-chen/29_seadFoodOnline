@@ -77,7 +77,6 @@
 }
 .breadcrumb a{
     color: #3c56a6;
-	font-weight: 600;
 }
 .breadcrumb a:hover,
 .breadcrumb li:last-child a{
@@ -168,7 +167,6 @@ h2{
 }
 .recipe-main-site h3{
 	color: #fff;
-	font-weight: 600;
 	font-size: 22px;
 	margin-top: 20px;
 	text-align: center;
@@ -212,8 +210,8 @@ h2{
 }
 .processing-card h3{
     text-align: center;
-    font-weight: 600;
     margin: 4% 0;
+    font-size: 24px;
 }
 .processing-btn{
     display: flex;
@@ -262,7 +260,6 @@ h2{
 }
 .show-recipe h3{
     color: #fff;
-    font-weight: 600;
     margin-top: 5%;
     margin-bottom: 2%;
 }
@@ -321,7 +318,6 @@ h2{
     object-fit: cover;
 }
 .recipe h3{
-    font-weight: 600;
     margin: 1% 2%;
 }
 
@@ -343,14 +339,14 @@ h2{
 
 .recipe-foot a{
     display: inline-block;
-    font-weight: 600;
     background-color: #f2bc5f;
+    margin-right: 0.5em;
     padding: 2% 5%;
     border-radius: 5px;
-    color: #ab4c4c;
+    color: #fff;
 }
 .recipe-foot a:hover{
-    color: #FF5959;
+    color: #eee;
 }
 .now-recipe-btn{
     display: flex;

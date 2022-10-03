@@ -80,7 +80,6 @@
 }
 .breadcrumb a{
     color: #3c56a6;
-	font-weight: 600;
 }
 .breadcrumb a:hover,
 .breadcrumb li:last-child a{
@@ -167,6 +166,10 @@ table{
 .check tr{
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #aaa;
+}
+.goods-name{
+    font-weight: 400;
+    
 }
 
 /* discount */
