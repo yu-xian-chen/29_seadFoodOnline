@@ -7,19 +7,20 @@ h2{
     color: #3c56a6;
     margin: 30px 0;
     text-align: center;
-    font-weight: 600;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
 
 }
-h3{color: #3c56a6;}
+h3{
+    color: #3c56a6;
+    /* font-weight: 300; */
+
+}
 p{color: #3c56a6;}
 
 /* 字型 */
 body{
     font-family: 'Noto Sans TC', sans-serif;
 }
-
-
 /* ------------ *\
     文字RWD 
 \* ------------ */
@@ -54,11 +55,9 @@ body{
     h4
     p{font-size: 24px;}
 }
-
 /* ---------- *\
     header
 \* ---------- */
-
 header {
     width: 100%;
     display: flex;
@@ -77,7 +76,7 @@ header {
     height: 100%;
 } 
 header a{
-    font-weight: 600;
+    font-weight: 400;
 }
 #menu-switch{
     display: none;
@@ -231,9 +230,9 @@ header a{
         color: #3c56a6;
         font-size: 24px;
     }
-    nav a:hover{
-        color: #fff;
-        font-weight: 700;
+    header nav a:hover{
+        /* color: #fff; */
+        border-bottom: #3c56a6 1px solid;
     }
     .desktop{
         display: block;
@@ -242,24 +241,29 @@ header a{
     .nav-next{
         display: none;
         position: absolute;
-        left: -20%;
-        width: 150%;
-        top: 100%;
+        width: 100%;
+        top: 120%;
         z-index: 4;
         text-align: center;
-        background-color: #75757587;
+        border-radius: 0 0 5px 5px ;
+        background-color: #32498f;
+        opacity: .9;
     }
     .nav-next a{
         display: block;
         padding: 10px 0;
-        color: #3c56a6;
+        color: #fff;
         font-size: 20px;
+        font-weight: 300;
+    }
+    .nav-next a:hover{
+        /* border: 1px dashed #fff; */
     }
     header nav li{
         position: relative;
     }
     header nav li:hover {
-        background-color: rgba(0,0,0,.3);
+        background-color: rgba(19, 19, 19, 0.1);
     }
     header nav li:hover >ul{
         display: block;
@@ -321,6 +325,7 @@ header a{
 }
 .imagery-txt p{
     color: #fff;
+    font-weight: 300;
 }
 .imagery-txt{
     position: absolute;
@@ -395,9 +400,8 @@ header a{
     border-radius: 5px;
 }
 .news h3{
-    font-weight: 600;
     text-align: center;
-    color: #0f1b3d;
+    color: #32498f;
 }
 .news p{
     color: rgb(78, 78, 78);
@@ -412,7 +416,7 @@ header a{
 }
 .news a:hover{
     color: #FF5959;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 @media screen and (max-width:767px){
@@ -460,6 +464,9 @@ header a{
     padding: 1% 3%;
     transform: rotate(-10deg);
     border-radius: 5px;
+}
+.banner-shopping .btn a:hover{
+    color: #eee;
 }
 .banner-shopping .btn .recipe{
     bottom: 20%;
@@ -520,7 +527,6 @@ header a{
 }
 .belief h3{
     text-align: center;
-    font-weight: 600;
     margin: 10px 0;
 }
 
@@ -571,14 +577,19 @@ header a{
     position: relative;
 }
 .product h3{
+    padding-left: 1em;
+    color: #3c56a6;
+    margin-top: -40px;
+}
+.product .container>p{
     text-align: center;
+    padding-left: 1em;
     color: #0f1b3d;
-    font-weight: 600;
     margin-top: -40px;
 }
 .product p{
-    text-align: center;
-    color: #0f1b3d;
+    padding-left: 1em;
+    color: #aaa;
     margin-top: -40px;
 }
 .product-list{
@@ -598,18 +609,15 @@ header a{
 }
 .product-price p{
     color: #aaa;
-    padding-left: 1em;
 }
 .product-price{
     display: flex;
     justify-content: space-between;
     padding: 0 5%;
-    margin: auto;
 }
 .product-price p:nth-child(1){
     color: #FF5959;
-    font-weight: 600;
-    font-size: 26px;
+    font-size: 24px;
     padding-top: 40px;
 }
 .product-price a{
@@ -618,17 +626,8 @@ header a{
     padding: 2% 4%;
     border-radius: 5px;
 }
-.product .btn a{
-    color: #fff;
-    display: inline-block;
-    background-color: #FF5959;
-    font-size: 24px;
-    padding: 1% 3%;
-    transform: rotate(-10deg);
-    border-radius: 5px;
-    position: absolute;
-    right: 10%;
-    top: 80%;
+.product-price a:hover{
+    color: #eee;
 }
 .btn-page{
     display: flex;
@@ -704,6 +703,10 @@ header a{
     right: 10%;
     bottom: 10%;
     background-size: cover;
+}
+
+.banner-recipe a:hover{
+    color: #eee;
 }
 /* ---------- *\
    knowledge 
@@ -828,6 +831,9 @@ header a{
     align-self: flex-start;
     border-radius: 5px;
 }
+.knowledge .btn:hover{
+    color: #eee;
+}
 
 @media screen and (max-width:767px){
     .fish:nth-child(7) img{display: none;}
@@ -918,7 +924,6 @@ header a{
 }
 .address-txt h3{
     text-align: center;
-    font-weight: 600;
     margin: 10px 0;
 }
 .address-txt p{
@@ -975,11 +980,8 @@ footer{
     color: #fff;
     font-size: 20px;
     padding: 10px 20px;
-
-    font-weight: 500;
 }
 .container.footer a:hover{
-    /* color: rgb(120, 237, 206); */
     font-weight: 600;
     outline: 1px solid #fff;
     border-radius: 10px;
@@ -999,6 +1001,7 @@ footer .social_media{
     height: 30px;
 }
 .copyright p{
+    line-height: 1.5rem;
     text-align: center;
     color: rgb(207, 208, 209);
 }
@@ -1006,8 +1009,9 @@ footer .social_media{
     color: #fff;
 }
 .copyright{
-    background-color: #3D56A7;
     margin-top: 20px;
+    background-color: #3D56A7;
+    padding-top: 10px;
 }
 
 
