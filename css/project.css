@@ -21,6 +21,17 @@ p{color: #3c56a6;}
 body{
     font-family: 'Noto Sans TC', sans-serif;
 }
+
+.dressing-box{
+    width: 100%;
+}
+.dressing-box img{
+    width: 100%;
+}
+.nami-up,.nami-down{
+    width: 100%;
+}
+
 /* ------------ *\
     文字RWD 
 \* ------------ */
