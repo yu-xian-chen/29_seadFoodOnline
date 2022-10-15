@@ -1,7 +1,16 @@
 /* ---------- *\
     公用設定
 \* ---------- */
-h1{display: none;}
+.logo h1{
+    background-image: url(../imgs/index/1_header/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    aspect-ratio: 240/118; 
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
 a{text-decoration: none;}
 h2{
     color: #3c56a6;
@@ -9,55 +18,42 @@ h2{
     text-align: center;
     font-weight: 500;
 }
-h3{
-    color: #3c56a6;
-    /* font-weight: 300; */
-}
+h3{color: #3c56a6;}
 p{color: #3c56a6;}
-body{
-    background-color: #F5F4F1;
-}
+body{background-color: #F5F4F1;}
 
-/* 字型 */
-body{
-    font-family: 'Noto Sans TC', sans-serif;
-}
-.dressing-box{
-    width: 100%;
-}
-.dressing-box img{
-    width: 100%;
-}
-.nami-up,.nami-down{
-    width: 100%;
-}
-/* ------------ *\
-    文字RWD 
-\* ------------ */
+/* -------------- *\
+    文字、logo RWD 
+\* -------------- */
 @media screen and (max-width:767px){
-    h2{font-size: 28px;
-    }
+    .logo{
+        width: 120px;
+        margin-top: 15px;}
+    h2{font-size: 28px;}
     h3{font-size: 20px;}
     h4
     p{font-size: 15px;}
 }
 @media screen and (min-width: 768px){
-    h2{font-size: 38px;
+    .logo{
+        width: 150px;
+        margin-top: 10px;
     }
+    h2{font-size: 38px;}
     h3{font-size: 32px;}
     h4
     p{font-size: 24px;}
 }
 @media screen and (min-width: 1024px){
-    h2{font-size: 38px;
-    }
+    .logo{width: 160px;}
+    h2{font-size: 38px;}
     h3{font-size: 26px;}
     h4
     p{font-size: 24px;}
 }
 @media screen and (min-width: 1200px){
-    h2{font-size: 38px;
-    }
+    .logo{margin: left 1%;}
+    h2{font-size: 38px;}
     h3{font-size: 26px;}
     h4
     p{font-size: 24px;}
@@ -65,27 +61,11 @@ body{
 /* ---------- *\
     header
 \* ---------- */
-header {
-    width: 100%;
+header .container{
     display: flex;
     justify-content: space-between;
     position: relative;
-    top: 0;
-}
-header *{
- /* outline: 1px solid red;    */
-}
-.logo{
-    height: 60px;
-    margin: 3% 0 0 5%;
-}
-.logo img{
-    vertical-align: top;
-    width: 100%;
-    height: 100%;
-} 
-header a{
-    font-weight: 400;
+    padding: 10;
 }
 #menu-switch{
     display: none;
@@ -101,7 +81,7 @@ header a{
 .icon .search img{
     width: 100%;
 }
-.desktop{
+.member.desktop{
     display: none;
 }
 @media screen and (max-width:767px) {
@@ -129,21 +109,20 @@ header a{
         height: 2px;
         background-color: #fff;
     }
-    nav{
-        /* display: none; */
+    .main-nav{
         position: absolute;
         width: 100%;
         left: -100%;
         top: 100%;
-        opacity: 0;
-        /* transition: opacity 0s 0s,
-                    left    0s 0s; */
+        transition: opacity 1.5s 0s,
+                    left    1s 0s;
     }
-    #menu-switch:checked + header nav{
-        /* display: block; */
+    #menu-switch:checked + header .main-nav{
         left: 0;
         opacity: 1;
-        /* transition: opacity 0s; */
+        transition: opacity 0s;
+        transition: opacity 1s 0.5s,
+                   right    1s 0s;
     }
     #menu-switch:checked + header .hb span:nth-child(2){
         display: none;
@@ -166,7 +145,7 @@ header a{
         margin: auto;
         transform: rotate(-45deg);
     }
-    nav ul{
+    .main-nav ul{
         position: fixed;
         background-color: #3c56a6;
         z-index: 3;
@@ -174,134 +153,63 @@ header a{
         width: 25%;
         opacity: 95%;
     }
-    nav li{padding: 5px 0;}
-    nav li{border-bottom: 1px #fff dashed;}
+    .main-nav li{padding: 5px 0;}
+    .main-nav li{border-bottom: 1px #fff dashed;}
     ul .member{text-align: center;}
-    nav a{
+    .main-nav a{
         display: block;
         padding: 7% 10%;
         color: #fff;
     }
-    nav a:hover{
+    .main-nav a:hover{
         background-color: #2b3f7c;
     }
-        /* 第二層選單 */
-        .nav-next{
-            display: none;
-            position: absolute;
-            left: 100%;
-            width: 70%;
-            top: 1%;
-            z-index: 4;
-            text-align: center;
-            background-color: #2b3f7c;
-        }
-        .nav-next a{
-            display: block;
-            padding: 10px 0;
-            color: #fff;
-            font-size: 15px;
-        }
-        header nav li{
-            position: relative;
-        }
-        header nav li:hover {
-            background-color: rgba(0,0,0,.3);
-        }
-        header nav li:hover >ul{
-            display: block;
-        }
 }
-
 @media screen and (min-width: 768px){
-    .logo{
-        height: 70px;
-        margin-top: 15px;
+    header .container{
+        justify-content: space-between;
     }
     .hb { display: none;}
+    header a{font-weight: 600;}
     .icon .search{
         height: 45px;
         height: 45px;
     }
-    nav>ul{
+    .main-nav>ul{
         display: flex;
-        margin-top: 15px; /* 應該有更好的做法 */
+        margin-top: 15px; 
         align-items: center;
         justify-content: space-around;
-        width: 600px;/* 應該有更好的做法 */
+        /* width: 600px;應該有更好的做法 */
         border-top: 1px dashed #3c56a6;
         border-bottom: 1px dashed #3c56a6;
         padding: 15px 0;
-        
     }
     nav a{
         color: #3c56a6;
         font-size: 24px;
     }
-    header nav a:hover{
-        /* color: #fff; */
-        border-bottom: #3c56a6 1px solid;
-    }
-    .desktop{
-        display: block;
-    }
-    /* 第二層選單 */
-    .nav-next{
-        display: none;
-        position: absolute;
-        width: 100%;
-        top: 120%;
-        z-index: 4;
-        text-align: center;
-        border-radius: 0 0 5px 5px ;
-        background-color: #32498f;
-        opacity: .9;
-    }
-    .nav-next a{
-        display: block;
-        padding: 10px 0;
-        color: #fff;
-        font-size: 20px;
-        font-weight: 300;
-    }
-    header nav li{
-        position: relative;
-    }
-    header nav li:hover {
-        background-color: rgba(19, 19, 19, 0.1);
-    }
-    header nav li:hover >ul{
-        display: block;
-    }
-    .member.phone{
-        display: none;
-    }
+    .main-nav ul{ width: 500px;}
+    .main-nav a:hover{color: #1f2c52;}
+    .desktop{display: block;}
+    .member.phone{display: none;}
 }
-
 @media screen and (min-width: 1024px){
-    nav a{font-size: 26px;}
-    nav ul{ width: 750px;}
-    .logo{height: 80px;
-        margin-left: 3%;
-    }
+    .main-nav a{font-size: 26px;}
+    .main-nav ul{ width: 750px;}
     .icon .search{
         height: 50px;
         height: 50px;
     }
 }
-
 @media screen and (min-width: 1200px){
-    nav ul{ width: 1000px;}
-    .logo{margin-left: 7%;}
-    .icon .search{
-        right: 35px;
-    }
+    .main-nav ul{ width: 1000px;}
+    .icon .search{ right: 35px;}
     .icon .search{
         height: 60px;
         height: 60px;
     }
 }
-
 /* --------------- *\
     beginner banner
 \* --------------- */
