@@ -21,7 +21,11 @@ h2{
 h3{color: #3c56a6;}
 p{color: #3c56a6;}
 body{background-color: #F5F4F1;}
-
+/* 動畫 */
+@keyframes fadeInAnime{
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 /* -------------- *\
     文字、logo RWD 
 \* -------------- */
@@ -231,8 +235,34 @@ header .container{
     position: relative;
     margin: auto;
     background-position:center center;
-  }
+}
+/* icon */
+.icon-imagery{
+    padding-top: 80px;
+}
+.icon-imagery img{
+    width: 50px;
+    margin-left: 10px;
+}
+/* icon animation */
+.anime{
+    width: 100px;
+    animation-name: nami;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+}
+.anime:nth-child(2){
+    animation-delay: 1s;
 
+}
+@keyframes nami {
+    25%{transform: translateY(5px); }
+    100%{ transform: translateY(-5px);}
+}
+/* txt */
 .imagery-txt p{
     color: #fff;
     font-weight: 300;
@@ -268,16 +298,23 @@ header .container{
         line-height: 2em;
         right: 3% ;
     }
+    .icon-imagery{padding-top: 100px;}
+    .icon-imagery img{
+        width: 60px;
+        margin-left: 15px;
+    }
 }
-
 @media screen and (min-width: 1024px){
     .imagery-txt p{font-size: 24px;}
     .imagery-txt{
         line-height: 2em;
         bottom: 15% ;
-    }    
+    }  
+    .icon-imagery img{
+        width: 80px;
+        margin-left: 30px;
+    }  
 }
-
 @media screen and (min-width: 1200px){
     .imagery-txt p{font-size: 28px;}
     .imagery-txt{
@@ -289,47 +326,100 @@ header .container{
 /* ---------- *\
     news
 \* ---------- */
-.news-box *{
-    margin-bottom: 20px;
+/* 動畫效果:手機按鈕輪播，放大動畫自動撥放 */
+.section-news *{
+   box-sizing: border-box;
+}
+.section-news .container{
+    overflow: hidden;
+}
+.section-news h2{
+    font-weight: 600;
+    animation-name: fadeInAnime;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+.fadeInTrigger{
+    opacity: 0;
 }
 .news-list{
     display: flex;
     width: 100%;
     justify-content: center;
-    align-items: center;
 }
+/* btn */
+.news-list .btn-box{
+    align-self: center;
+    margin: 0 10px;
+}
+.btn-box:hover{
+    cursor: pointer;
+}
+.btn-box img{
+    width: 25px;
+}
+/* 內容 */
 .news{
-    border: 1px solid #aaa;
+    background-color: #fff;
     border-radius: 5px;
     margin: 1%;
     width: 30%;
     display: none;
+    transition: 0.5s;
+}
+.news:hover{
+    transition: 0.5s;
     box-shadow: 3px 3px 5px #d3d6df;
+    cursor: pointer;
+}
+.news:hover .news-pic img{
+    filter: brightness(0.5);
+    transition: 0.5s;
+}
+.news:hover .news-pic::after{
+    content: 'READ MORE >';
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+    /* outline: 1px solid red; */
+}
+.news-pic{
+    position: relative;
 }
 .news img{
     width: 100%;
     border-radius: 5px;
 }
+/* 文字 */
+.news-txt{
+    padding: 5px;
+}
 .news h3{
     text-align: center;
     color: #32498f;
+    font-weight: 600;
+    margin: 5px 0;
+}
+.news-txt .date{
+    background-color: #3c56a6;
+    color: #F5F4F1 ;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 2px 4px;   
 }
 .news p{
     color: rgb(78, 78, 78);
     text-align: center;
     padding: 0 1%;
+    line-height: 1.5em;
+    margin: 5px 0;
 }
-.news a{
-    display: block;
-    color: #0f1b3d;
-    text-align: end;
-    padding: 0 1%;
-}
-.news a:hover{
-    color: #FF5959;
-    font-weight: 500;
-}
-
 @media screen and (max-width:767px){
     .news-list .news:nth-child(2){display: block;}
     .news{width: 60%;}
@@ -338,13 +428,14 @@ header .container{
     .news-list .news:nth-child(2){display: block;}
     .news{width: 70%;}
 }
-
 @media screen and (min-width: 1024px){
     .news-list>.news{display: block;}
     .news-box{
         margin: 55px 0;
     }
 }
+
+
 /* -------------- *\
     shopping banner 
 \* -------------- */

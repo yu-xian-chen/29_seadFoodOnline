@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9de1e3e715.js" crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.6.1.js"></script>
 </head>
 <body>
 <!---------------- header  ------------------->
@@ -37,8 +38,8 @@
                 <li>
                     <a href="./shopping_cart.html">購物車</a>
                 </li>
-                <a class="member desktop" href="./member_log-in.html"><img src="number.png" alt="會員"></a>
-                <a class="member phone" href="./member_log-in.html"><img src="w-number.png" alt="會員"></a>
+                <a class="member desktop" href="./member_log-in.html"><img src="./imgs/index/icon/number.png" alt="會員"></a>
+                <a class="member phone" href="./member_log-in.html"><img src="./imgs/index/icon/w-number.png" alt="會員"></a>
             </ul>
         </nav>
         <label for="menu-switch" class="hb ">
@@ -53,6 +54,11 @@
 </header>
 <!---------------- beginner banner ------------------->
     <div class="banner-imagery">
+        <div class="icon-imagery">
+            <img class="anime" src="./imgs/index/icon/fish.png" alt="fish-icon">
+            <img class="anime" src="./imgs/index/icon/food.png" alt="food-icon">
+            <img class="anime" src="./imgs/index/icon/recipe.png" alt="book-icon">
+        </div>
         <div class="imagery-txt">
             <p>季節鮮魚海港直送</p>
             <p>海鮮指南-綠燈魚種 食譜教學</p>
@@ -60,33 +66,105 @@
         </div>    
     </div>
 <!----------------      news        ------------------->
-    <section class="news-box">
+    <section class="section-news">
         <div class="container">
             <h2>最新消息</h2>
             <div class="news-list">
                 <div class="btn-box l">
-                    <img src="./imgs/index/320/3_news/l.png" alt="">
+                    <img src="./imgs/index/320/3_news/l.png" alt="left-btn" id="btnLeft">
                 </div>
                 <div class="news">
-                    <img src="./imgs/index/news_1.png" alt="中秋">
-                    <h3>中秋禮盒商城熱賣中</h3>
-                    <p>月圓人團圓，多魚為你嚴選食材，輕鬆過好節!</p>
-                    <a href="./online_store.html">了解更多 →</a>
+                    <div class="news-pic">
+                        <img src="./imgs/index/product_2.png" alt="食譜">
+                    </div>
+                    <div class="news-txt">
+                        <span class="date">2022.08.11</span>
+                        <h3>私房小菜-醃漬牡蠣</h3>
+                        <p>傳承三代好滋味，手工製作，限量發售!</p>
+                    </div>
                 </div>
                 <div class="news">
-                    <img src="./imgs/index/news_2.png" alt="紅甘魚尾">
-                    <h3>紅甘-蔥燒魚尾</h3>
-                    <p>示範魚種-紅甘，當季美味，趕緊來試試...</p>
-                    <a href="./recipe.html">了解更多 →</a>
+                    <div class="news-pic">
+                        <img src="./imgs/index/news_1.png" alt="中秋">
+                    </div>
+                    <div class="news-txt">
+                        <span class="date">2022.08.05</span>
+                        <h3>中秋禮盒商城熱賣中</h3>
+                        <p>月圓人團圓，多魚為你嚴選食材，輕鬆過好節!</p>
+                    </div>
                 </div>
                 <div class="news">
-                    <img src="./imgs/index/product_2.png" alt="食譜">
-                    <h3>私房小菜-醃漬牡蠣</h3>
-                    <p>傳承三代好滋味，手工製作，限量發售!</p>
-                    <a href="./online_store.html">了解更多 →</a> 
+                    <div class="news-pic">
+                        <img src="./imgs/index/news_2.png" alt="紅甘魚尾">
+                    </div>
+                    <div class="news-txt">
+                        <span class="date">2022.10.16</span>
+                        <h3>紅甘-蔥燒魚尾</h3>
+                        <p>示範魚種-紅甘，當季美味，趕緊來試試...</p>
+                    </div>
                 </div>
+                <div class="news">
+                    <div class="news-pic">
+                        <img src="./imgs/index/product_2.png" alt="食譜">
+                    </div>
+                    <div class="news-txt">
+                        <span class="date">2022.09.29</span>
+                        <h3>私房小菜-醃漬牡蠣</h3>
+                        <p>傳承三代好滋味，手工製作，限量發售!</p>
+                    </div>
+                </div>
+                <!-- <div class="news">
+                    <div class="news-pic">
+                        <img src="./imgs/index/news_1.png" alt="中秋">
+                    </div>
+                    <div class="news-txt">
+                        <span class="date">2022.08.05</span>
+                        <h3>中秋禮盒商城熱賣中</h3>
+                        <p>月圓人團圓，多魚為你嚴選食材，輕鬆過好節!</p>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news-pic">
+                        <img src="./imgs/index/news_1.png" alt="中秋">
+                    </div>
+                    <div class="news-txt">
+                        <span class="date">2022.08.05</span>
+                        <h3>中秋禮盒商城熱賣中</h3>
+                        <p>月圓人團圓，多魚為你嚴選食材，輕鬆過好節!</p>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news-pic">
+                        <img src="./imgs/index/news_1.png" alt="中秋">
+                    </div>
+                    <div class="news-txt">
+                        <span class="date">2022.08.05</span>
+                        <h3>中秋禮盒商城熱賣中</h3>
+                        <p>月圓人團圓，多魚為你嚴選食材，輕鬆過好節!</p>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news-pic">
+                        <img src="./imgs/index/news_1.png" alt="中秋">
+                    </div>
+                    <div class="news-txt">
+                        <span class="date">2022.08.05</span>
+                        <h3>中秋禮盒商城熱賣中</h3>
+                        <p>月圓人團圓，多魚為你嚴選食材，輕鬆過好節!</p>
+                    </div>
+                </div>
+                <div class="news">
+                    <div class="news-pic">
+                        <img src="./imgs/index/news_1.png" alt="中秋">
+                    </div>
+                    <div class="news-txt">
+                        <span class="date">2022.08.05</span>
+                        <h3>中秋禮盒商城熱賣中</h3>
+                        <p>月圓人團圓，多魚為你嚴選食材，輕鬆過好節!</p>
+                    </div>
+                </div> -->
                 <div class="btn-box r">
-                    <img src="./imgs/index/320/3_news/r.png" alt="">
+                    <img src="./imgs/index/320/3_news/r.png" alt="right-btn" id="btnRight">
                 </div>
             </div>
         </div>
@@ -332,5 +410,6 @@
             <p>COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</p>
         </div>
     </footer>
+    <script src="./js/index.js"></script>
 </body>
 </html>
