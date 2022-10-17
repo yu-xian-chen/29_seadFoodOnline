@@ -16,16 +16,32 @@ h2{
     color: #3c56a6;
     margin: 30px 0;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
 }
 h3{color: #3c56a6;}
 p{color: #3c56a6;}
 body{background-color: #F5F4F1;}
 /* 動畫 */
-@keyframes fadeInAnime{
-    from {opacity: 0;}
-    to {opacity: 1;}
+.fadeUpTrigger{opacity: 0;} /* htnl抓取、初始設定 */
+
+/* for JQuery */
+.fadeUp{    
+	animation-name:fadeUpAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+	opacity: 0;
+    transform: translateY(100px);
   }
+  to {
+    opacity: 1;
+ 	transform: translateY(0);
+  }
+}
 /* -------------- *\
     文字、logo RWD 
 \* -------------- */
@@ -74,6 +90,7 @@ header .container{
 #menu-switch{
     display: none;
 }
+/* 放大鏡 */
 .icon .search{
     position: fixed;
     top: 70px;
@@ -82,6 +99,7 @@ header .container{
     height: 40px;
     z-index: 3;
 }
+.icon .search
 .icon .search img{
     width: 100%;
 }
@@ -195,7 +213,7 @@ header .container{
     }
     .main-nav ul{ width: 500px;}
     .main-nav a:hover{color: #1f2c52;}
-    .desktop{display: block;}
+    .member.desktop{display: block;}
     .member.phone{display: none;}
 }
 @media screen and (min-width: 1024px){
@@ -232,9 +250,9 @@ header .container{
     width: 100%;
     background-repeat: no-repeat;
     background-size: cover; 
+    background-position:center center;
     position: relative;
     margin: auto;
-    background-position:center center;
 }
 /* icon */
 .icon-imagery{
@@ -338,11 +356,8 @@ header .container{
     animation-name: fadeInAnime;
     animation-duration:3s;
     animation-fill-mode:forwards;
-    opacity:0;
 }
-.fadeInTrigger{
-    opacity: 0;
-}
+
 .news-list{
     display: flex;
     width: 100%;
@@ -434,7 +449,57 @@ header .container{
         margin: 55px 0;
     }
 }
+/* -------------- *\
+    新 
+\* -------------- */
+/* .about *{
+    outline: 1px solid red;
+}
+.about .container{
+    padding: 0;
+}
+.about-content{
+    display: flex;
+}
+.about-bgc{
+    --mask:
+    radial-gradient(49.19px at calc(100% - 66.00px) 50%,#000 99%,#0000 101%) 0 calc(50% - 44px)/100% 88px,
+    radial-gradient(49.19px at calc(100% + 44.00px) 50%,#0000 99%,#000 101%) calc(100% - 22px) 50%/100% 88px repeat-y;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+    background-image: url(../imgs/index/banner/1_imagery.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position:center center;
+    width: 50%;
+    height: 400px;
+}
+.about-bgc-txt{
+    text-align: center;
+    background-color: #9f9f9f87;
+    border-radius: 10px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.about-bgc-txt p{
+    color: #fff;
+    font-size: 24px;
 
+}
+.about-main-des{
+    font-size: 40px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media screen and (min-width: 1024px){
+    .banner-shopping{
+        display: none;
+    }
+} */
 
 /* -------------- *\
     shopping banner 

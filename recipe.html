@@ -18,71 +18,154 @@
 <!---------------- header  ------------------->
 <input type="checkbox" name="" id="menu-switch">
 <header>
-    <div class="logo">
-        <a href="./index.html"><img src="./imgs/index/1_header/logo.png" alt="logo"></a>
-    </div>
-    <nav>
-        <ul>
-            <li>
-                <a href="./online_store.html">多魚商品</a>
-                <ul class="nav-next">
-                    <li><a href="./online_store.html">組合包</a></li>
-                    <li><a href="./online_store.html">整尾魚</a></li>
-                    <li><a href="./online_store.html">半條魚</a></li>
-                    <li><a href="./online_store.html">魚骨頭</a></li>
-                    <li><a href="./online_store.html">私房小菜</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="./recipe.html">多魚食譜</a>
-                <ul class="nav-next">
-                    <li><a href="./recipe.html">季節分類</a></li>
-                    <li><a href="./recipe.html">處理技巧</a></li>
-                    <li><a href="./recipe.html">鮮魚食譜</a></li>
-                    <li><a href="./recipe.html">當季食譜</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="./knowledge.html">多魚知識</a>
-                <ul class="nav-next">
-                    <li><a href="./knowledge.html">鮮度判斷</a></li>
-                    <li><a href="./knowledge.html">鮮魚季節</a></li>
-                    <li><a href="./knowledge.html">認識魚</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="./contact.html">聯絡我們</a>
-                <ul class="nav-next">
-                    <li><a href="./contact.html">服務據點</a></li>
-                    <li><a href="./contact.html">聯絡表單</a></li>
-                </ul>
-            </li>
-            <li><a href="./shopping_cart.html">購物車</a></li>
-            <a class="member desktop" href="./member_log-in.html"><img src="./imgs/index/icon/number.png" alt="會員"></a>
-            <a class="member phone" href="./member_log-in.html"><img src="./imgs/index/icon/w-number.png" alt="會員"></a>
-        </ul>
-    </nav>
-    <label for="menu-switch" class="hb ">
-        <span></span>
-        <span></span>
-        <span></span>
-    </label>
-    <div class="icon">
-        <a class="search" href="#"><img src="./imgs/index/1_header/search.png" alt="search"></a>
+    <div class="container">
+        <div class="logo">
+            <a href="./index.html"><h1>有點多魚</h1></a>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li>
+                    <a href="./online_store.html">多魚商品</a>
+                </li>
+                <li>
+                    <a href="./recipe.html">多魚食譜</a>
+                </li>
+                <li>
+                    <a href="./knowledge.html">多魚知識</a>
+                </li>
+                <li>
+                    <a href="./contact.html">聯絡我們</a>
+                </li>
+                <li>
+                    <a href="./shopping_cart.html">購物車</a>
+                </li>
+                <a class="member desktop" href="./member_log-in.html"><img src="./imgs/index/icon/number.png" alt="會員"></a>
+                <a class="member phone" href="./member_log-in.html"><img src="./imgs/index/icon/w-number.png" alt="會員"></a>
+            </ul>
+        </nav>
+        <label for="menu-switch" class="hb ">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="icon">
+            <a class="search" href="#"><img src="./imgs/index/1_header/search.png" alt="search"></a>
+        </div>
     </div>
 </header>
-<h1>有點多魚</h1>
-<!---------------- beginner banner  ----------->
-<div class="page-cecipe-banner">
-    <div class="dressing-box beginner">
-        <img class="nami-up" src="./imgs/index/nami_up.png" alt="nami">
+<!---------------- menu  ----------->
+<section class="recipe-menu">
+    <div class="container">
+        <div class="recipe-menu-content">
+            <h2><span class="d-menu">多魚MENU</span></h2>
+            <ul class="recipe-menu-tab">
+                <li><a href="#skill">處理技巧</a></li>
+                <li title="其他季節食譜"><a href="#fish-recipe">鮮魚食譜</a></li>
+                <li><a href="#season-recipe">當季食譜</a></li>
+            </ul>
+            <!-- area -->
+            <div id="skill" class="area skill">
+                <ul class="mana area-section">
+                    <h3><span class="recipe-tittle">開魚</span></h3>
+                    <li><a href="#">鯖魚</a></li>
+                    <li><a href="#">竹夾</a></li>
+                    <li><a href="#">鬼頭刀</a></li>
+                    <li><a href="#">比目魚</a></li>
+                </ul>
+                <ul class="sanmai area-section">
+                    <h3><span class="recipe-tittle">三枚</span></h3>
+                    <li><a href="#">竹夾</a></li>
+                    <li><a href="#">鰈魚</a></li>
+                    <li><a href="#">太刀魚</a></li>
+                    <li><a href="#">鬼頭刀</a></li>
+                </ul>
+                <ul class="processing area-section">
+                    <h3><span class="recipe-tittle">加工</span></h3>
+                    <li><a href="#">原理說明</a></li>
+                    <li><a href="#">昆布熟成</a></li>
+                    <li><a href="#">鹽水熟成</a></li>
+                    <li><a href="#">味噌熟成</a></li>
+                </ul>
+                <ul class="slice area-section">
+                    <h3><span class="recipe-tittle">切片</span></h3>
+                    <li><a href="#">真鯛</a></li>
+                    <li><a href="#">剝皮魚</a></li>
+                    <li><a href="#">鰹魚</a></li>
+                    <li><a href="#">鰤魚</a></li>
+                </ul>
+            </div>
+            <!-- area -->
+            <div id="fish-recipe" class="area fish-recipe">
+                <ul class="pan-fry area-section">
+                    <h3><span class="recipe-tittle">煎</span></h3>
+                    <li><a href="#">法式鰤魚菲力</a></li>
+                    <li><a href="#">乾煎肉魚</a></li>
+                </ul>
+                <ul class="saute area-section">
+                    <h3><span class="recipe-tittle">炒</span></h3>
+                    <li><a href="#">糖醋鬼頭魚酥</a></li>
+                    <li><a href="#">青蒜烏魚白子</a></li>
+                </ul>
+                <ul class="boil area-section">
+                    <h3><span class="recipe-tittle">煮</span></h3>
+                    <li><a href="#">佃煮真鯛</a></li>
+                    <li><a href="#">石斑鮮魚湯</a></li>
+                </ul>
+                <ul class="fry area-section">
+                    <h3><span class="recipe-tittle">炸</span></h3>
+                    <li><a href="#">尖梭天婦羅</a></li>
+                    <li><a href="#">南蠻魚骨</a></li>
+                </ul>
+                <ul class="sasimi area-section">
+                    <h3><span class="recipe-tittle">刺身</span></span></h3>
+                    <li><a href="#">太刀魚</a></li>
+                    <li><a href="#">比目魚</a></li>
+                </ul>
+                <ul class="sozai area-section">
+                    <h3><span class="recipe-tittle">其他</span></h3>
+                    <li><a href="#">稻燒鰹魚茶泡飯</a></li>
+                    <li><a href="#">肝醬油</a></li>
+                </ul>
+            </div>
+            <!-- area -->
+            <div id="season-recipe" class="area season-recipe">
+                <ul class="pan-fry area-section">
+                    <h3><span class="recipe-tittle">煎</span></h3>
+                    <li><a href="#">鬼頭菲力魚排</a></li>
+                    <li><a href="#">乾煎肉魚</a></li>
+                </ul>
+                <ul class="saute area-section">
+                    <h3><span class="recipe-tittle">炒</span></h3>
+                    <li><a href="#">紅燒鰹魚血合</a></li>
+                    <li><a href="#">紅甘魚皮三鮮</a></li>
+                </ul>
+                <ul class="boil area-section">
+                    <h3><span class="recipe-tittle">煮</span></h3>
+                    <li><a href="#">砂鍋鬼頭</a></li>
+                    <li><a href="#">紅甘魚片涮涮鍋</a></li>
+                </ul>
+                <ul class="fry area-section">
+                    <h3><span class="recipe-tittle">炸</span></h3>
+                    <li><a href="#">鹹酥鬼頭</a></li>
+                    <li><a href="#">南蠻魚骨</a></li>
+                </ul>
+                <ul class="sasimi area-section">
+                    <h3><span class="recipe-tittle">刺身</span></span></h3>
+                    <li><a href="#">稻燒鰹魚刺身</a></li>
+                    <li><a href="#">湯引紅甘刺身</a></li>
+                    <li><a href="#">菊島生蠔</a></li>
+                </ul>
+                <ul class="sozai area-section">
+                    <h3><span class="recipe-tittle">小菜</span></h3>
+                    <li><a href="#">鰹魚血合慕斯</a></li>
+                    <li><a href="#">海膽醬魚皮百菇</a></li>
+                    <li><a href="#">明太子河豚</a></li>
+                    <li><a href="#">炭燒螺肉</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="p-cecipe-banner-txt">
-        <p>從原魚到餐桌，每個步驟不藏私</p>
-        <p>各式食譜教學，豐富食魚菜單</p>
-        <p>跟著多魚一起享受當季的美味!</p>
-    </div>
-</div>
+</section>
 <!---------------- path  ------------------->
 <div class="container">
     <ol class="breadcrumb">
@@ -92,21 +175,11 @@
 </div>
 <!---------------- main  ------------------->
 <div class="main">
+    <!-- 處理技巧 -->
     <div class="container ">
         <div class="fish-class">
-            <div class="recipe-main-site">
-                <div class="recipe-class">
-                    <h3>多魚食譜</h3>
-                    <ul>
-                        <!-- <li><a href="#">季節分類</a></li> -->
-                        <li><a href="#youtube">處理技巧</a></li>
-                        <li><a href="#show-recipe">鮮魚食譜</a></li>
-                        <li><a href="##now-season-recipe">當季食譜</a></li>
-                    </ul>
-                </div>
-            </div>
             <div class="processing-cards">
-                <h2 id="youtube">處理技巧</h2>
+                <h2>開魚</h2>
                 <div class="processing-card">
                     <div class="youtube-box">
                         <iframe width="642" height="361" src="https://www.youtube.com/embed/fDCPDv6GY8s" title="【しめ鯖】ゴマサバとマサバの違いとは？【捌き方・旬・刺身】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -131,62 +204,86 @@
                     </div>
                     <h3>切片教學</h3>
                 </div>
-            </div>
-            <!-- 改配置:(原本影片在下方) -->
-            <!-- <div class="main-content">
-                <h2>鮮魚季節</h2>
-                <div class="full-year">
-                    <p>全年</p>
-                    <a href="#"><img src="" alt=""></a>
-                    <a href="#"><img src="" alt=""></a>
-                    <a href="#"><img src="" alt=""></a>
-                    <a href="#"><img src="" alt=""></a>
+                <h2>三枚</h2>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/fDCPDv6GY8s" title="【しめ鯖】ゴマサバとマサバの違いとは？【捌き方・旬・刺身】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>竹夾</h3>
                 </div>
-                <div class="season-txt">
-                    <span>春</span>
-                    <span>夏</span>
-                    <span>秋</span>
-                    <span>冬</span>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/SCiRzd_4qoQ" title="【板前が教える】魚のさばき方！3枚おろし・腹開き・背開きのやり方を解説【初心者向け】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>鰈魚</h3>
                 </div>
-                <div class="season-class-fish">
-                    <ul class="season-class-rotate">
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 260.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 261.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 262.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 263.png" alt=""></a></li>
-                    </ul>
-                    <ul class="season-class-rotate">
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 264.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 265.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 266.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 267.png" alt=""></a></li>
-                    </ul>
-                    <ul class="season-class-rotate">
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 268.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 271.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 272.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 273.png" alt=""></a></li>
-                    </ul>
-                    <ul class="season-class-rotate">
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 274.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 284.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 285.png" alt=""></a></li>
-                        <li><a href="#"><img src="./imgs/recipe/rt_box/Rectangle 519.png" alt=""></a></li>
-                    </ul>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/DdRooMNcpuo" title="【プロの昆布締め】寝かせる時間・食べ方【甘鯛】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>太刀魚</h3>
                 </div>
-            </div>     -->
-        </div>
-            
-            <div class="processing-btn">
-                <a href="#">更多影片</a>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/ji_jJ9RKHOQ" title="【板前が教える】平造り・そぎ造り・薄造りの違い/盛り付け【刺身の切り方】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>開魚教學-比目魚</h3>
+                </div>
+                <h2>加工</h2>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/fDCPDv6GY8s" title="【しめ鯖】ゴマサバとマサバの違いとは？【捌き方・旬・刺身】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>加工-原理說明</h3>
+                </div>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/SCiRzd_4qoQ" title="【板前が教える】魚のさばき方！3枚おろし・腹開き・背開きのやり方を解説【初心者向け】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>加工-昆布熟成</h3>
+                </div>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/DdRooMNcpuo" title="【プロの昆布締め】寝かせる時間・食べ方【甘鯛】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>加工-鹽水熟成</h3>
+                </div>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/ji_jJ9RKHOQ" title="【板前が教える】平造り・そぎ造り・薄造りの違い/盛り付け【刺身の切り方】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>加工-味噌熟成</h3>
+                </div>
+                <h2>切片</h2>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/fDCPDv6GY8s" title="【しめ鯖】ゴマサバとマサバの違いとは？【捌き方・旬・刺身】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>真鯛</h3>
+                </div>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/SCiRzd_4qoQ" title="【板前が教える】魚のさばき方！3枚おろし・腹開き・背開きのやり方を解説【初心者向け】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>剝皮魚</h3>
+                </div>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/DdRooMNcpuo" title="【プロの昆布締め】寝かせる時間・食べ方【甘鯛】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>鰹魚</h3>
+                </div>
+                <div class="processing-card">
+                    <div class="youtube-box">
+                        <iframe width="642" height="361" src="https://www.youtube.com/embed/ji_jJ9RKHOQ" title="【板前が教える】平造り・そぎ造り・薄造りの違い/盛り付け【刺身の切り方】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <h3>鰤魚</h3>
+                </div>
             </div>
         </div>
     </div>
+    <!-- 鮮魚食譜 -->
     <div class="container show-recipe">
-        <div class="dressing-box beginner">
-            <img class="nami-up" src="./imgs/index/nami_up.png" alt="nami">
-            <img class="nami-down" src="./imgs/index/nami_down.png" alt="nami">
-        </div>
         <h2 id="show-recipe">鮮魚食譜</h2>
         <div class="show-recipe-pic">
             <img src="./imgs/recipe/recipe_00.jpg" alt="茶泡飯">
@@ -212,8 +309,9 @@
             <a href="./recipe.html">詳細作法</a>
         </div>        
     </div>
+    <!-- 當季食譜 -->
     <div class="container">
-        <h2 id="#now-season-recipe" >當季食譜</h2>
+        <h2 >當季食譜</h2>
         <div class="recipe-list">
             <div class="recipe">
                 <div class="recipe-pic">
@@ -268,14 +366,10 @@
                 </div>
             </div>
         </div>
-        <div class="now-recipe-btn">
-            <a href="./recipe.html">更多當季食譜</a>
-        </div>
-        </div>
     </div>
-
-
-
+</div>
+<script src="./js/jquery-3.6.1.js"></script>
+<script src="./js/recipe.js"></script>
 <!---------------- footer  ------------------->
 <footer>
     <div class="container footer">

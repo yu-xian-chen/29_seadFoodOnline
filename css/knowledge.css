@@ -2,6 +2,11 @@
     banner
 \* ------------ */
 .page-knowledge-banner{
+    --mask:
+    radial-gradient(111.80px at 50% 150.00px,#000 99%,#0000 101%) calc(50% - 100px) 0/200px 100%,
+    radial-gradient(111.80px at 50% -100px,#0000 99%,#000 101%) 50% 50px/200px 100% repeat-x;
+    -webkit-mask: var(--mask);
+          mask: var(--mask);
 	background-image: url(../imgs/knowledge/knowledge_banner.jpg);
 	height: 300px;
     max-width: 1440px;

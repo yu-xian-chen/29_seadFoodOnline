@@ -1,69 +1,102 @@
 /* ------------ *\
-    banner
+    menu
 \* ------------ */
-.page-cecipe-banner{
-	background-image: url(../imgs/recipe/banner.jpg);
-	height: 300px;
-    max-width: 1440px;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
+.recipe-menu-content *{
+    /* outline: 1px solid red; */
+}
+.recipe-menu-content{
+    background-color: #F5F4F1;
+    border: 3px solid #1f2c52;
+    margin-top: 60px;
     position: relative;
-    margin: auto;
-    background-position:center bottom;
+    padding-top: 6px;
 }
-.p-cecipe-banner-txt{
+.recipe-menu h2{
+    margin: 0;
+    border: none;
+}
+.d-menu{
     position: absolute;
-    bottom: 5%;
-    right: 1% ;
-    background-color: #635e5e87;
-    padding: 2%;
-    line-height: 1.5em;
-    border-radius: 5px;
+    top: -17px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 1em;
+    background-color: #F5F4F1;
 }
-.p-cecipe-banner-txt p{
-    color: #fff;
+/*tab*/
+.recipe-menu-tab{
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 0;
+}
+.recipe-menu-tab li a{
+  display: block;
+  background:#ddd;
+  margin:0 2px;
+  padding:10px 20px;
+}
+/*li active*/
+.recipe-menu-tab li.active a{
+  background:#fff;
+}
+@media screen and (max-width:767px){
+    .d-menu{top: -35px;}
+}
+@media screen and (min-width:768px){
+    .d-menu{ top: -35px;}
 }
 
-@media screen and (min-width: 550px){
-    .page-cecipe-banner{
-        height: 400px;
-    }
-}
-@media screen and (min-width: 600px){
-    .page-cecipe-banner{
-        height: 450px;
-    }
+/*tab 非選取*/
+.area {
+  display: none;
+  opacity: 0;
+  background: #fff;
+  padding:15px 20px;
 }
 
-@media screen and (min-width: 650px){
-    .page-cecipe-banner{
-        height: 500px;
-    }
+/*area is-active*/
+.area.is-active {
+    display: block;
+    animation-name: displayAnime;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
 }
-@media screen and (min-width: 768px){
-    .page-cecipe-banner{
-        height: 550px;
-    }
-	.p-cecipe-banner-txt p{font-size: 24px;}
-    .p-cecipe-banner-txt{
-        line-height: 2em;
-        right: 3% ;
-    }
+
+@keyframes displayAnime{
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
-@media screen and (min-width: 1024px){
-	.p-cecipe-banner-txt p{font-size: 24px;}
-    .p-cecipe-banner-txt{
-        line-height: 2em;
-        right: 15% ;
-    }
+  /* 內容排版 */
+.recipe-tittle{
+    padding: 3px 3em;
+    border-top: 1px dashed #3c56a6;
+    border-bottom: 1px dashed #3c56a6;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
-@media screen and (min-width: 1200px){
-	.p-cecipe-banner-txt p{font-size: 28px;}
-    .p-cecipe-banner-txt{
-        line-height: 2em;
-        right: 5% ;
-    }
+.area.skill,
+.area.fish-recipe,
+.area.season-recipe{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.skill ul,
+.fish-recipe ul,
+.season-recipe ul{
+    margin: 15px;
+    text-align: center;
+}
+.skill li,
+.fish-recipe li,
+.season-recipe li{
+    margin: 10px 0;
+}
+
+.area-section{
+    width: 40%;
 }
 /* ------------ *\
     path
@@ -102,89 +135,6 @@ h2{
 	border-top: 1px dashed #3c56a6;
 	border-bottom: 1px dashed #3c56a6;
 }
-.fish-class .main-content{
-    width: 800px;
-    height: 600px;
-    background-color: #aaa;
-}
-/* 季節分類
-.season-class-fish *{
-    outline: 1px solid red;
-}
-.season-class-fish{
-    display: flex;
-}
-
-.season-class-rotate{
-    display: flex;
-    margin: auto;
-    padding: 100px 0;
-    flex-wrap:wrap ;
-}
-.season-class-rotate li{
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-    margin: 0 60px -40px;
-    position: relative;
-    font-size: 30px;
-}
-.season-class-rotate li::before{
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    transform: rotate(45deg);
-    z-index: -1;
-}
-.season-class-rotate li:nth-child(n+4){
-    left: 160px;
-}
-.season-class-rotate li:nth-child(N+7){
-    left: 0;
-}
-.season-class-rotate li:hover{
-    color: aliceblue;
-}
-.season-class-rotate li:hover::before{
-    background-color: #000;
-} */
-
-
-
-/* 側邊欄 */
-.recipe-main-site{
-	background-color: #3c56a6;
-	border-radius: 10px;
-	opacity: 95%;
-	height: 600px;
-	margin-top: 30px;
-    display: none;
-    width: 10%;
-}
-.recipe-main-site h3{
-	color: #fff;
-	font-size: 22px;
-	margin-top: 20px;
-	text-align: center;
-	padding: 10px 0;
-	border-top: 1px dashed #fff;
-	border-bottom: 1px dashed #fff;
-}
-.recipe-main-site a{
-	display: block;
-	color: #fff;
-	margin-top: 10px;
-	padding: 6px 0;
-	text-align: center;
-	font-size: 18px;
-}
-.recipe-main-site a:hover{
-	background-color: #2b3d74;
-}
 
 /* 處理技巧 */
 .processing-cards h2{
@@ -196,7 +146,6 @@ h2{
     margin: auto;
     justify-content: space-around;
     width: 75%; /* 配合影片移動設置 */
-    
 }
 .youtube-box{
     width: 100%;
@@ -227,9 +176,6 @@ h2{
     font-weight: 600;
     background-color: #ab4c4c;
 }
-
-
-
 
 /* 鮮魚食譜 */
 /* *{
@@ -325,18 +271,15 @@ h2{
     margin-bottom: 15%;
     margin: 1% 2%;
 }
-
 .recipe-txt p{
     color: rgb(74, 74, 74);
 }
-
 .recipe-foot{
     display: flex;
     align-items: center;
     justify-content: end;
     margin-bottom: 3%;
 }
-
 .recipe-foot a{
     display: inline-block;
     background-color: #f2bc5f;
