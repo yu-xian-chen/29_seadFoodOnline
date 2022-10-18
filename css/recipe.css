@@ -241,6 +241,9 @@ h2{
     background-color: #ab4c4c;
 }
 /* 當季食譜 */
+.recipe *{
+    /* outline: 1px solid red; */
+}
 .recipe-list{
     display: flex;
     flex-wrap: wrap;
@@ -249,11 +252,39 @@ h2{
 }
 .recipe{
     box-shadow: 3px 3px 5px #d3d6df;
-    border: 1px solid #aaa;
     margin: 2% 1%;
     border-radius: 5px;
     width: 60%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+.recipe:hover{
+    transition: 0.5s;
+    box-shadow: 4px 4px 6px #929292;
+    cursor: pointer;
+}
+.recipe-pic{
+    position: relative;
+}
+.recipe:hover .recipe-pic img{
+    filter: brightness(0.5);
+    transition: 0.5s;
+}
+.recipe:hover .recipe-pic::after{
+    content: '查看食譜 >';
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center; 
+    transform: 0.5s;
+}
+
 .recipe-pic{
     width: 100%;
 }
@@ -263,16 +294,59 @@ h2{
     aspect-ratio: 20/13;
     object-fit: cover;
 }
+/* 文字 */
 .recipe h3{
-    margin: 1% 2%;
+    margin: 3% 2%;
+    font-weight: 600;
 }
-
+.season-span{
+    position: relative;
+    left: -40%;
+}
 .recipe-txt{
     margin-bottom: 15%;
     margin: 1% 2%;
 }
+.season-tag.spring p{
+    background-color: #e198b4;
+    color: #ffffff;
+    text-align: start;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+.season-tag.summer p{
+    background-color: rgb(90, 126, 56);
+    color: #ffffff;
+    text-align: start;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+.season-tag.fall p{
+    background-color: rgb(249, 163, 97);
+    color: #ffffff;
+    text-align: start;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+.season-tag.winter p{
+    background-color: #89c3eb;
+    color: #ffffff;
+    text-align: start;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
 .recipe-txt p{
     color: rgb(74, 74, 74);
+    margin: 4px 0;
+    line-height: 1.5em;
+}
+/* 收藏 */
+/* 星星 */
+.favorite{
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    background-color: rgb(221, 8, 8);
+    height: 25px;
+    width: 25px;                 
 }
 .recipe-foot{
     display: flex;
@@ -282,14 +356,15 @@ h2{
 }
 .recipe-foot a{
     display: inline-block;
-    background-color: #f2bc5f;
+    background-color: #f2645f;
     margin-right: 0.5em;
     padding: 2% 5%;
     border-radius: 5px;
     color: #fff;
 }
 .recipe-foot a:hover{
-    color: #eee;
+    font-weight: 600;
+    transform: 1s;
 }
 .now-recipe-btn{
     display: flex;

@@ -25,31 +25,29 @@
     padding: 2%;
     line-height: 1.5em;
     border-radius: 5px;
+    animation: contact-anime;
+    animation-duration: 10s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+}
+@keyframes contact-anime {
+    0%{transform: translateY(-30px);}
+    25%{transform: translateX(-10px)}
+    50%{transform: translateY(-80px);}
+    100%{transform: translateX(-80px)}
+
 }
 .p-contact-banner-txt p{
     color: #fff;
 }
-
 @media screen and (min-width: 550px){
-    .p-contact-banner{
-        height: 400px;
-    }
-}
-@media screen and (min-width: 600px){
-    .p-contact-banner{
-        height: 450px;
-    }
-}
-
-@media screen and (min-width: 650px){
     .p-contact-banner{
         height: 500px;
     }
 }
 @media screen and (min-width: 768px){
-    .p-contact-banner{
-        height: 550px;
-    }
 	.p-contact-banner-txt p{font-size: 24px;}
     .p-contact-banner-txt{
         line-height: 2em;
@@ -57,6 +55,9 @@
     }
 }
 @media screen and (min-width: 1024px){
+    .p-contact-banner{
+        height: 600px;
+    }
 	.p-contact-banner-txt p{font-size: 24px;}
     .p-contact-banner-txt{
         line-height: 2em;
@@ -70,6 +71,8 @@
         right: 5% ;
     }
 }
+
+
 /* ------------ *\
     path
 \* ------------ */
@@ -98,13 +101,29 @@
 /* ------------ *\
     main
 \* ------------ */
-/* 地圖與地址設定在index css */
+/* 地圖與地址主要設定在index css */
+.address h2{
+    margin-top: 100px;
+}
+.map{
+    margin-top: 50px;
+}
+.address-txt {
+    margin: auto;
+}
+.address-txt h3{
+    font-weight: 600;
+    margin-top: 40px;
+}
 /* 回饋表單 */
+.contact-table h2{
+    margin-top: 100px;
+}
 .table-content{
     background-color: #3c56a6;
     border-radius: 10px;
     padding-bottom: 5%;
-    margin-bottom: 50px;
+    margin: 50px 0;
 }
 .table-content .logo-pic{
     display: flex;

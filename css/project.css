@@ -22,17 +22,46 @@ h3{color: #3c56a6;}
 p{color: #3c56a6;}
 body{background-color: #F5F4F1;}
 /* 動畫 */
-.fadeUpTrigger{opacity: 0;} /* htnl抓取、初始設定 */
+.fadeInTrigger, /* htnl抓取、初始設定 */
+.fadeUpTrigger,
+.fadeLeftTrigger,
+.fadeRightTrigger{
+    opacity: 0;
+} 
 
 /* for JQuery */
-.fadeUp{    
+/* 進場動畫css */
+.fadeUp{/* ↑ */   
 	animation-name:fadeUpAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	opacity:0;
+} 
+
+.fadeIn{/* 原地 */   
+	animation-name:fadeInAnime;
 	animation-duration:1s;
 	animation-fill-mode:forwards;
 	opacity:0;
 }
 
-@keyframes fadeUpAnime{
+.fadeLeft{ /* → */
+    animation-name:fadeLeftAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+.fadeRight{ /*  ← */
+    animation-name:fadeRightAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+
+/* 進場動畫腳本 */
+@keyframes fadeUpAnime{ /* ↑ */ 
   from {
 	opacity: 0;
     transform: translateY(100px);
@@ -42,6 +71,35 @@ body{background-color: #F5F4F1;}
  	transform: translateY(0);
   }
 }
+
+@keyframes fadeInAnime{ /* 原地 */
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeLeftAnime{ /* → */
+    from {
+      opacity: 0;
+        transform: translateX(-150px);
+    }
+    to {
+      opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeRightAnime{ /*  ← */
+    from {
+      opacity: 0;
+    transform: translateX(150px);
+    }
+  
+    to {
+      opacity: 1;
+    transform: translateX(0);
+    }
+  }
+
 /* -------------- *\
     文字、logo RWD 
 \* -------------- */
@@ -656,16 +714,16 @@ header .container{
 /* ---------- *\
    product
 \* ---------- */
-.product *{
+/* .product *{
     margin-bottom: 50px;
-}
-.product{
+} */
+/* .product{ */
     /* --mask:
     radial-gradient(78.26px at 105.00px 50%,#000 99%,#0000 101%) 0 calc(50% - 70px)/100% 140px,
     radial-gradient(78.26px at -70px 50%,#0000 99%,#000 101%) 35px 50%/100% 140px repeat-y;
     -webkit-mask: var(--mask);
     mask: var(--mask); */
-    background-color: rgb(216, 212, 212);
+    /* background-color: rgb(216, 212, 212);
 }
 .product h3{
     padding-left: 1em;
@@ -754,7 +812,7 @@ header .container{
     .product-list>.products{
         display: block;
     }
-}
+} */
 
 /* ------------- *\
     recipe banner 
@@ -977,11 +1035,12 @@ header .container{
 /* ---------- *\
     C&P 
 \* ---------- */
-.container.certification{
-    display: flex;
+.container.certification *{
+    /* display: flex; */
+    outline: 1px solid red;
 }
 .cp-mode{
-    width: 50%;
+    /* width: 50%; */
 }
 .cp-mode .list-row{
     width: 100%;
@@ -989,7 +1048,7 @@ header .container{
     margin: 20px 0px;
 }
 .certification-list{
-    border-right: 1px solid #3c56a6;
+    /* border-right: 1px solid #3c56a6; */
 }
 .certification-list .list-row:nth-child(1){
     justify-content: center;
@@ -1075,7 +1134,7 @@ footer{
     background-size: cover;
     width: 100%;
     position: relative;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 .footer .row{
     display: flex;

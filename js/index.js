@@ -2,7 +2,7 @@
 // 動畫 下到上
 function fadeAnime(){
     $('.fadeUpTrigger').each(function(){ //抓html的class:fadeUpTrigger
-        var elemPos = $(this).offset().top-20 //
+        var elemPos = $(this).offset().top-5 //
         var scroll = $(window).scrollTop()
         var windowHeight = $(window).height()
 
@@ -12,6 +12,44 @@ function fadeAnime(){
         $(this).removeClass('fadeUp')
         }
     });
+
+    // 左到右
+    $('.fadeLeftTrigger').each(function(){ 
+        var elemPos = $(this).offset().top-5;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll >= elemPos - windowHeight){
+        $(this).addClass('fadeLeft');
+        }else{
+        $(this).removeClass('fadeLeft');
+        }
+        });
+
+
+    // 右到左
+    $('.fadeRightTrigger').each(function(){ 
+        var elemPos =$(this).offset().top-5;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll >= elemPos - windowHeight){
+        $(this).addClass('fadeRight');
+        }else{
+        $(this).removeClass('fadeRight');
+        }
+        });
+
+
+    // 原地
+    $('.fadeInTrigger').each(function(){ 
+        var elemPos = $(this).offset().top-5;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+      if (scroll >= elemPos - windowHeight){
+        $(this).addClass('fadeIn');
+        }else{
+        $(this).removeClass('fadeIn');
+        }
+      });
 }
   
 $(window).scroll(function (){

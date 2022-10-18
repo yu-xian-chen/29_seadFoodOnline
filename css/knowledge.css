@@ -406,7 +406,11 @@ table th{
 .haki td:nth-child(14){
     background-color: #fddea587;
 }
-
+@media screen and (max-width:767px){
+    .phone-x{
+        display: none;
+    }
+}
 
 /* ------------- *\
  fish-season-party   
@@ -418,19 +422,12 @@ table th{
 .season-box{
     position: relative;
 }
-.spring-box,
-.summer-box,
-.fall-box,
-.winter-box{
-    position: relative;
-    left: 15%;
-}
+
 .season-txt{
     position: absolute;
     font-size: 60px;
     z-index: 2;
 }
-
 .fish-season-party h2{
     padding: 1% 0;
     border-top:1px dashed #2b3d74;
@@ -452,7 +449,6 @@ table th{
     background-size: contain;
     height: 200px;
     margin-bottom: 40px;
-
 }
 .fall{
     background-image: url(../imgs/knowledge/season_bg_fall.png);
@@ -461,7 +457,6 @@ table th{
     background-size: contain;
     height: 200px;
     margin-bottom: 40px;
-
 }
 .winter{
     background-image: url(../imgs/knowledge/season_bg_winter.png);
@@ -478,7 +473,7 @@ table th{
 /* 春 */
 .season-pic img[alt="白帶"]{
     width: 45%;
-    left: 10%;
+    left: 30%;
     top: 0%;
 }
 .season-pic img[alt="白帶"]::after{
@@ -491,91 +486,112 @@ table th{
     z-index: 50;
     position: absolute;
 }
-
 .season-pic img[alt="飛魚"]{
     width: 25%;
-    left: 3%;
+    left: 16%;
     top: 20%;
 }
 .season-pic img[alt="竹夾"]{
     width: 20%;
-    left: 40%;
+    left: 60%;
     top: 30%;
 }
 
 /* 夏 */
 .season-pic img[alt="剝皮"]{
-    width: 20%;
-    left: 5%;
+    width: 30%;
+    left: 10%;
     top: 15%;
 }
 .season-pic img[alt="巴鰹"]{
-    width: 25%;
-    left: 25%;
-    top: -15%;
+    width: 30%;
+    left: 30%;
+    top: -8%;
 }
 .season-pic img[alt="鬼頭刀"]{
-    width: 25%;
-    left: 40%;
-    top: 30%;
+    width: 35%;
+    left: 50%;
+    top: 9%;
 }
 
 /* 秋 */
 .season-pic img[alt="齒鰹"]{
-    width: 18%;
-    left: 5%;
-    top: 30%;
+    width: 30%;
+    left: 10%;
+    top: 15%;
 }
 .season-pic img[alt="紅甘"]{
-    width: 25%;
-    left: 15%;
+    width: 35%;
+    left: 20%;
 }
 .season-pic img[alt="圓花鰹"]{
-    width: 20%;
-    left: 33%;
-    top: 55%;
+    width: 30%;
+    left: 50%;
+    top: 30%;
 }
 .season-pic img[alt="油帶"]{
-    width: 30%;
-    left: 40%;
-    top: 15%;
+    width: 35%;
+    left: 55%;
+    top: 8%;
 }
 /* 冬 */
 .season-pic img[alt="正鰹"]{
-    width: 20%;
-    left: 5%;
-    top: 40%;
+    width: 30%;
+    left: 8%;
+    top: 20%;
 }
 .season-pic img[alt="剝皮魚"]{
-    width: 20%;
+    width: 25%;
     left: 20%;
     top: -5%;
 }
 .season-pic img[alt="尖梭"]{
     width: 25%;
-    left: 45%;
-    top: -10%;
+    left: 60%;
+    top: -5%;
 }
 .season-pic img[alt="鯖魚"]{
-    width: 25%;
-    left: 35%;
-    top: 60%;
+    width: 30%;
+    left: 50%;
+    top: 30%;
 }
+/* 魚陰影、動畫設定 */
+.season-pic img{
+    filter: brightness(0.2);
+    transition: 1s;
+}
+.season-pic img:hover{
+    filter: brightness(1);
+    transition:  0.3s;
+    /* 動畫套用 */
+    animation-name: shake;
+    animation-duration:0.1s;
+    animation-iteration-count: 10;
+    
 
-@media screen and (max-width:767px){
-
+}
+@keyframes shake {
+    0%{transform: rotate(10deg) scale(1.5);}
+    100%{transform: rotate(-10deg) scale(1.5);}
 }
 
 @media screen and (min-width: 768px){
-
+    .season-pic img[alt="飛魚"]{top: 25%;}
+    .season-pic img[alt="竹夾"]{top: 40%;}
+    .season-pic img[alt="鬼頭刀"]{top: 25%;}
+    .season-pic img[alt="圓花鰹"]{top: 55%;}
+    .season-pic img[alt="正鰹"]{top: 35%;}
+    .season-pic img[alt="鯖魚"]{top: 45%;}
 }
-
 @media screen and (min-width: 1024px){
-
-}
-
-@media screen and (min-width: 1200px){
-
+    .spring-box,
+    .summer-box,
+    .fall-box,
+    .winter-box{
+        position: relative;
+        left: 15%;
+        width: 70%;
+    }
 }
 
 
