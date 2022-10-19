@@ -29,6 +29,9 @@ body{background-color: #F5F4F1;}
     opacity: 0;
 } 
 
+.flipLeftTopTrigger{
+    opacity: 0;
+}
 /* for JQuery */
 /* 進場動畫css */
 .fadeUp{/* ↑ */   
@@ -58,6 +61,14 @@ body{background-color: #F5F4F1;}
     animation-fill-mode:forwards;
     opacity:0;
 }
+/* ↖ */
+.flipLeftTop{
+	animation-name:flipLeftTopAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
+
 
 
 /* 進場動畫腳本 */
@@ -100,6 +111,16 @@ body{background-color: #F5F4F1;}
     }
   }
 
+  @keyframes flipLeftTopAnime{
+    from {
+      transform: translate(-20px,80px) rotate(-15deg);
+      opacity: 0;
+    }
+    to {
+      transform: translate(0,0) rotate(0deg);
+      opacity: 1;
+    }
+  }
 /* -------------- *\
     文字、logo RWD 
 \* -------------- */
@@ -616,6 +637,9 @@ header .container{
 .beliefs *{
     width: 100%;
 }
+.beliefs .container{
+    padding: 0;
+} 
 .beliefs{
     margin-top: 50px;
     /* background-image: url(https://cdn.shopify.com/s/files/1/0606/6932/9625/t/1/assets/bg_bottom01.png) ;
@@ -860,6 +884,7 @@ header .container{
 /* ---------- *\
    knowledge 
 \* ---------- */
+
 .fish-list{
     display: grid;
     grid-template-rows:17% 10.638% 29.787% 42.55% ;
@@ -1011,6 +1036,8 @@ header .container{
 @media screen and (max-width:767px){
     .fish:nth-child(7) img{display: none;}
     .fish:nth-child(7)::after{display: none;}
+    .fish:nth-child(5) img{display: none;}
+    .fish:nth-child(5)::after{display: none;}
 }
 
 @media screen and (min-width: 670px){

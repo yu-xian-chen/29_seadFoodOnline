@@ -50,6 +50,18 @@ function fadeAnime(){
         $(this).removeClass('fadeIn');
         }
       });
+
+    $('.flipLeftTrigger').each(function(){ 
+        var elemPos = $(this).offset().top-5;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll >= elemPos - windowHeight){
+        $(this).addClass('flipLeft');
+        }else{
+        $(this).removeClass('flipLeft');
+        }
+        });
+
 }
   
 $(window).scroll(function (){
