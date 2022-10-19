@@ -1,3 +1,5 @@
+
+
 /* ------------ *\
     banner
 \* ------------ */
@@ -180,13 +182,43 @@
 	margin: auto;
 }
 .specialty .card{
-    box-shadow: 3px 3px 5px #d3d6df;
-    border: 1px solid #aaa;
 	margin: 5% 0;
 	border-radius: 5px;
+	background-color: #fff;
+    cursor: pointer;
+	transition: 0.5s;
+	padding-bottom: 5%;
+}
+.specialty .card:hover{
+    box-shadow: 3px 3px 5px #d3d6df;
+	transition: 0.5s;
 }
 .specialty-pic{
 	width: 100%;
+	/* position: relative; */
+	z-index: 0;
+}
+.specialty .card:hover img{
+    /* transition: 0.5s; */
+	animation-name: productHover;
+	animation-duration: 2.5s;
+}
+/* 若加hover過去 圖片變黑效果，會導致側邊欄次選項出來時被圖片蓋住 */
+/* .specialty .card:hover .specialty-pic::after{
+	content: '查看商品 >';
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center; 
+    transform: 0.5s;
+} */
+@keyframes productHover {
+	0%{filter: brightness(0.5);}
+	100%{filter: brightness(1);}
 }
 .specialty .cards img{
 	width: 100%;
@@ -197,7 +229,7 @@
 .specialty h3{
 	font-weight: 400;
 	font-size: 24px;
-	margin: 1% 0;
+	margin: 3% 0;
 	margin-left: 0.5em;
 
 }
@@ -215,7 +247,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	margin-bottom: 3%;
 }
 
 .card-foot p:nth-child(1){
