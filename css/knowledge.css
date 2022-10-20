@@ -225,6 +225,9 @@
 /* ------------ *\
     season-table
 \* ------------ */
+.fish-season-table{
+    margin-top: 200px;
+}
 .fish-season-table h2{
     padding: 1% 0;
     border-top:1px dashed #2b3d74;
@@ -426,6 +429,7 @@ table th{
 }
 .season-box{
     position: relative;
+    margin-top: 150px;
 }
 
 .season-txt{

@@ -62,6 +62,17 @@ function fadeAnime(){
         }
         });
 
+    $('.blurTrigger').each(function(){ 
+        var elemPos = $(this).offset().top-5;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll >= elemPos - windowHeight){
+        $(this).addClass('blur');
+        }else{
+        $(this).removeClass('blur');
+        }
+        });
+
 }
   
 $(window).scroll(function (){

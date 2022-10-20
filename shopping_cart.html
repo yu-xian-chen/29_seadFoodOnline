@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9de1e3e715.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
 </head>
 <body>
 <!---------------- header  ------------------->
@@ -86,9 +87,10 @@
 </div>
 <div class="container">
     <div class="shopping_chart">
-        <div class="check">
+        <div class="out-shape fadeUpTrigger">
+            <!-- 訂單確認 -->
             <h2><i class="fa-solid fa-check"></i> 訂單確認</h2>
-            <table >
+            <table class="table-check">
                 <thead>
                     <tr>
                         <th>購買項目(冷凍)</th>
@@ -163,7 +165,8 @@
                 <span>560</span>
             </div>
         </div>
-        <div class="discount">
+        <!-- 折扣碼 -->
+        <div class="discount out-shape fadeUpTrigger">
             <h2><i class="fa-solid fa-barcode"></i> 使用折扣碼</h2>
             <div class="discount-box">
                 <label for="discount_code">折扣碼</label>
@@ -173,7 +176,8 @@
                 <span>-$0</span>
             </div>
         </div>
-        <div class="shipping">
+        <!-- 運輸方式 -->
+        <div class="shipping out-shape fadeUpTrigger">
             <h2><i class="fa-solid fa-truck"></i> 冷凍運送方式</h2>
             <table>
                 <thead>
@@ -238,7 +242,8 @@
                 <span>560</span>
             </div>
         </div>
-        <div class="wrapping">
+        <!-- 包裝方式 -->
+        <div class="wrapping out-shape fadeUpTrigger">
             <h2><i class="fa-solid fa-gift"></i> 冷凍包裝方式</h2>
             <table>
                 <thead>
@@ -285,7 +290,8 @@
                 <span>560</span>
             </div>
         </div>
-        <div class="pay">
+        <!-- 付款方式 -->
+        <div class="pay out-shape fadeUpTrigger">
             <h2><i class="fa-regular fa-credit-card"></i> 付款方式</h2>
             <table>
                 <thead>
@@ -337,8 +343,8 @@
             </div>
         </div>
         <div class="finall btn">
-            <button>上一步</button>
-            <a href="./shopping_cart_s2.html"><button>下一步</button></a>
+            <a href="#"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="./shopping_cart_s2.html"><i class="fa-solid fa-arrow-right"></i></a>
         </div>
     </div>
 </div>
@@ -385,5 +391,6 @@
         <p>COPYRIGHT © 2022 PARTYME Co.,Ltd. All rights reserved.</p>
     </div>
 </footer>
+<script src="./js/index.js"></script>
 </body>
 </html>

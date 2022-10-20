@@ -25,13 +25,11 @@ body{background-color: #F5F4F1;}
 .fadeInTrigger, /* htnl抓取、初始設定 */
 .fadeUpTrigger,
 .fadeLeftTrigger,
-.fadeRightTrigger{
-    opacity: 0;
-} 
-
+.fadeRightTrigger,
+.blurTrigger,
 .flipLeftTopTrigger{
     opacity: 0;
-}
+} 
 /* for JQuery */
 /* 進場動畫css */
 .fadeUp{/* ↑ */   
@@ -40,35 +38,35 @@ body{background-color: #F5F4F1;}
 	animation-fill-mode:forwards;
 	opacity:0;
 } 
-
 .fadeIn{/* 原地 */   
 	animation-name:fadeInAnime;
 	animation-duration:1s;
 	animation-fill-mode:forwards;
 	opacity:0;
 }
-
 .fadeLeft{ /* → */
     animation-name:fadeLeftAnime;
     animation-duration:1s;
     animation-fill-mode:forwards;
     opacity:0;
 }
-
 .fadeRight{ /*  ← */
     animation-name:fadeRightAnime;
     animation-duration:1s;
     animation-fill-mode:forwards;
     opacity:0;
 }
-/* ↖ */
-.flipLeftTop{
+.flipLeftTop{ /* ↖ */
 	animation-name:flipLeftTopAnime;
 	animation-duration:1s;
 	animation-fill-mode:forwards;
 	opacity:0;
 }
-
+.blur{ /* 湧現 */
+    animation-name:blurAnime;
+    animation-duration:1s;
+    animation-fill-mode:forwards;
+}
 
 
 /* 進場動畫腳本 */
@@ -82,12 +80,10 @@ body{background-color: #F5F4F1;}
  	transform: translateY(0);
   }
 }
-
 @keyframes fadeInAnime{ /* 原地 */
     from {opacity: 0;}
     to {opacity: 1;}
 }
-
 @keyframes fadeLeftAnime{ /* → */
     from {
       opacity: 0;
@@ -98,7 +94,6 @@ body{background-color: #F5F4F1;}
         transform: translateX(0);
     }
 }
-
 @keyframes fadeRightAnime{ /*  ← */
     from {
       opacity: 0;
@@ -110,8 +105,7 @@ body{background-color: #F5F4F1;}
     transform: translateX(0);
     }
   }
-
-  @keyframes flipLeftTopAnime{
+@keyframes flipLeftTopAnime{
     from {
       transform: translate(-20px,80px) rotate(-15deg);
       opacity: 0;
@@ -121,6 +115,18 @@ body{background-color: #F5F4F1;}
       opacity: 1;
     }
   }
+@keyframes blurAnime{ /*  湧現blur */
+    from {
+        filter: blur(10px);
+        transform: scale(1.02);
+        opacity: 0;
+    }
+    to {
+        filter: blur(0);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
 /* -------------- *\
     文字、logo RWD 
 \* -------------- */
@@ -332,6 +338,7 @@ header .container{
     background-position:center center;
     position: relative;
     margin: auto;
+    background-attachment: fixed;
 }
 /* icon */
 .icon-imagery{
@@ -345,11 +352,15 @@ header .container{
 .anime{
     width: 100px;
     animation-name: nami;
-    animation-duration: 4s;
+    animation-duration: 3s;
     animation-delay: 0s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse; 
+}
+.anime:hover{
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
 }
 .anime:nth-child(2){
     animation-delay: 1s;
@@ -435,6 +446,9 @@ header .container{
     animation-name: fadeInAnime;
     animation-duration:3s;
     animation-fill-mode:forwards;
+}
+.section-news{
+    margin: 70px 0;
 }
 
 .news-list{
@@ -529,58 +543,6 @@ header .container{
     }
 }
 /* -------------- *\
-    新 
-\* -------------- */
-/* .about *{
-    outline: 1px solid red;
-}
-.about .container{
-    padding: 0;
-}
-.about-content{
-    display: flex;
-}
-.about-bgc{
-    --mask:
-    radial-gradient(49.19px at calc(100% - 66.00px) 50%,#000 99%,#0000 101%) 0 calc(50% - 44px)/100% 88px,
-    radial-gradient(49.19px at calc(100% + 44.00px) 50%,#0000 99%,#000 101%) calc(100% - 22px) 50%/100% 88px repeat-y;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
-    background-image: url(../imgs/index/banner/1_imagery.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-position:center center;
-    width: 50%;
-    height: 400px;
-}
-.about-bgc-txt{
-    text-align: center;
-    background-color: #9f9f9f87;
-    border-radius: 10px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.about-bgc-txt p{
-    color: #fff;
-    font-size: 24px;
-
-}
-.about-main-des{
-    font-size: 40px;
-    margin: 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-@media screen and (min-width: 1024px){
-    .banner-shopping{
-        display: none;
-    }
-} */
-
-/* -------------- *\
     shopping banner 
 \* -------------- */
 .banner-shopping{
@@ -589,12 +551,13 @@ header .container{
       radial-gradient(111.80px at 50% -100px,#0000 99%,#000 101%) 50% 50px/200px 100% repeat-x;
     -webkit-mask: var(--mask);
             mask: var(--mask);
-    background-image: url(../imgs/index/banner/2_imagery_table.jpg);
+    background-image: url(../imgs/index/banner/shopping.jpg);
     height: 350px;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     background-position:center center;
+    background-attachment: fixed;
     max-width: 1440px;
     margin: auto;
   }
@@ -616,12 +579,14 @@ header .container{
     background-color: #FF5959;
     position: absolute;
     font-size: 24px;
-    padding: 1% 3%;
-    transform: rotate(-10deg);
+    padding: 1% 2%;
     border-radius: 5px;
 }
 .banner-shopping .btn a:hover{
     color: #eee;
+    transition: 0.5s;
+    transform: rotate(-5deg);
+    transform-origin: left bottom;
 }
 .banner-shopping .btn .recipe{
     bottom: 20%;
@@ -635,17 +600,13 @@ header .container{
    beliefs start 
 \* ------------- */
 .beliefs *{
-    width: 100%;
+    /* outline: 1px solid red; */
 }
 .beliefs .container{
     padding: 0;
 } 
-.beliefs{
-    margin-top: 50px;
-    /* background-image: url(https://cdn.shopify.com/s/files/1/0606/6932/9625/t/1/assets/bg_bottom01.png) ;
-    background-position: center top;
-    background-repeat: no-repeat; */
-
+.beliefs.space{
+    margin-top: 100px;
 }
 .belief-pic{
     background-image: url(../imgs/index/seafood_guide.jpg);
@@ -662,12 +623,12 @@ header .container{
 .belief-pic-txt{
     outline: 1px solid #fff;
     width: fit-content;
+    padding: 0 10px;
 }
 .belief-pic-txt p{
     color: #fff;
     background-color: #6f6c6c87;
     width: 100%;
-    margin: 0 10px;   
 }
 .belief-txt{
     line-height: 1.5em;
@@ -683,16 +644,21 @@ header .container{
 }
 .belief-img{
     width: 100%;
-    /* height: 120px; */
     overflow: hidden;
     border-radius: 5px;
-    object-fit: cover;
-    object-position: center;
     aspect-ratio: 16/10;
+    position: relative;
+}
+.belief-img img:nth-child(1){
+    height: 100%;
+}
+.belief-img img{
+    width: 100%;
 }
 .belief h3{
     text-align: center;
     margin: 10px 0;
+    font-weight: 600;
 }
 
 @media screen and (max-width:767px){
@@ -730,113 +696,7 @@ header .container{
     .belief-img{
         height: 200px;
     }
-    .beliefs{
-        margin-top: 100px;
-    }
 }
-
-/* ---------- *\
-   product
-\* ---------- */
-/* .product *{
-    margin-bottom: 50px;
-} */
-/* .product{ */
-    /* --mask:
-    radial-gradient(78.26px at 105.00px 50%,#000 99%,#0000 101%) 0 calc(50% - 70px)/100% 140px,
-    radial-gradient(78.26px at -70px 50%,#0000 99%,#000 101%) 35px 50%/100% 140px repeat-y;
-    -webkit-mask: var(--mask);
-    mask: var(--mask); */
-    /* background-color: rgb(216, 212, 212);
-}
-.product h3{
-    padding-left: 1em;
-    color: #3c56a6;
-    margin-top: -40px;
-}
-.product .container>p{
-    text-align: center;
-    padding-left: 1em;
-    color: #0f1b3d;
-    margin-top: -40px;
-}
-.product p{
-    padding-left: 1em;
-    color: #aaa;
-    margin-top: -40px;
-}
-.product-list{
-    display: flex;
-    justify-content: center;
-}
-.products{
-    margin: 0 1%;
-    display: none;
-    border: 1px solid #aaa;
-    box-shadow: 3px 3px 5px #d3d6df;
-    height:360px;
-    border-radius: 5px;
-}
-.product-pic{
-    height: 195px;
-}
-.product-price p{
-    color: #aaa;
-}
-.product-price{
-    display: flex;
-    justify-content: space-between;
-    padding: 0 5%;
-}
-.product-price p:nth-child(1){
-    color: #FF5959;
-    font-size: 24px;
-    padding-top: 40px;
-}
-.product-price a{
-    background-color: #F39800;
-    color: #fff;
-    padding: 2% 4%;
-    border-radius: 5px;
-}
-.product-price a:hover{
-    color: #eee;
-}
-.btn-page{
-    display: flex;
-    justify-content: center;
-}
-.btn-page a{
-    color: #fff;
-    background-color: #3c56a6;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    text-align: center;
-    line-height: 25px;
-    margin: 0 1%;
-}
-.btn-page a:hover{
-    background-color: #0f1b3d;
-}
-
-@media screen and (max-width:767px){
-    .product-list .products:nth-child(1){
-        display: block;
-    }
-}
-@media screen and (min-width: 768px){
-    .product-list .products:nth-child(1),
-    .product-list .products:nth-child(2){
-        display: block;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    .product-list>.products{
-        display: block;
-    }
-} */
 
 /* ------------- *\
     recipe banner 
@@ -884,7 +744,9 @@ header .container{
 /* ---------- *\
    knowledge 
 \* ---------- */
-
+.knowledge.space{
+    margin-top: 150px;
+}
 .fish-list{
     display: grid;
     grid-template-rows:17% 10.638% 29.787% 42.55% ;
@@ -1009,7 +871,6 @@ header .container{
     top: 0;
 }
 
-
 .fish-list{
     position: relative;
 }
@@ -1021,7 +882,6 @@ header .container{
     right: 50px;
     bottom: 50px;
     background-color: #FF5959;
-    /* transform: rotate(-8deg); */
     width: fit-content;
     right: 0;
     bottom: 200px;
@@ -1031,6 +891,9 @@ header .container{
 }
 .knowledge .btn:hover{
     color: #eee;
+    transition: 0.5s;
+    transform: rotate(-5deg);
+    transform-origin: left bottom;
 }
 
 @media screen and (max-width:767px){
@@ -1064,10 +927,13 @@ header .container{
 \* ---------- */
 .container.certification *{
     /* display: flex; */
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 .cp-mode{
     /* width: 50%; */
+}
+.certification.partner.space.fadeUpTrigger{
+    margin: 200px 0;;
 }
 .cp-mode .list-row{
     width: 100%;
@@ -1103,6 +969,7 @@ header .container{
 /* ---------- *\
    contact 
 \* ---------- */
+
 .address-information{
     width: 100%;
     margin-bottom: 50px;

@@ -1,6 +1,9 @@
 /* ------------ *\
     banner
 \* ------------ */
+* {
+    /* outline: 1px solid red; */
+}
 .p-shopping_chart-banner{
     --mask:
     radial-gradient(111.80px at 50% 150.00px,#000 99%,#0000 101%) calc(50% - 100px) 0/200px 100%,
@@ -137,8 +140,8 @@
 
 /* 表格公版 */
 thead tr{
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 table{
     width: 100%;
@@ -147,38 +150,73 @@ table{
     width: 80%;
     margin: auto;
 }
-
+h2,th{
+    color: rgb(255, 255, 255);
+}
 table p{
     line-height: 1.5em;
+    color: rgb(245, 245, 245);
+    margin: 5px;
+    text-align: center;
 }
-
+table th{
+    font-weight: 600;
+}
+.total-box{
+    color: #fff;
+    margin-top: 10px;
+}
+th,td{
+    line-height: 2em;
+}
+input{
+    outline: none;
+    border-radius: 5px;
+    height: 1.5em;
+}
 /* check */
-.check *{
-    /* outline: 1px red solid; */
+.table-check tbody tr{
+    border-bottom: 1px dashed #fff;
+    
 }
-
+.out-shape{
+    background-color: #b4866b;
+    padding: 5%;
+    border-radius: 10px;
+    margin: 50px 0;
+    padding-bottom: 60px;
+}
 .delete-x{
     display: inline-block;
-    color: red;
+    color: #fff;
     width: 100%;
     text-align: center;
 }
-.goods-price span{
-    color: red;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
+.goods-price{
+    text-align: center; 
 
+}
+.goods-price span{
+    color: rgb(255, 255, 255);
+
+}
+.goods-box{
+    display: flex;
+    flex-direction: column;
+}
+.btn-reduce,
+.btn-add{
+    color: #fff;
+}
 .goods-item{
     display: flex;
     width: 100%;
     justify-content: center;
-    margin: 10px 0;
 }
 .count-box input{
     text-align: center;
 }
+
 /* .goods-price,  */
 .goods-total{
     width: 100%;
@@ -188,9 +226,10 @@ table p{
 }
 .count-box{
     text-align: center;
+    vertical-align: middle;
 }
 .goods-name{
-    color: #3c56a6;
+    color: #fff;
     font-weight: 600;
     font-size: 20px;
 }
@@ -201,27 +240,40 @@ table p{
 .goods-pic img{
     width: 100px;
     height: 100px;
+    margin: 5px 10px 5px ;
+    border-radius: 5px;
 }
 .check tr{
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
-.goods-name{
-    font-weight: 400;
-    
+.goods-weight{
+    color: #fff;
+}
+.goods-discount-tag{
+    color: #fff;
+}
+.discount-box label{
+    color: #fff;
+}
+.discount-price{
+    color: #fff;
+}
+.goods-total span{
+    color: #fff;
 }
 
 /* discount */
 .discount-box{
     text-align: center;
     padding: 15px 0;
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
+    border-top: 1px solid rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 .discount-price{
     text-align: end;
 }
-
+label
 /* shipping */
 .shipping-area{
     width: 15%;
@@ -241,11 +293,11 @@ table p{
 
 }
 .shipping-class{
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 .shipping-demo p{
     text-indent: 2em;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 /* wrapping */
@@ -267,11 +319,11 @@ table p{
 
 }
 .wrapping-class{
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 .wrapping-demo p{
     text-indent: 2em;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 /* pay */
@@ -288,15 +340,60 @@ table p{
     width: 65%;
 }
 .pay-class{
-    border-bottom: 1px solid #aaa;
+    border-bottom: 1px solid rgb(255, 255, 255);
 }
 .pay-demo p{
     text-indent: 2em;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .finall.btn{
 display: flex;
 justify-content: space-between;
 margin: 10% 30%;
+font-size: 30px;
+}
+.finall a{
+    color: #fff;
+    background-color: #0EA5A1;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* ------------ *\
+    page-2
+\* ------------ */
+.data-section{
+    margin: 10px 0;
+}
+.p2-demo{
+    color: #fff;
+}
+.end{
+    text-align: end;
+    margin: 5px 0;
+}
+.center{
+    text-align: center;
+    margin: 5px 0;
+}
+.p2.total-box{
+    margin: 0;
+}
+.p2.total-box.out-shape{
+    padding-bottom: 0;
+}
+.quite-sign-up{
+    font-weight: 600;
+    cursor: pointer;
+}
+.quite-sign-up:hover{
+    color: darkred;
+    transition: 0.5s;
+}
+.textarea{
+    text-align: start;
+}
+textarea{
+    outline: none;
+    border-radius: 5px;
 }
