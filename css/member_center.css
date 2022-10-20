@@ -5,7 +5,7 @@
     --mask:
     radial-gradient(111.80px at 50% 150.00px,#000 99%,#0000 101%) calc(50% - 100px) 0/200px 100%,
     radial-gradient(111.80px at 50% -100px,#0000 99%,#000 101%) 50% 50px/200px 100% repeat-x;
-  -webkit-mask: var(--mask);
+    -webkit-mask: var(--mask);
           mask: var(--mask);
 	background-image: url(../imgs/member_center/center.png);
 	height: 300px;
@@ -32,7 +32,6 @@
 .p-member-banner-txt p{
     color: #fff;
 }
-
 .id-pic{
     width: 150px;
     margin: auto;
@@ -61,11 +60,9 @@
     opacity: .9;
     border-radius: 10px;
 }
-
 .id-pic img{
     width: 100%;
 }
-
 @media screen and (min-width: 550px){
     .p-member-banner{
         height: 400px;
@@ -76,7 +73,6 @@
         height: 450px;
     }
 }
-
 @media screen and (min-width: 650px){
     .p-member-banner{
         height: 500px;
@@ -106,7 +102,6 @@
         right: 5% ;
     }
 }
-
 /* ------------ *\
     path
 \* ------------ */
@@ -131,7 +126,6 @@
     content: '/';
     margin-right: 20px;
 }
-
 /* ------------ *\
     main
 \* ------------ */
@@ -152,9 +146,28 @@
     display: block;
     border:none;
     border-bottom: 1px solid #aaa;
-    outline: none;
-    width: 100%;
+    width: 80%;
     margin: 2% 0;
+    margin: auto;
+    line-height: 1.5em;
+    border-radius: 5px;
+}
+.data-table input:focus{
+    outline:1px solid #aaa;
+}
+.data-table{
+    background-color: #eee;
+    padding:0 10px 20px 10px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+.space{
+    margin: 10px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+}
+.space.reset{
+    border-bottom: none;
 }
 .person-data .btn{
 display: flex;
@@ -188,11 +201,14 @@ display: flex;
     .data-table label,
     .data-table input,
     .data-list a{font-size: 15px;}
+    .data-list{height: 550px;}
 }
 @media screen and (min-width: 768px){
     .data-table label,
     .data-table input,
     .data-list a{font-size: 24px;}
+    .data-listt{height: 700px;}
+    .reset-btn{font-size: 20px;}
 }
 @media screen and (min-width: 1024px){
     .data-table label,
@@ -203,4 +219,34 @@ display: flex;
     .data-table label,
     .data-table input,
     .data-list a{font-size: 24px;}
+}
+
+/* 文字 */
+.personal-data h2{
+    padding: 10px 0;
+    border-top: 1px dashed #2f427c;
+    border-bottom:1px dashed #2f427c ;
+}
+.reset{
+    text-align: center;
+    margin-top: 30px;
+}
+.reset-btn{
+    display: inline-block;
+    background-color: #0EA5A1;
+    color: #fff;
+    padding: 3% 6%;
+    border-radius: 10px;
+}
+.reset-btn:hover{
+    background-color: #0d8c88;
+    transition: 0.5s;
+}
+.space p{
+    text-align: center;
+}
+.data-table span{
+    display: block;
+    text-align: end;
+    color: #3c56a6;
 }

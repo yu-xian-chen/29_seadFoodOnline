@@ -1,0 +1,155 @@
+/* ------------ *\
+    path
+\* ------------ */
+.breadcrumb{
+	display: flex;
+	margin: 20px 0;
+}
+.breadcrumb li{
+    padding: 0 20px;
+}
+.breadcrumb a{
+    color: #3c56a6;
+}
+.breadcrumb a:hover,
+.breadcrumb li:last-child a{
+    color: #0EA5A1;
+}
+.breadcrumb li+li{
+    padding-left: 0;
+}
+.breadcrumb li+li::before{
+    content: '/';
+    margin-right: 20px;
+}
+/* ------------ *\
+    內容
+\* ------------ */
+
+/* 版面配置 */
+.pic{
+    width: 80%;
+    margin: auto;
+}
+.pic video{
+    width: 100%;
+    border-radius: 10px;
+}
+.txt{
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+.material{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-box{
+    display: flex;
+    justify-content: space-between;
+}
+.article-body{
+    padding: 10px 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+/* head-txt */
+.txt h2{
+    padding-top: 10px;
+}
+.txt h3{
+    font-weight: 600;
+    margin: 50px 0 40px 0;
+    padding-top: 10px;
+}
+.material span{
+    margin: 10px 0;
+    padding: 0 20px;
+}
+.material{
+    border-top: 1px solid #aaa;
+}
+.material:last-child:last-child{
+    border-bottom: 1px solid #aaa;
+}
+.title{
+    background-color: #ddd;
+    padding: 10px;
+    margin: 40px 0;
+    border-radius: 10px;
+}
+.share{
+    display: flex;
+    align-items: center;
+}
+@media screen and (min-width:768px){
+    .article-head{display: flex;}
+}
+
+/* 文章敘述 */
+.title h3{
+    margin: 30px 0;
+    font-weight: 600;
+    text-align: center;
+}
+p{
+    color: #141b32;
+    line-height: 1.5em;
+    margin: 10px 0;
+}
+.title p{
+    padding-left: 30px;
+}
+li{
+    color: #141b32;
+    line-height: 1.5em;
+    margin: 10px 0;  
+}
+.title .des{
+    text-align: center;
+}
+/* 收藏、分享 */
+.save-btn{
+    color: #141b32;
+    background-color: rgb(211, 211, 211);
+    padding: 15px 60px;
+    display: block;
+    margin: 40px 30px;
+    border-radius: 20px;
+    font-size: 24px;
+}
+.save-btn:hover{
+    color: aliceblue;
+    background-color: #b4866b;
+    transition: 0.5s;
+}
+.share a{
+    margin: 0 5px;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+.fa-facebook{
+    background-color: #3B579D;
+    padding: 5px 30px 5px 10px;
+}
+.fa-twitter{
+    background-color: #1B95E0;
+    padding: 5px 10px 5px 10px;
+}
+.fa-qrcode{
+    background-color: #DBB34D;
+    padding: 5px 30px 5px 10px;
+}
+.fa-print{
+    background-color: #DBB34D;
+    padding: 5px 30px 5px 10px;
+}
+/* 製作方法 */
+.notice{
+    font-weight: 600;
+    font-size: 20px;
+}
+.article-foot{
+    height: 100px;
+}

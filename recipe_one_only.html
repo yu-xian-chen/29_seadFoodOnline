@@ -4,17 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> 有點多魚 | 會員中心 </title>
+    <title> 有點多魚 | 多魚食譜</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/grid.css">
     <link rel="stylesheet" href="./css/project.css">
-    <link rel="stylesheet" href="./css/member_center.css">
+    <link rel="stylesheet" href="./css/recipe_one_only.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/9de1e3e715.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.js"></script>
 </head>
 <body>
+
 <!---------------- header  ------------------->
 <input type="checkbox" name="" id="menu-switch">
 <header>
@@ -53,121 +54,89 @@
         </div>
     </div>
 </header>
-<!---------------- beginner banner  ----------->
-<div class="p-member-banner">
-    <div class="member-personal">
-        <div class="id-pic">
-            <img src="./imgs/member_center/me.png" alt="personal">
-        </div>
-        <div class="edit">
-            <p>更換</p>
-        </div>
-        <div class="id">
-            <p>雲丹</p>
-        </div>
-    </div>
-</div>
 <!---------------- path  ------------------->
 <div class="container">
     <ol class="breadcrumb">
-        <li><a href="./index.html">首頁</a></li>
-        <li><a href="./member_log-in.html">會員登入</a></li>
-        <li><a href="./member_center.html">會員中心</a></li>
+        <li><a href="#">首頁</a></li>
+        <li><a href="#">多魚食譜</a></li>
+        <li><a href="#">單一食譜頁面</a></li>
     </ol>
 </div>
 <!---------------- main  ------------------->
-<div class="container">
-    <div class="member-content">
-        <div class="data-list fadeInTrigger">
-            <a href="#">基本資料</a>
-            <a href="#">我的訂單</a>
-            <a href="#">寄送地址</a>
-            <a href="#">收藏 / 最愛</a>
-            <a href="#">我的優惠券</a>
-            <a href="#">歷史紀錄</a>
-            <a href="./index.html">登出</a>
-        </div>
-        <div class="personal-data ">
-            <form class="data-table personal fadeUpTrigger">
-                <h2>基本資料</h2>
-                <div class="space">
-                    <label for="">姓名:
-                        <input type="text" placeholder="雲丹">
-                    </label>
-                </div>
-                <div class="space">
-                    <label for="">email:
-                        <input type="email" placeholder="yundan_uni@gmail.com">
-                    </label>
-                </div>
-                <div class="space">
-                    <label for="">手機:
-                        <input type="tel" placeholder="09-00-000-000">
-                    </label>
-                </div>
-                <div class="space">
-                    <label for="">住址:
-                        <input type="text" placeholder="10024深海的大鳳梨666-77號">
-                    </label>
-                </div>
-                <div class="space">
-                    <label for="">生日:
-                        <input type="text" placeholder="1993/09/29">
-                    </label>
-                </div>
-                <div class="space">
-                    <label for="">性別:
-                        <input type="text" placeholder="母">
-                    </label>
-                </div>
-                <div class="space">
-                    <label for="">line ID :
-                        <input type="text" placeholder="yundan_uni">
-                    </label>
-                </div>
-                <div class="space reset">
-                    <a class="reset-btn" href="#">重設資料</a>
-                </div>
-            </form>
-            <form class="data-table order fadeUpTrigger">
-                <h2>我的訂單</h2>
-                <div class="space">
-                    <p>目前無訂單</p>
-                </div>
-            </form>
-            <form class="data-table address-data fadeUpTrigger">
-                <h2>寄送地址</h2>
-                <div class="space">
-                    <label for="">地址:
-                        <input type="text" placeholder="10024深海的大鳳梨666-77號">
-                    </label>
-                    <div class="space reset">
-                        <a class="reset-btn" href="#">更改寄送地址</a>
+<article class="only_recipe">
+    <div class="container">
+        <div class="article-head">
+            <div class="col-12 col-md-4 pic fadeLeftTrigger">
+                <video autoplay muted loop src="https://video.kurashiru.com/production/videos/1df69012-acfc-4cef-984f-d0145c90e458/original.mp4" type="video/mp4"></video>
+            </div>
+            <div class="col-12 col-md-8 txt fadeRightTrigger">
+                <h2>鯖魚味噌煮</h2>
+                <h3>材料 (2人份)</h3>
+                <div class="material-list">
+                    <div class="material">
+                        <span>鯖魚</span>
+                        <span>2片</span>
+                    </div>
+                    <div class="material">
+                        <span>味噌</span>
+                        <span>適量</span>
+                    </div>
+                    <div class="material">
+                        <span>生薑</span>
+                        <span>10g</span>
+                    </div>
+                    <div class="material">
+                        <span>酒</span>
+                        <span>50ml</span>
+                    </div>
+                    <div class="material">
+                        <span>砂糖</span>
+                        <span>2大匙</span>
+                    </div>
+                    <div class="material">
+                        <span>蔥白</span>
+                        <span>20g</span>
                     </div>
                 </div>
-                <span>*請再次確認寄送地址</span>
-            </form>
-            <form class="data-table save fadeUpTrigger">
-                <h2>收藏 / 最愛</h2>
-                <div class="space">
-                    <p>目前無收藏 / 最愛</p>
-                </div>
-            </form>
-            <form class="data-table discount fadeUpTrigger">
-                <h2>我的優惠券</h2>
-                <div class="space">
-                    <p>目前無優惠碼</p>
-                </div>
-            </form>
-            <form class="data-table history fadeUpTrigger">
-                <h2>歷史紀錄</h2>
-                <div class="space">
-                    <p>目前無購買紀錄</p>
-                </div>
-            </form>
+            </div>
         </div>
+        <div class="title fadeUpTrigger">
+            <h3>簡單好做的食譜，料理小白的救星~</h3>
+            <p class="des">就算是初學者也適合做的料理。處理過程中使用米酒去腥，料理完成後即為白飯殺手，歡迎大家試著做做看!</p>
+            <p><i class="fa-regular fa-clock"></i> 烹飪時間：30分鐘</p>
+            <p><i class="fa-solid fa-dollar-sign"></i> 材料費：100元左右</p>
+            <p><i class="fa-solid fa-fire"></i> 卡路里：150大卡</p>
+            <div class="btn-box">
+                <div class="save">
+                    <a class="save-btn" href="#"><i class="fa-solid fa-tag"></i> 收藏</a>
+                </div>
+                <div class="share">
+                    <a href="#"><i class="fa-brands fa-facebook"> 分享</i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"> 分享</i></a>
+                    <a href="#"><i class="fa-solid fa-qrcode"> 分享</i></a>
+                    <a href="#"><i class="fa-solid fa-print"> 列印</i></a>
+                </div>
+            </div>
+        </div>
+        <div class="article-body fadeUpTrigger">
+            <h2>製作方法</h2>
+            <ol>
+                <p><span class="notice">準備. </span>生薑削皮、切薄，蔥絲預備</p>
+                <li>1.在鯖魚的皮上做切口</li>
+                <li>2.將鯖魚放入盛有熱水的碗中，翻面數次，待整體發白後，加水再翻面數次冷卻。把它放到濾鍋裡，瀝乾。</li>
+                <li>3.將酒放入鍋中，中火煮沸，然後加入2中的材料，帶皮的一面朝上，煮3分鐘左右，同時撇去浮渣。</li>
+                <li>4.關火，從第3步舀取大約1勺湯，將其放入裝有味噌的碗中，將味噌溶解並加入第3步。</li>
+                <li>5.煮沸後，蓋上烤盤等，用小火煮15分鐘左右。</li>
+                <li>6.關火，放入碗中，將湯倒在上面，在上面放上蔥，就完成了。</li>
+            </ol>
+            <h2>技巧和要點</h2>
+            <p>大火燉的話味道會變濃，容易燒焦，所以請用小火慢慢燉。味噌的鹽含量因製造商而異，因此請根據您的口味進行調整。</p>
+        </div>
+        <div class="article-foot"></div>
     </div>
-</div>
+</article>
+
+
 <!---------------- footer  ------------------->
 <footer>
     <div class="container footer">
