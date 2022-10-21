@@ -22,12 +22,12 @@ h3{color: #3c56a6;}
 p{color: #3c56a6;}
 body{background-color: #F5F4F1;}
 /* 動畫 */
-.fadeInTrigger, /* htnl抓取、初始設定 */
-.fadeUpTrigger,
-.fadeLeftTrigger,
-.fadeRightTrigger,
-.blurTrigger,
-.flipLeftTopTrigger{
+.fadeInStart, /* htnl抓取、初始設定 */
+.fadeUpStart,
+.fadeLeftStart,
+.fadeRightStart,
+.blurStart,
+.flipLeftTopStart{
     opacity: 0;
 } 
 /* for JQuery */
@@ -906,7 +906,7 @@ header .container{
 /* ---------- *\
     C&P 
 \* ---------- */
-.certification.partner.space.fadeUpTrigger{
+.certification.partner.space.fadeUpStart{
     margin: 200px 0;;
 }
 .cp-mode .list-row{

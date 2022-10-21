@@ -1,77 +1,82 @@
 // ----------公共區------------
-// 動畫 下到上
+// 動畫進場 下到上
 function fadeAnime(){
-    $('.fadeUpTrigger').each(function(){ //抓html的class:fadeUpTrigger
+    $('.fadeUpStart').each(function(){ //抓html的class:fadeUpStart
         var elemPos = $(this).offset().top-5 //
         var scroll = $(window).scrollTop()
         var windowHeight = $(window).height()
 
-    if (scroll >= elemPos - windowHeight){
-        $(this).addClass('fadeUp')
+        if (scroll >= elemPos - windowHeight){
+            $(this).addClass('fadeUp')
         }else{
-        $(this).removeClass('fadeUp')
+            $(this).removeClass('fadeUp')
         }
     });
 
     // 左到右
-    $('.fadeLeftTrigger').each(function(){ 
+    $('.fadeLeftStart').each(function(){ 
         var elemPos = $(this).offset().top-5;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
+
         if (scroll >= elemPos - windowHeight){
-        $(this).addClass('fadeLeft');
+            $(this).addClass('fadeLeft');
         }else{
-        $(this).removeClass('fadeLeft');
+            $(this).removeClass('fadeLeft');
         }
-        });
+    });
 
 
     // 右到左
-    $('.fadeRightTrigger').each(function(){ 
+    $('.fadeRightStart').each(function(){ 
         var elemPos =$(this).offset().top-5;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
+
         if (scroll >= elemPos - windowHeight){
-        $(this).addClass('fadeRight');
+            $(this).addClass('fadeRight');
         }else{
-        $(this).removeClass('fadeRight');
+            $(this).removeClass('fadeRight');
         }
-        });
+    });
 
 
     // 原地
-    $('.fadeInTrigger').each(function(){ 
+    $('.fadeInStart').each(function(){ 
         var elemPos = $(this).offset().top-5;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
-      if (scroll >= elemPos - windowHeight){
-        $(this).addClass('fadeIn');
-        }else{
-        $(this).removeClass('fadeIn');
-        }
-      });
 
-    $('.flipLeftTrigger').each(function(){ 
-        var elemPos = $(this).offset().top-5;
-        var scroll = $(window).scrollTop();
-        var windowHeight = $(window).height();
-        if (scroll >= elemPos - windowHeight){
-        $(this).addClass('flipLeft');
+        if(scroll >= elemPos - windowHeight){
+            $(this).addClass('fadeIn');
         }else{
-        $(this).removeClass('flipLeft');
+            $(this).removeClass('fadeIn');
         }
-        });
+    });
 
-    $('.blurTrigger').each(function(){ 
+    $('.flipLeftStart').each(function(){ 
         var elemPos = $(this).offset().top-5;
         var scroll = $(window).scrollTop();
         var windowHeight = $(window).height();
+
         if (scroll >= elemPos - windowHeight){
-        $(this).addClass('blur');
+            $(this).addClass('flipLeft');
         }else{
-        $(this).removeClass('blur');
+            $(this).removeClass('flipLeft');
         }
-        });
+    });
+
+    $('.blurStart').each(function(){ 
+        var elemPos = $(this).offset().top-5;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        if (scroll >= elemPos - windowHeight){
+            $(this).addClass('blur');
+        }else{
+            $(this).removeClass('blur');
+        }
+    });
 
 }
   
