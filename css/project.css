@@ -188,9 +188,6 @@ header .container{
 .icon .search img{
     width: 100%;
 }
-.member.desktop{
-    display: none;
-}
 @media screen and (max-width:767px) {
     .icon-box{
         display: flex;
@@ -259,9 +256,11 @@ header .container{
         border-radius: 0 5% 5% 0;
         width: 25%;
         opacity: 95%;
+        top: 120px;
     }
     .main-nav li{padding: 5px 0;}
     .main-nav li{border-bottom: 1px #fff dashed;}
+    .main-nav li:last-child{border-bottom: none;}
     ul .member{text-align: center;}
     .main-nav a{
         display: block;
@@ -297,8 +296,6 @@ header .container{
     }
     .main-nav ul{ width: 500px;}
     .main-nav a:hover{color: #1f2c52;}
-    .member.desktop{display: block;}
-    .member.phone{display: none;}
 }
 @media screen and (min-width: 1024px){
     .main-nav a{font-size: 26px;}
