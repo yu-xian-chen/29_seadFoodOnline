@@ -40,8 +40,9 @@
                 <li>
                     <a href="./shopping_cart.html"><i class="fa-solid fa-cart-flatbed"></i> 購物車</a>
                 </li>
-                <a class="member desktop" href="./member_log-in.html"><i class="fa-solid fa-user"></i></a>
-                <a class="member phone" href="./member_log-in.html"><i class="fa-solid fa-user"></i></a>
+                <li>
+                    <a href="./member_log-in.html"><i class="fa-solid fa-user"></i> 會員</a>
+                </li>    
             </ul>
         </nav>
         <label for="menu-switch" class="hb ">
@@ -94,29 +95,52 @@
             <div class="logo-pic">
                 <img src="./imgs/index/1_header/logo.png" alt="logo">
             </div>
-            <h3>您的建議是我們的動力，歡迎回饋與意見提供，我們將盡快回復您</h3>
+            <h3 >您的建議是我們的動力，歡迎回饋與意見提供，我們將盡快回復您</h3>
             <form class="form-content" action="">
-                <div class="come_back-class">
-                    <input type="text" placeholder="回饋分類">
+                <div class="data-list who">
+                    <label for="who">聯絡人：</label>
+                    <input type="text" placeholder="" id="who">
                 </div>
-                <div class="table custumer_name">
-                    <input type="text" placeholder="聯絡人">
+                <div class="data-list">
+                    <label for="back-class">回饋分類：</label>
+                    <select name="" id="back-class">
+                        <option value="transparent">商品相關</option>
+                        <option value="lightblue">知識相關</option>
+                        <option value="lightpink">食譜相關</option>
+                        <option value="lightgreen">運送問題</option>
+                        <option value="lightgreen">活動相關</option>
+                        <option value="lightgreen">其他問題</option>
+                    </select>
                 </div>
-                <div class="table c-phone_email">
-                    <input type="tel" placeholder="連絡電話">
-                    <input type="email" placeholder="聯絡信箱">
+                <div class="data-list">
+                    <label for="tel">連絡電話： </label>
+                    <input type="tel" placeholder="" id="tel">
                 </div>
-                <div class="table come_back-content">
+                <div class="data-list">
+                    <label for="mail">聯絡信箱：</label>
+                    <input type="email" placeholder="" id="mail">
+                </div>
+                <div class="data-list advice">
                     <textarea placeholder="回饋意見" name="" id="" cols="45" rows="10" ></textarea>
                 </div>
-                <div class="table btn">
-                    <input type="submit">
+                <div class="data-list contact-btn">
+                    <input class="submit-btn" type="submit" >
                     <input type="reset" >
                 </div> 
             </form>
         </div>
+        <!-- 送出後彈出燈箱 -->
+        <!-- <div class="black-box">
+            <div class="black-box-txt">
+                <p>感謝您!</p>
+                <p>已經收到您的回饋</p>
+                <a href="#">返回</a>
+            </div>
+        </div> -->
     </div>
 </section>
+
+
 
 <!---------------- footer  ------------------->
 <footer>

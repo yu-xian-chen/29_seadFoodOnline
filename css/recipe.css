@@ -1,8 +1,9 @@
 /* ------------ *\
     menu
 \* ------------ */
-.recipe-menu-content *{
-    /* outline: 1px solid red; */
+.recipe-txt a{
+    width: 100%;
+    text-align: center;
 }
 .recipe-menu-content{
     background-color: #F5F4F1;

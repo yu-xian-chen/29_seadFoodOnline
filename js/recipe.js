@@ -51,3 +51,14 @@ function GethashID (hashIDName){
     document.getElementById(serve).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+
+  // 收藏最愛
+  $(document).ready(function(){
+    $('.star-btn').click(function(){
+      $(this).css({
+          color:'black'
+      }).text('已加入')
+    })
+    
+  })

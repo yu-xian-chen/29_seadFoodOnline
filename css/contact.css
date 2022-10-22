@@ -145,54 +145,105 @@
     color: #fff;
 }
 /* form */
-.form-content{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+form *{
+    /* outline: 1px solid red; */
 }
-.form-content input[type="text"],
-.form-content input[type="tel"],
-.form-content input[type="email"]{
+
+.data-list label{
+    color: #fff;
+}
+.data-list{
+    width: 80%;
+    text-align: start;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.data-list input,
+textarea{
     border-radius: 5px;
-    height: 2em;
-    border: none;
-    outline: none;
+    line-height: 1.5em;
 }
-.form-content input{
-    margin:1% 2%;
-    color: #aaa;
+textarea{
+    width: 80%;
+    max-width: 600px;
 }
-.c-phone_email,
-.btn{
-    width: 100%;
+
+.data-list.contact-btn{
     display: flex;
     justify-content: center;
 }
-.come_back-class,
-.custumer_name{
-    margin:1% 2%;
-    margin-left: -185px;
+
+input[type="submit"],
+input[type="reset"]{
+    margin: 5px 30px;
+    color: #fff;
+    background-color: #0EA5A1;
+    border: 1px solid #0b7673;
+    padding: 5px 20px;
+    cursor: pointer;
 }
-.form-content input[type="submit"],
-.form-content input[type="reset"]{
-    border-radius: 5px;
-    height: 2em;
-    color: #3c56a6;
-    padding: 1%;
-    line-height: 0.5em;
-    border: none;
-    outline: none;
-    margin-top: 3%;
-}
-.form-content textarea{
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    margin-top: 1%;
-}
-@media screen and (min-width: 1024px){
-    .c-phone_email{
-    padding-left: 6px;}
+.data-list text:focus{
+    outline: #293ea8;
 }
 
+@media screen and (min-width: 768px){
+    .form-content{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .data-list{
+        width: calc(50% - 40px);
+    }
+    .data-list:nth-child(1),
+    .data-list:nth-child(3){
+        text-align: end;
+        margin-right: 20px;
+    }
+    .data-list:nth-child(2),
+    .data-list:nth-child(4){
+        text-align: start;
+        margin-left: 10px;
+    }
+    .advice,
+    .contact-btn{
+        width: 100%;
+        /* justify-content: center; */
+        text-align: center;
+    }
+}
+
+/* 送出後燈箱 */
+/* .contact-table .container{
+    position: relative;
+} */
+.black-box{
+    position: fixed;
+    text-align: center;
+    background-color: #00000090;
+    width: 100%;
+    height: 700px;
+    top: 0;            
+    bottom: 0;
+    margin: auto;     
+    left: 0;
+    right: 0;
+    z-index: 10;
+    max-width: 1300px;
+}
+.black-box p{
+    color: #fff;
+    font-size: 30px;
+    line-height: 1.5em;
+}
+.black-box-txt{
+    margin-top: 200px;
+}
+.black-box-txt a{
+    color: #fff;
+    margin: 30px;
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #0EA5A1;
+    border-radius: 5px;
+}
