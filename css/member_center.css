@@ -40,15 +40,16 @@
     top: 35%;
     transform: translateX(-50%);
 }
-.member-personal .id p{
+.id p{
     position: absolute;
     left: 48%;
     top: 65%;
     font-size: 30px;
     color: #fff;
     font-weight: 600;
+    display: none;
 }
-.member-personal .edit p{
+.edit p{
     position: absolute;
     left: 52%;
     top: 58%;
@@ -59,6 +60,7 @@
     background-color: #aaa;
     opacity: .9;
     border-radius: 10px;
+    display: none;
 }
 .id-pic img{
     width: 100%;
@@ -67,6 +69,7 @@
     .p-member-banner{
         height: 400px;
     }
+
 }
 @media screen and (min-width: 600px){
     .p-member-banner{
@@ -94,6 +97,8 @@
         line-height: 2em;
         right: 15% ;
     }
+    .member-personal .edit p{display: block;}
+    .member-personal .id p{display: block;}
 }
 @media screen and (min-width: 1200px){
 	.p-member-banner-txt p{font-size: 28px;}

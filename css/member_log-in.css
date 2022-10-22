@@ -131,6 +131,13 @@ button{
     border: none;
     padding: 1% 2%;
 }
+.sign-in-box input{
+    border-radius: 5px;
+    border: none;
+    padding: 1% 2%;
+    border: 1px solid #aaa;
+
+}
 
 /* sign-up */
 .sign-up h3{
@@ -157,7 +164,22 @@ button{
 
 }
 
+/* 按鈕 */
+.log-btn{
+    color: #fff;
+    padding: 5px 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    background-color: #0EA5A1;
+    display: inline-block;
+    cursor: pointer;
+}
 
+.log-demo{
+    text-align: end;
+    color: rgb(118, 8, 8);
+    font-size: 14px;
+}
 
 
 
@@ -166,11 +188,16 @@ button{
     .member_log-in input,
     button,
     .member_log-in label{font-size: 15px;}
+    .member_log-in{
+        display: flex;
+        flex-direction: column-reverse;
+
+    }
 }
 @media screen and (min-width: 768px){
     .member_log-in input,
     button,
-    .member_log-in label{font-size: 24px;}
+    .member_log-in label{font-size: 16px;}
     .member_log-in{
         display: flex;
         justify-content: center;
@@ -185,10 +212,10 @@ button{
 @media screen and (min-width: 1024px){
     .member_log-in input,
     button,
-    .member_log-in label{font-size: 24px;}
+    .member_log-in label{font-size: 18px;}
 }
 @media screen and (min-width: 1200px){
     .member_log-in input,
     button,
-    .member_log-in label{font-size: 24px;}
+    .member_log-in label{font-size: 18px;}
 }

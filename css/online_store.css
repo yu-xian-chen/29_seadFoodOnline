@@ -324,7 +324,7 @@
 .small-pic{
 	width: 20%;
 	margin: auto;
-
+	cursor: pointer;
 }
 .p-only-pics img{
 	width: 100%;

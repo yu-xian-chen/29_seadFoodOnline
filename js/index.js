@@ -15,6 +15,14 @@
 
 
 // -------------------公共區---------------------
+// to-top
+$('#toTop').click(function(){
+    $('body,html').animate({
+        scrollTop: 0
+    }, 500); //速度，越大越慢
+    return false;
+});
+
 // 動畫進場 下到上
 function fadeAnime(){
     $('.fadeUpStart').each(function(){ //抓html的class:fadeUpStart
@@ -91,6 +99,19 @@ function fadeAnime(){
             $(this).addClass('blur');
         }else{
             $(this).removeClass('blur');
+        }
+    });
+
+    //魚進場
+    $('.flipLeftTopStart').each(function(){ 
+        var elemPos = $(this).offset().top-5;
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+
+        if (scroll >= elemPos - windowHeight){
+            $(this).addClass('flipLeftTop');
+        }else{
+            $(this).removeClass('flipLeftTop');
         }
     });
 
@@ -230,3 +251,78 @@ $(document).ready(function(){
 //         document.querySelector("black-box").style.display = "block" 
 //     })
 // })
+
+
+// --------------會員登入------------
+    // 登入
+    $(document).ready(function(){
+        $('.sign-in-box input').focus(function(){
+        $(this).css({
+            backgroundColor: '#eee',
+            fontSize: 20,
+            outline:'none'
+
+        }).attr('placeholder','')
+    }).blur(function(){
+
+        $(this).css({
+            backgroundColor: '#F5F4F1',
+            fontSize: 16
+        }).attr('placeholder','請輸入英數至少6個字元')
+    }) 
+    })
+
+    // 註冊
+    $(document).ready(function(){
+        $('.sign-up-box input').focus(function(){
+        $(this).css({
+            backgroundColor: '#fff',
+            fontSize: 20,
+            outline:'none'
+
+        }).attr('placeholder','')
+    }).blur(function(){
+
+        $(this).css({
+            backgroundColor: '#fff',
+            fontSize: 16
+        }).attr('placeholder','請輸入英數至少6個字元')
+    }) 
+    })
+
+    // 信箱
+    $(document).ready(function(){
+        $('.sign-up-box-mail input').focus(function(){
+        $(this).css({
+            backgroundColor: '#fff',
+            fontSize: 20,
+            outline:'none'
+
+        }).attr('placeholder','')
+    }).blur(function(){
+
+        $(this).css({
+            backgroundColor: '#fff',
+            fontSize: 16
+        }).attr('placeholder','Email')
+    }) 
+    })
+
+    
+    // 手機
+    $(document).ready(function(){
+        $('.sign-up-box-phone input').focus(function(){
+        $(this).css({
+            backgroundColor: '#fff',
+            fontSize: 20,
+            outline:'none'
+
+        }).attr('placeholder','')
+    }).blur(function(){
+
+        $(this).css({
+            backgroundColor: '#fff',
+            fontSize: 16
+        }).attr('placeholder','手機')
+    }) 
+    })

@@ -67,7 +67,12 @@ body{background-color: #F5F4F1;}
     animation-duration:1s;
     animation-fill-mode:forwards;
 }
-
+.flipRightTop{ /* 魚 */
+	animation-name:flipRightTopAnime;
+	animation-duration:1s;
+	animation-fill-mode:forwards;
+	opacity:0;
+}
 
 /* 進場動畫腳本 */
 @keyframes fadeUpAnime{ /* ↑ */ 
@@ -127,6 +132,18 @@ body{background-color: #F5F4F1;}
         opacity: 1;
     }
 }
+@keyframes flipRightTopAnime{ /* 魚 */ 
+    from {
+     transform: translate(-20px,80px) rotate(25deg);
+     opacity: 0;
+    }
+  
+    to {
+     transform: translate(0,1) rotate(0deg);
+     opacity: 1;
+    }
+  }
+
 /* -------------- *\
     文字、logo RWD 
 \* -------------- */
@@ -761,12 +778,7 @@ header .container{
     filter: brightness(1);
     transition: 0.3s;
 }
-.fish:nth-child(1)::after{
-    position: absolute;
-    content: '帶魚';
-    top: 0;
-    left: 45%;
-}
+
 .fish:nth-child(2){
     grid-column: 2/3;
     grid-row: 2/3;
@@ -774,12 +786,7 @@ header .container{
     filter: brightness(0);
     transition: 0.5s;
 }
-.fish:nth-child(2)::after{
-    position: absolute;
-    content: '竹夾';
-    top: -5px;
-    left: 30%;
-}
+
 .fish:nth-child(3){
     grid-column: 5/6;
     grid-row: 2/3;
@@ -787,12 +794,7 @@ header .container{
     filter: brightness(0);
     transition: 1s;
 }
-.fish:nth-child(3)::after{
-    position: absolute;
-    content: '飛魚';
-    top: 10px;
-    left: 30%;
-}
+
 .fish:nth-child(4){
     grid-column: 1/2;
     grid-row: 3/4;
@@ -800,12 +802,7 @@ header .container{
     filter: brightness(0);
     transition: 1s;
 }
-.fish:nth-child(4)::after{
-    position: absolute;
-    content: '剝皮魚';
-    top: 30px;
-    left: 60%;
-}
+
 .fish:nth-child(5){
     grid-column: 6/7;
     grid-row: 3/4;
@@ -813,12 +810,7 @@ header .container{
     filter: brightness(0);
     transition: 1s;
 }
-.fish:nth-child(5)::after{
-    position: absolute;
-    content: '尖梭';
-    top: 15px;
-    left: 25%;
-}
+
 .fish:nth-child(6){
     grid-column: 1/4;
     grid-row: 4/5;
@@ -826,12 +818,7 @@ header .container{
     filter: brightness(0);
     transition: 1s;
 }
-.fish:nth-child(6)::after{
-    position: absolute;
-    content: '紅甘';
-    top: 3px;
-    left: 70%;
-}
+
 .fish:nth-child(7){
     grid-column: 4/6;
     grid-row: 4/5;
@@ -839,12 +826,7 @@ header .container{
     filter: brightness(0);
     transition: 1s;
 }
-.fish:nth-child(7)::after{
-    position: absolute;
-    content: '鬼頭刀';
-    top: 20px;
-    left: 30%;
-}
+
 .fish:nth-child(7) img{
     position: absolute;
     top: 0;
@@ -1079,6 +1061,47 @@ footer .social_media{
         right: 5%;
     }
 }
+/* to-up btn */
+
+.toTop-btn{
+    position: relative;
+    height: 60px;
+
+}
+#toTop{
+    position: absolute;
+    left: 50%;
+    transform: translateY(-100px);
+    cursor: pointer;
+    color: #0EA5A1;
+    font-size: 50px;
+    transition: 0.5s;
+
+    animation-name: upup;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+}
+
+#toTop:hover{
+    color: darkred;
+    transition: 0.5s;
+
+    animation-name: upup;
+    animation-duration: 0.5s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
+}
+
+@keyframes upup {
+    0%{transform: translateY(5px); }
+    100%{ transform: translateY(-5px);}
+}
+
 
 /* ---------- *\
     banner變化
