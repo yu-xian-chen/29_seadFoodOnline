@@ -233,6 +233,27 @@ $(document).ready(function(){
 
 
 // ----------------商品頁 單一商品
+//最愛購物車
+
+
+
+// 小圖換大圖
+function showLarge(e) {
+  // 換大圖
+  let small = e.target;
+  document.getElementById("large-pic").src = small.src;
+}
+
+$(document).ready(function(){
+
+  // 小圖可以點按
+  let imgs = document.querySelectorAll(".small-pic-list img");
+  for(let i = 0; i < imgs.length;i++) {
+      imgs[i].onclick = showLarge;
+  }
+
+})
+
 //tab切換
 $(document).ready(function(){
   $('#p-feature').click(function(){
@@ -254,39 +275,5 @@ $(document).ready(function(){
       // $('#p-feature').addClass('des-tab-active')
       $('#p-des').text('相關類別')
   })
-
-})
-
-
-// 小圖換大圖
-// function showLarge(e) {
-//   // 換大圖
-//   let small = e.target;
-//   document.getElementById("large-pic").src = small.src;
-
-// }
-
-function init() {
-  // 小圖可以點按
-  let imgs = document.querySelectorAll(".small-pic-list img");
-  for(let i = 0; i < imgs.length;i++) {
-      imgs[i].onclick = showLarge;
-  }
-
-
-}
-
-
-function showLarge(e) {
-  // 換大圖
-  let small = e.target;
-  document.getElementById("large-pic").src = small.src;
-}
-
-$(document).ready(function(){
-  $('#large-pic').click(function(){
-    alert('hello');
-  })
-
 
 })

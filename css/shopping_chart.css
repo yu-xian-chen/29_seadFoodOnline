@@ -1,9 +1,7 @@
 /* ------------ *\
     banner
 \* ------------ */
-* {
-    /* outline: 1px solid red; */
-}
+
 .p-shopping_chart-banner{
     --mask:
     radial-gradient(111.80px at 50% 150.00px,#000 99%,#0000 101%) calc(50% - 100px) 0/200px 100%,
@@ -51,6 +49,9 @@
     .p-shopping_chart-banner{
         height: 500px;
     }
+}
+@media screen and (max-width:767px){
+    .goods-pic{display: none;}
 }
 @media screen and (min-width: 768px){
     .p-shopping_chart-banner{
@@ -191,6 +192,7 @@ input{
     color: #fff;
     width: 100%;
     text-align: center;
+    cursor: pointer;
 }
 .goods-price{
     text-align: center; 
@@ -207,6 +209,7 @@ input{
 .btn-reduce,
 .btn-add{
     color: #fff;
+    cursor: pointer;
 }
 .goods-item{
     display: flex;
@@ -273,7 +276,17 @@ input{
 .discount-price{
     text-align: end;
 }
-label
+.car-diacount-btn{
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: none;
+}
+.car-diacount-btn:hover{
+    background-color: #aaa;
+    color: #fff;
+    cursor: pointer;
+}
+
 /* shipping */
 .shipping-area{
     width: 15%;

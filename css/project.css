@@ -196,7 +196,7 @@ header .container{
 .icon .search{
     position: fixed;
     top: 70px;
-    right: 30px;
+    right: 60px;
     width: 40px;
     height: 40px;
     z-index: 3;
@@ -221,7 +221,7 @@ header .container{
         align-items: center;
         position: fixed;
         border-radius: 10px;
-        right: 35px;
+        right: 70px;
         top: 3%;
         z-index: 3;
     }
@@ -996,7 +996,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 1%;
+    margin: 10px 1%;
 }
 .social_media-list{
     width: 100%;
@@ -1079,7 +1079,7 @@ footer .social_media{
 }
 #toTop{
     position: absolute;
-    left: 90%;
+    left: 80%;
     transform: translateY(-100px);
     cursor: pointer;
     color: #0EA5A1;

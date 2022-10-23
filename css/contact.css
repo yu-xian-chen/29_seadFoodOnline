@@ -145,9 +145,7 @@
     color: #fff;
 }
 /* form */
-form *{
-    /* outline: 1px solid red; */
-}
+
 
 .data-list label{
     color: #fff;
@@ -217,7 +215,7 @@ input[type="reset"]{
 /* .contact-table .container{
     position: relative;
 } */
-.black-box{
+/* .black-box{
     position: fixed;
     text-align: center;
     background-color: #00000090;
@@ -246,4 +244,4 @@ input[type="reset"]{
     padding: 10px 30px;
     background-color: #0EA5A1;
     border-radius: 5px;
-}
+} */
