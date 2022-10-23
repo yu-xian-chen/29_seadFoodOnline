@@ -196,12 +196,12 @@ header .container{
 .icon .search{
     position: fixed;
     top: 70px;
-    right: 10px;
+    right: 30px;
     width: 40px;
     height: 40px;
     z-index: 3;
 }
-.icon .search
+
 .icon .search img{
     width: 100%;
 }
@@ -220,8 +220,8 @@ header .container{
         justify-content: space-evenly;
         align-items: center;
         position: fixed;
-        border-radius: 5px;
-        right: 5%;
+        border-radius: 10px;
+        right: 35px;
         top: 3%;
         z-index: 3;
     }
@@ -885,35 +885,44 @@ header .container{
 /* ---------- *\
     C&P 
 \* ---------- */
-.certification.partner.space.fadeUpStart{
-    margin: 200px 0;;
+/* *{
+    outline: 1px solid red;
+} */
+.certification-partner{
+    margin: 200px 0 ;
 }
-.cp-mode .list-row{
-    width: 100%;
-    display: flex;
-    margin: 20px 0px;
-}
-.certification-list .list-row:nth-child(1){
-    justify-content: center;
-}
-.certification-list .list-row:nth-child(2){
-    justify-content: space-evenly;
-}
-.partner-list .list-row{
-    justify-content: center;
-}
-.partner .pic{
-    margin: 20px;
-}
-.partner .pic img:nth-child(1){
+.certification-part,
+.partner-part{
     width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
-.cp-mode h2{
-    text-align: center;
-    margin: 70px 0;
+
+.certifications,
+.partners{
+    display: flex;
+    width: 1500px;
+
+    animation-name: runrun-left;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse; 
 }
-.cp-mode .pic{
-    width: 150px;
+
+.certification,
+.partner{
+    width: 100px;
+}
+.certification img,
+.partner img{
+    width: 100%;
+}
+
+@keyframes runrun-left{
+    0%{left:0}
+    100%{left:-1500px}
 }
 
 /* ---------- *\
@@ -1070,7 +1079,7 @@ footer .social_media{
 }
 #toTop{
     position: absolute;
-    left: 50%;
+    left: 90%;
     transform: translateY(-100px);
     cursor: pointer;
     color: #0EA5A1;

@@ -34,23 +34,23 @@ function GethashID (hashIDName){
 
 
   // -----------------------跟著選取標籤轉換下方顯示內容
-  function openServe(evt,serve){
-    //宣告會用到的變數
+  // function openServe(evt,serve){
+  //   //宣告會用到的變數
     
-    var i , textcontent ,tablinks
-    //抓到所有class="textcontent"元素，並且把他們藏起來
-    textcontent = document.getElementsByClassName("textcontent");
-    for(i=0;i<textcontent.length;i++){
-      textcontent[i].style.display ="none";
-    }
-    //抓到所有tablinks 取消.active
-    tablinks = document.getElementsByClassName("tablinks");
-    for( i=0 ; i < tablinks.length ; i++){     tablinks[i].className=tablinks[i].className.replace("active","");
-    }
-    //顯示當前的tab與active的效果
-    document.getElementById(serve).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
+  //   var i , textcontent ,tablinks
+  //   //抓到所有class="textcontent"元素，並且把他們藏起來
+  //   textcontent = document.getElementsByClassName("textcontent");
+  //   for(i=0;i<textcontent.length;i++){
+  //     textcontent[i].style.display ="none";
+  //   }
+  //   //抓到所有tablinks 取消.active
+  //   tablinks = document.getElementsByClassName("tablinks");
+  //   for( i=0 ; i < tablinks.length ; i++){     tablinks[i].className=tablinks[i].className.replace("active","");
+  //   }
+  //   //顯示當前的tab與active的效果
+  //   document.getElementById(serve).style.display = "block";
+  //   evt.currentTarget.className += " active";
+  // }
 
 
   // 收藏最愛
