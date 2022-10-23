@@ -898,32 +898,22 @@ header .container{
     overflow: hidden;
 }
 
-.certifications,
+/* .certifications,
 .partners{
     display: flex;
     width: 1500px;
+} */
 
-    animation-name: runrun-left;
-    animation-duration: 3s;
-    animation-delay: 0s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse; 
-}
-
-.certification,
+/* .certification,
 .partner{
     width: 100px;
-}
+} */
 .certification img,
 .partner img{
-    width: 100%;
+    width: 100px;
 }
 
-@keyframes runrun-left{
-    0%{left:0}
-    100%{left:-1500px}
-}
+
 
 /* ---------- *\
    contact 

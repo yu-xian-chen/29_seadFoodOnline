@@ -156,6 +156,59 @@ $(window).on('load', function(){
 //     }
 // })
 
+// 輪播圖
+$(document).ready(function(){
+    $('.slider').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 6900,
+        infinite: true,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        cssEase: 'linear',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 769,//斷點
+            settings: {
+            slidesToShow: 3,//畫面看幾張
+        }},{
+            breakpoint: 426,//斷點
+            settings: {
+            slidesToShow: 1.5,
+            }
+        }]
+    });
+
+    $('.slider-another').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 2,
+        speed: 6900,
+        infinite: true,
+        pauseOnHover: true,
+        pauseOnFocus: false,
+        cssEase: 'linear',
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 769,
+            settings: {
+                slidesToShow: 3,
+            }},
+        {
+            breakpoint: 426,
+            settings: {
+                slidesToShow: 1.5,
+            }
+        }
+    ]
+    });
+
+
+
+})
 
 
 
