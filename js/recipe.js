@@ -1,13 +1,12 @@
 // tab  
-// a.上方span連結錨定對應的區塊
-function GethashID (hashIDName){
+function GethashID (hashIDName){// 切換tab的方法
     if(hashIDName){
       //tab設定
-      $('.recipe-menu-tab li').find('a').each(function() { //取得tab裡的a
+      $('.tab li').find('a').each(function() { //取得tab裡的a 
         var idName = $(this).attr('href'); //#錨定ID取得
         if(idName == hashIDName){ //抓取的ID與錨定的ID相同時
           var parentElm = $(this).parent(); //tab的父層(li)
-          $('.recipe-menu-tab li').removeClass("active"); //舊有.active狀態移除
+          $('.tab li').removeClass("active"); //舊有.active狀態移除
           $(parentElm).addClass("active"); //新按的li加.active
       
           //選取區域設定
@@ -16,17 +15,20 @@ function GethashID (hashIDName){
         }
       });
     }
+
+
   }
   
   //按tab的時候
-  $('.recipe-menu-tab a').on('click', function() {
+  $('.tab a').on('click', function() {
     var idName = $(this).attr('href'); //#id取得  
     GethashID (idName);//讀取tab
     return false; //a標籤無效
   });
 
+
   $(window).on('load', function () {
-      $('.recipe-menu-tab li:first-of-type').addClass("active"); //最開始li加.active
+      $('.tab li:first-of-type').addClass("active"); //最開始li加.active
       $('.area:first-of-type').addClass("is-active"); //最開始.area + .is-active
     var hashName = location.hash;  // #
     GethashID (hashName);
@@ -53,12 +55,43 @@ function GethashID (hashIDName){
   // }
 
 
-  // 收藏最愛
   $(document).ready(function(){
+  // 收藏最愛
     $('.star-btn').click(function(){
       $(this).css({
           color:'black'
       }).text('已加入')
     })
     
+    // 對應tab顯示該區
+    // $(document).ready(function(){
+    //   $('#skill').click(function(){
+    //     alert('HI');
+    //   })
+      
+    // })
+  $(`.skill-btn`).click(function(){
+      $('.fish-class').removeClass('none').addClass('block')
+      $('.fish-recipe-section').removeClass('block').addClass('none')
+      $('.season-recipe-section').removeClass('block').addClass('none')
   })
+
+  $(`.fish-recipe-btn`).click(function(){
+      $('.fish-class').removeClass('block').addClass('none')
+      $('.fish-recipe-section').removeClass('none').addClass('block')
+      $('.season-recipe-section').removeClass('block').addClass('none')
+  })
+
+  $(`.season-recipe-btn`).click(function(){
+      $('.fish-class').removeClass('block').addClass('none')
+      $('.fish-recipe-section').removeClass('block').addClass('none')
+      $('.season-recipe-section').removeClass('none').addClass('block')
+  })
+
+
+
+
+
+
+  })
+

@@ -459,7 +459,17 @@
 }
 .des-content{
 	/* border-top: 1px solid #aaa; */
-	padding: -5px;
+	padding: 10px;
 	height: 400px;
 	background-color: #fff;
 }
+
+.des-tab-active{
+	background-color: #fff;
+	border-top: 2px solid #1a2547;
+	border-bottom: none;
+}
+
+
+
+

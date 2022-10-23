@@ -24,21 +24,22 @@
     padding: 0 1em;
     background-color: #F5F4F1;
 }
+
 /*tab*/
-.recipe-menu-tab{
+.tab{
     display: flex;
     flex-wrap: wrap;
     position: absolute;
     top: 0;
 }
-.recipe-menu-tab li a{
+.tab li a{
   display: block;
   background:#ddd;
   margin:0 2px;
   padding:10px 20px;
 }
 /*li active*/
-.recipe-menu-tab li.active a{
+.tab li.active a{
   background:#fff;
 }
 @media screen and (max-width:767px){
@@ -49,7 +50,7 @@
 }
 
 /*tab 非選取*/
-.area {
+.area{
   display: none;
   opacity: 0;
   background: #fff;
@@ -60,7 +61,7 @@
 .area.is-active {
     display: block;
     animation-name: displayAnime;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
@@ -76,9 +77,9 @@
     margin-bottom: 5px;
     font-weight: 600;
 }
-.area.skill,
-.area.fish-recipe,
-.area.season-recipe{
+.skill,
+.fish-recipe,
+.season-recipe{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -99,6 +100,16 @@
 .area-section{
     width: 40%;
 }
+
+/* 區域顯示 */
+.block{
+    display: block;
+}
+
+.none{
+    display: none;
+}
+
 /* ------------ *\
     path
 \* ------------ */

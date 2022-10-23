@@ -232,5 +232,61 @@ $(document).ready(function(){
 // window.addEventListener("load", init, false);
 
 
+// ----------------商品頁 單一商品
+//tab切換
+$(document).ready(function(){
+  $('#p-feature').click(function(){
+      // $('#p-feature').addClass('des-tab-active')
+      $('#p-des').text('商品特色')
+  })
+
+  $('#p-spec').click(function(){
+      // $('#p-feature').addClass('des-tab-active')
+      $('#p-des').text('商品規格')
+  })
+
+  $('#p-change').click(function(){
+      // $('#p-feature').addClass('des-tab-active')
+      $('#p-des').text('退換貨須知')
+  })
+
+  $('#p-class').click(function(){
+      // $('#p-feature').addClass('des-tab-active')
+      $('#p-des').text('相關類別')
+  })
+
+})
 
 
+// 小圖換大圖
+// function showLarge(e) {
+//   // 換大圖
+//   let small = e.target;
+//   document.getElementById("large-pic").src = small.src;
+
+// }
+
+function init() {
+  // 小圖可以點按
+  let imgs = document.querySelectorAll(".small-pic-list img");
+  for(let i = 0; i < imgs.length;i++) {
+      imgs[i].onclick = showLarge;
+  }
+
+
+}
+
+
+function showLarge(e) {
+  // 換大圖
+  let small = e.target;
+  document.getElementById("large-pic").src = small.src;
+}
+
+$(document).ready(function(){
+  $('#large-pic').click(function(){
+    alert('hello');
+  })
+
+
+})

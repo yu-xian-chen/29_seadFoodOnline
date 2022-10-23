@@ -189,7 +189,7 @@
                <div class="p-only-product">
                     <div class="col-12 col-md-6 col-lg-5 p-only-pics">
                         <div class="big-pic">
-                            <img src="./imgs/online_store/only/1.jpg" alt="單一商品圖(大)">
+                            <img id="large-pic" src="./imgs/online_store/only/1.jpg" alt="單一商品圖(大)">
                         </div>
                         <div class="small-pic-list">
                             <div class="change-btn"><p><</p></div>
@@ -236,12 +236,14 @@
                 </div>
                 <div class="p-only-des">
                     <div class="des-tab">
-                        <span>商品特色</span>
-                        <span>商品規格</span>
-                        <span>退換貨須知</span>
-                        <span>相關類別</span>
+                        <span id="p-feature">商品特色</span>
+                        <span id="p-spec">商品規格</span>
+                        <span id="p-change">退換貨須知</span>
+                        <span id="p-class">相關類別</span>
                     </div>
-                    <div class="des-content"></div>
+                    <div class="des-content">
+                        <h2 id="p-des">商品特色</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -294,5 +296,6 @@
 </footer>
 <script src="./js/index.js"></script>
 <script src="./js/online_store.js"></script>
+
 </body>
 </html>
