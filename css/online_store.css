@@ -286,11 +286,12 @@
 .specialty .btn a:hover{
 	background-color: #18213c;
 }
-
+@media screen and (max-width:767px){
+	.phone-x{display: none;}
+}
 @media screen and (min-width: 768px){
 	.main-site {
 		display: block;
-
 	}
 }
 

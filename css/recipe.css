@@ -1,6 +1,9 @@
 /* ------------ *\
     menu
 \* ------------ */
+.recipe-menu a{
+    color: #3c56a6;
+}
 .recipe-txt a{
     width: 100%;
     text-align: center;
@@ -43,7 +46,9 @@
   background:#fff;
 }
 @media screen and (max-width:767px){
-    .d-menu{top: -35px;}
+    .d-menu{
+    padding: 0 5px;
+    top: -35px;}
 }
 @media screen and (min-width:768px){
     .d-menu{ top: -35px;}

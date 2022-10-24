@@ -103,6 +103,14 @@
 }
 @media screen and (max-width:767px){
 	.breadcrumb li{padding: 0 5px;}
+    .count-box{
+    display: flex;
+    flex-direction: column;
+    }
+    #discount_code{
+        width: 140px;
+        line-height: 1.5em;
+    }
 }
 /* ------------ *\
     main
