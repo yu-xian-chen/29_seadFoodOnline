@@ -132,15 +132,13 @@ $('.slider-news').slick({
             slidesToShow: 2,
             slidesToScroll: 2,
         }
-    },
-    {
+    },{
         breakpoint: 426,//斷點
         settings: {
             slidesToShow: 1,
             slidesToScroll: 1,
         }
-    }
-]
+    }]
 });
 
 // 輪播圖
@@ -183,14 +181,12 @@ $(document).ready(function(){
             breakpoint: 769,
             settings: {
                 slidesToShow: 3,
-            }},
-        {
+            }},{
             breakpoint: 426,
             settings: {
                 slidesToShow: 1.5,
             }
-        }
-    ]
+        }]
     });
 
 

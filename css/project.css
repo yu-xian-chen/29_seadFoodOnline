@@ -196,7 +196,7 @@ header .container{
 .icon .search{
     position: fixed;
     top: 70px;
-    right: 60px;
+    right: 40px;
     width: 40px;
     height: 40px;
     z-index: 3;
@@ -221,7 +221,7 @@ header .container{
         align-items: center;
         position: fixed;
         border-radius: 10px;
-        right: 70px;
+        right: 40px;
         top: 3%;
         z-index: 3;
     }
@@ -350,7 +350,6 @@ header .container{
     background-position:center center;
     position: relative;
     margin: auto;
-    background-attachment: fixed;
 }
 /* icon */
 .icon-imagery{
@@ -545,6 +544,8 @@ header .container{
 @media screen and (min-width: 768px){
     .news-list .news:nth-child(2){display: block;}
     .news{width: 70%;}
+    .banner-imagery{background-attachment: fixed;}
+    .banner-shopping{background-attachment: fixed;}
 }
 @media screen and (min-width: 1024px){
     .news-list>.news{display: block;}
@@ -597,58 +598,6 @@ header .container{
 .slick-dots .slick-active button{
     background:#3c56a6;
 }
- /* CSS */
- /* Slider */
-.slick-slider{
-    position: relative;
-    display: block;
-    box-sizing: border-box;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    -webkit-touch-callout: none;
-    -khtml-user-select: none;
-    -ms-touch-action: pan-y;
-        touch-action: pan-y;
-    -webkit-tap-highlight-color: transparent;
-}
-.slick-list{
-    position: relative;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-.slick-list:focus{
-    outline: none;
-}
-.slick-list.dragging{
-    cursor: pointer;
-    cursor: hand;
-}
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
-    -webkit-transform: translate3d(0, 0, 0);
-       -moz-transform: translate3d(0, 0, 0);
-        -ms-transform: translate3d(0, 0, 0);
-         -o-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-}
-.slick-track{
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-.slick-track:before,
-.slick-track:after{
-    display: table;
-    content: '';
-}
 
 /* -------------- *\
     shopping banner 
@@ -665,7 +614,6 @@ header .container{
     background-size: cover;
     position: relative;
     background-position:center center;
-    background-attachment: fixed;
     max-width: 1440px;
     margin: auto;
   }
@@ -958,6 +906,14 @@ header .container{
     .fish:nth-child(7)::after{display: none;}
     .fish:nth-child(5) img{display: none;}
     .fish:nth-child(5)::after{display: none;}
+    .fish-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .knowledge .btn{
+        position: static ;
+        margin-top: 30px;
+    }
 }
 
 @media screen and (min-width: 670px){
