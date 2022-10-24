@@ -1,6 +1,5 @@
 // 尚未完成
-// 首頁: 輪播圖、合作夥伴、放大鏡
-// 購物車表單+-、$連動
+// 首頁:放大鏡
 // 全域:進商品頁面活動彈出
 
 
@@ -116,45 +115,33 @@ $(window).on('load', function(){
 });
 
 
-//------news------- 目前無效果
-// function $id(id){  //$id("btnLeft")
-//     return document.getElementById(id);  //document.getElementById("btnLeft")
-// }
+//------news------- 
 
-// window.addEventListener("load", function(){
-    
-
-//     let wrap = document.querySelector(".news-list");
-//     let curIndex = 0;
-//     //-----------------------------------------btnLeft.onclick
-//     $id("btnLeft").onclick = function(){
-//         curIndex--;
-//         wrap.style.left = -310*curIndex + "px";
-//         if(curIndex == 0 ){
-//            $id("btnLeft").disabled = true; 
-//         }
-//         $id("btnRight").disabled = false; 
-//     }
-//     //-----------------------------------------btnRight.onclick
-//     /* $id("btnRight").onclick = function(){
-//     curIndex++;
-//     wrap.style.left = -310*curIndex + "px";  
-//     if(curIndex == 5){
-//         document.getElementById("btnRight").disabled = true; 
-//     }
-//     document.getElementById("btnLeft").disabled = false;       
-//     } */
-//     $id("btnRight").onclick = function(){
-//         curIndex++;
-//         wrap.style.left = -310*curIndex + "px";  
-//         $id("btnLeft").disabled = false;   
-//         if(curIndex == 5){
-//             wrap.style.left="5px";
-//             curIndex = 0;
-//             $id("btnLeft").disabled = true;       
-//         }
-//     }
-// })
+$('.slider-news').slick({
+    autoplay: true,
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    prevArrow: '<div class="slick-prev"></div>',
+    nextArrow: '<div class="slick-next"></div>',
+    dots: true,
+    responsive: [
+        {
+        breakpoint: 769,//斷點
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+        }
+    },
+    {
+        breakpoint: 426,//斷點
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+        }
+    }
+]
+});
 
 // 輪播圖
 $(document).ready(function(){
@@ -209,12 +196,6 @@ $(document).ready(function(){
 
 
 })
-
-
-
-
-
-
 //-----------------聯絡我們表單----------------
 
 //表單點擊狀態 
