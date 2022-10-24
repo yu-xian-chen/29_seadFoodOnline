@@ -97,6 +97,9 @@
     content: '/';
     margin-right: 20px;
 }
+@media screen and (max-width:767px){
+	.breadcrumb li{padding: 0 5px;}
+}
 /* ------------ *\
     main
 \* ------------ */
@@ -313,9 +316,7 @@
 .des-tab{
 	display: flex;
 }
-.p-online_store *{
-	/* outline: 1px solid red; */
-}
+
 /* 大小圖設定 */
 .big-pic{
 	width: 100%;

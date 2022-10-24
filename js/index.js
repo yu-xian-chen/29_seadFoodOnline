@@ -169,7 +169,7 @@ $(document).ready(function(){
     $('.slider-another').slick({
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 2,
+        autoplaySpeed: 4,
         speed: 6900,
         infinite: true,
         pauseOnHover: true,

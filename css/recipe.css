@@ -134,7 +134,9 @@
     content: '/';
     margin-right: 20px;
 }
-
+@media screen and (max-width:767px){
+	.breadcrumb li{padding: 0 5px;}
+}
 /* ------------ *\
     main
 \* ------------ */
@@ -253,9 +255,6 @@ h2{
     background-color: #ab4c4c;
 }
 /* 當季食譜 */
-.recipe *{
-    /* outline: 1px solid red; */
-}
 .recipe-list{
     display: flex;
     flex-wrap: wrap;
